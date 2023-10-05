@@ -67,3 +67,11 @@
 //     </section>
 //   )
 // }
+export default function LargeStartups(){
+  return <>
+  
+    <h1>
+      large startups
+    </h1>
+  </>
+}
