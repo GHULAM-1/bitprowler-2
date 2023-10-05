@@ -1,0 +1,13 @@
+.progress-bar {
+    position: fixed;
+    z-index: 21;
+    /* margin-top: 4rem; */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: hsl(8, 82%, 44%);
+    /* background: var(); */
+    transform-origin: 0%;
+  }
+  
