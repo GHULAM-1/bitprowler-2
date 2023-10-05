@@ -32,7 +32,7 @@ export default function Contact() {
   const onSubmit = async (data: any, e: any) => {
     console.log(data);
     // sendEmail(data)
-    await fetch("http://localhost:3000/api/email", {
+    await fetch("https://b-prowler2.vercel.app/api/email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
