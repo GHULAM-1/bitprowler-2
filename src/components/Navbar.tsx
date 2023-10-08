@@ -8,7 +8,6 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { DropdownMenu } from "@radix-ui/react-dropdown-menu";
 import { ServicesDD } from "./dropDowns";
-import { PackagesDD } from "./packages-dd";
 import { Button } from "./ui/button";
 
 
@@ -66,7 +65,7 @@ export default function Navbar() {
                       </Link>
                     ))}
                     <ServicesDD></ServicesDD>
-                    <PackagesDD></PackagesDD>
+                    
 
                   </div>
 
@@ -121,7 +120,7 @@ export default function Navbar() {
               <ServicesDD></ServicesDD>
               </div>
               <div>
-              <PackagesDD></PackagesDD>
+            
 
               </div>
               {/* <Link href="https://github.com/humberni/halley" target="_blank">

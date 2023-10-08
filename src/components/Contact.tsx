@@ -34,7 +34,7 @@ export default function Contact() {
     // sendEmail(data)
     //https://b-prowler2.vercel.app/api/send
     //http://localhost:3000/api/send
-    await fetch("https://b-prowler2.vercel.app/api/send", {
+    await fetch("http://localhost:3000/api/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

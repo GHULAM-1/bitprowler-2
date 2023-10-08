@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "keystatic.config.ts", "src/components/Pricing.tsx", "src/store/store.tsx", "src/app/api/send/route.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "keystatic.config.ts", "src/components/Pricing.tsx", "src/store/store.tsx", "src/app/api/send/route.js", "src/components/ui/button.tsx"],
   "exclude": ["node_modules"]
 }
