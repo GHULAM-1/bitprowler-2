@@ -57,6 +57,15 @@
   }
 }
 
+.clamp-48px{
+  font-size: clamp(1rem ,4.739vw , 10rem);
+}
+.clamp-width-48px{
+  width: clamp(1rem ,1vw , 10rem);
+}
+.clamp-height-48px{
+  height: clamp(1rem ,1vw , 10rem);
+}
 
 
  

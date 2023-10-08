@@ -1,18 +1,41 @@
 
-import ServicesMainHeading from "@/components/servicesStuff/servicesMainHeading";
-
-export default function Seo(){
+import ServicesMainHeading from "@/components/servicesStuff/servicesMainHeading"
+import SeoContent from "@/components/servicesStuff/seoContent"
+import DeliverablesSection from "@/components/servicesStuff/deliverablesSection"
+import { seoPills } from "@/data/servicesData/servicesPillsData"
+import MeetSection from "@/components/servicesStuff/meetSection"
+import Image from "next/image"
+export default function Seo() {
     return <>
-    
-    
-    <div>
-    
-                <div className="mt-[4rem]">
-                <ServicesMainHeading>SEO</ServicesMainHeading>
-                    </div>        
-    
-    
-    </div>
 
-</>
+
+        <div>
+
+            <ServicesMainHeading>
+                    SEO
+                </ServicesMainHeading>
+            <div className="mt-[4rem]  bg-background">
+
+                
+                <Image
+                        src="/mockups/seo.svg"
+                        width={1900}
+                        height={300}
+                        alt="Picture of the author"
+                        className=""
+                    />
+                
+
+                <SeoContent></SeoContent>
+
+                <DeliverablesSection deliverablesData={seoPills}></DeliverablesSection>
+                <MeetSection></MeetSection>
+            </div>
+
+
+        </div>
+
+    </>
+
+
 }

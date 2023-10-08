@@ -8,7 +8,7 @@ export default function HeroLogoImage(){
 
     {isDarkTheme?            <Image
                       className="mt-[1rem]"
-                      src="/bitprowler-white.svg"
+                      src="/brand_images/bitprowler-white.svg"
                       alt="Logo Your Company"
                       width={300}
                       height={300}
@@ -16,7 +16,7 @@ export default function HeroLogoImage(){
                       sizes="100vw"
                     />:            <Image
                     className="mt-[1rem]"
-                    src="/bitprowler-black.svg"
+                    src="/brand_images/bitprowler-black.svg"
                     alt="Logo Your Company"
                     width={300}
                     height={300}
