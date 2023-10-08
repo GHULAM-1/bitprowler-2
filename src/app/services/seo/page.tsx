@@ -1,16 +1,16 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
+import ServicesMainHeading from "@/components/servicesStuff/servicesMainHeading";
 
 export default function Seo(){
     return <>
     
     
     <div>
-    <Navbar></Navbar>
+    
                 <div className="mt-[4rem]">
-                    fmfmdkfmdkfmk
+                <ServicesMainHeading>SEO</ServicesMainHeading>
                     </div>        
-    <Footer></Footer>
+    
     
     </div>
 

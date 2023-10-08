@@ -1,4 +1,4 @@
-
+import ServicesMainHeading from "@/components/servicesStuff/servicesMainHeading";
 export default function WebDevelopment(){
     return <>
     
@@ -6,7 +6,7 @@ export default function WebDevelopment(){
     <div>
     
                 <div className="mt-[4rem]">
-                    fmfmdkfmdkfmk
+                    <ServicesMainHeading>Web Dev</ServicesMainHeading>
                     </div>        
     
     

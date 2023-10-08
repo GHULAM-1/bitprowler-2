@@ -1,6 +1,5 @@
+import ServicesMainHeading from "@/components/servicesStuff/servicesMainHeading";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 export default function Marketing(){
     return <>
@@ -9,7 +8,9 @@ export default function Marketing(){
             <div>
             
                         <div className="mt-[4rem]">
-                            fmfmdkfmdkfmk
+
+                            <ServicesMainHeading>Marketing</ServicesMainHeading>
+                            
                             </div>        
             
             
