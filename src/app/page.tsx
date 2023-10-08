@@ -10,6 +10,7 @@ import Customers from "@/components/Customers";
 import Navbar from "@/components/Navbar";
 import Prefooter from "@/components/Prefooter";
 import Footer from "@/components/Footer";
+import PackagesSection from "@/components/packages/packagesSection";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
       <Hero />
       <Services />
       {/* <Features /> */}
-      
+      <PackagesSection></PackagesSection>
       <Faq />
       <Contact />
       <Customers />
