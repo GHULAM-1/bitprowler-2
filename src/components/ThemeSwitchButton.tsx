@@ -1,21 +1,28 @@
 'use client'
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-
+import { useTogglingStore } from '@/store/store';
 export default function ThemeSwitchButton() {
+    const changeCurrentTheme = useTogglingStore((state:any)=>state.changeCurrentTheme)
+    const isDarkTheme = useTogglingStore((state:any)=> state.isDarkTheme)
+    
     const [mounted, setMounted] = useState(false);
     const { resolvedTheme, setTheme } = useTheme();
     // After mounting, we have access to the theme
     useEffect(() => setMounted(true), []);
+const handleThemeSetting = () => {
+    setTheme(resolvedTheme === "dark" ? "light" : "dark")
+    // console.log(isDarkTheme)
+    changeCurrentTheme()
 
+}
     return (
 
         <button
             aria-label="Toggle Dark Mode"
             type="button"
             className="w-10 h-10  flex items-center justify-center hover:bg-neutral-200 hover:dark:bg-neutral-600 rounded-full transition-all"
-            onClick={() =>
-                setTheme(resolvedTheme === "dark" ? "light" : "dark")
+            onClick={handleThemeSetting
             }
         >
             {mounted && (

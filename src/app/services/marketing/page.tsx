@@ -7,11 +7,11 @@ export default function Marketing(){
     
     
             <div>
-            <Navbar></Navbar>
+            
                         <div className="mt-[4rem]">
                             fmfmdkfmdkfmk
                             </div>        
-            <Footer></Footer>
+            
             
             </div>
         

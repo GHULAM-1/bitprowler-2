@@ -26,7 +26,7 @@ export default function Home() {
 
 
       <>
-      <Navbar></Navbar>
+      
       <Hero />
       <Services />
       {/* <Features /> */}
@@ -35,7 +35,7 @@ export default function Home() {
       <Contact />
       <Customers />
       {/* <Prefooter></Prefooter> */}
-      <Footer></Footer>
+      
     </>
   );
 }

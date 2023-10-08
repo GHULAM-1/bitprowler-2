@@ -6,11 +6,11 @@ export default function MobileDevelopment(){
     
     
     <div>
-    <Navbar></Navbar>
+    
                 <div className="mt-[4rem]">
                     fmfmdkfmdkfmk
                     </div>        
-    <Footer></Footer>
+    
     
     </div>
 

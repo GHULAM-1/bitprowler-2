@@ -9,6 +9,7 @@ import { XMarkIcon } from "@heroicons/react/24/solid";
 import { DropdownMenu } from "@radix-ui/react-dropdown-menu";
 import { ServicesDD } from "./dropDowns";
 import { Button } from "./ui/button";
+import NavbarLogoImage from "./onlyImageComponents/navbarImages";
 
 
 const navigation = [
@@ -29,25 +30,17 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className=" fixed top-0 left-0 right-0 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-400 border-b border-neutral-200 dark:border-neutral-700 backdrop-blur-sm bg-white/90 dark:bg-neutral-900/80 z-20"
+      className=" fixed w-[100vw] top-0 left-0 right-0 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-400 border-b border-neutral-200 dark:border-neutral-700 backdrop-blur-sm bg-white/90 dark:bg-neutral-900/80 z-20"
     >
       {({ open }: { open: any }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1 items-center justify-start">
-                <div className="flex flex-shrink-0 items-center md:pl-0">
+                <div className="flex flex-shrink-0 items-center md:pl-0 h-8">
                   {/* <Link href="/">
-                    <Image
-                      className="block h-14 w-auto"
-                      src="/logo-dark-mode.png"
-                      alt="Logo Your Company"
-                      width={150}
-                      height={150}
-                      quality={75}
-                      sizes="100vw"
-                    />
-                  </Link> */}
+                    <NavbarLogoImage></NavbarLogoImage>
+                                </Link> */}
                 </div>
 
                 <div className="hidden sm:ml-6 sm:block">

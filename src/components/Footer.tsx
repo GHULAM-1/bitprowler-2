@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import ThemeSwitchOption from "./ThemeSwitchOption";
+import FooterLogoImage from "./onlyImageComponents/footerImages";
+
 
 const social = [
   {
@@ -82,15 +83,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5">
         <div className="col-span-2 sm:col-span-3 md:col-span-3 lg:col-span-2 2xl:col-span-2">
           <Link href="/">
-            <Image
-              className="h-8 w-auto"
-              src="/darkmode-short-rb.svg"
-              alt="Logo Your Company"
-              width={150}
-              height={150}
-              quality={75}
-              sizes="100vw"
-            />
+            <FooterLogoImage></FooterLogoImage>
           </Link>
 
           <p className="md:text-sm pt-4 w-auto sm:w-6/12 md:w-6/12 lg:w-8/12">
@@ -152,7 +145,7 @@ export default function Footer() {
             </Link>
           ))}
           <div className="mt-12">
-            <ThemeSwitchOption />
+            
           </div>
         </div>
       </div>

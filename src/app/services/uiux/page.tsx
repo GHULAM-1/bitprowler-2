@@ -1,16 +1,18 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
+import ServicesMainHeading from "@/components/servicesStuff/servicesMainHeading"
 export default function Uiux(){
     return <>
     
     
     <div>
-    <Navbar></Navbar>
+    
                 <div className="mt-[4rem]">
-                    fmfmdkfmdkfmk
+                    <ServicesMainHeading>
+                        UX design
+                    </ServicesMainHeading>
+                    
                     </div>        
-    <Footer></Footer>
+    
     
     </div>
 

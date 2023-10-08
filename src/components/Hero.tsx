@@ -1,24 +1,22 @@
+
+import { useTogglingStore } from "@/store/store";
+import HeroLogoImage from "./onlyImageComponents/heroImages";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import NavbarLogoImage from "./onlyImageComponents/navbarImages";
 export function Hero() {
+  const isDarkTheme = useTogglingStore((state:any)=> state.isDarkTheme)
+
   return (
     <div className="bg-background dark:bg-background">
       <div className="max-w-7xl mx-auto pt-20 pb-16 px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2">
         <div className="pt-6 md:pt-32 justify-center text-center sm:justify-start sm:text-start">
           <h1 className="text-5xl font-bold ">
             Welcome to <br />{" "}
-            {/* <span className="text-rose-500 font-extrabold">Halley</span> */}
+      
+           
+                  <HeroLogoImage></HeroLogoImage>
 
-            <Image
-                      className="mt-[1rem]"
-                      src="/darkmode-short-rb.png"
-                      alt="Logo Your Company"
-                      width={300}
-                      height={300}
-                      quality={100}
-                      sizes="100vw"
-                    />
           </h1>
           <p className="pt-6 text-base w-auto sm:w-10/12 md:w-10/12 dark:text-neutral-400">
             Bit Prowler is dedicated to empowering businesses through innovative digital solutions. Our mission is to deliver excellence in web and mobile development, marketing, SEO, and security services, ensuring our clients thrive in the ever-evolving digital landscape.
