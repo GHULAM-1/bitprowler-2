@@ -18,7 +18,7 @@ export default function Marketing() {
 
                 
                 <Image
-                        src="/mockups/marketing.png"
+                        src="/mockups/marketing-no-bg.png"
                         width={1900}
                         height={300}
                         alt="Picture of the author"

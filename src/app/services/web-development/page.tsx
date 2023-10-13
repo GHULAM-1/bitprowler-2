@@ -18,7 +18,7 @@ export default function WebDev() {
 
                 
                 <Image
-                        src="/mockups/web.png"
+                        src="/mockups/web-no-bg.png"
                         width={1900}
                         height={300}
                         alt="Picture of the author"
@@ -38,4 +38,4 @@ export default function WebDev() {
     </>
 
 
-}
+}   
