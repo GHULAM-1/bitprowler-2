@@ -9,18 +9,18 @@ export default function WebDev() {
     return <>
 
 
-        <div>
+        <div className="bg-background">
 
             <ServicesMainHeading>
                     Web Dev
                 </ServicesMainHeading>
-            <div className="mt-[4rem]  bg-background">
+            <div className="mt-[4rem]  bg-background flex flex-col justify-center items-center">
 
                 
                 <Image
                         src="/mockups/web-no-bg.png"
-                        width={1900}
-                        height={300}
+                        width={1100}
+                        height={1100}
                         alt="Picture of the author"
                         className=""
                     />

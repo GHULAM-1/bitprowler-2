@@ -18,7 +18,7 @@ export default function Security() {
 
                 
                 <Image
-                        src="/mockups/security.svg"
+                        src="/mockups/security-no-bg.svg"
                         width={1900}
                         height={10}
                         alt="Picture of the author"

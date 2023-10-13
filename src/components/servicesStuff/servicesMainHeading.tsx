@@ -1,7 +1,7 @@
 export default function ServicesMainHeading({children}:any){
     return <>
 
-            <div className="text-[5.5rem] font-normal flex justify-start items-center gap-[2rem] ml-[3rem] mt-[8rem] mb-[5rem] clamp-48px">
+            <div className="text-[5.5rem] font-normal flex justify-start items-center gap-[2rem] ml-[3rem] mt-[5rem] mb-[0rem] clamp-48px ">
 
 
                 <div >

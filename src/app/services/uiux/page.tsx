@@ -18,7 +18,7 @@ export default function Uiux() {
 
                 
                 <Image
-                        src="/mockups/ux.svg"
+                        src="/mockups/ux-no-bg.svg"
                         width={1900}
                         height={300}
                         alt="Picture of the author"
