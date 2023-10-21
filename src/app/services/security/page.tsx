@@ -14,12 +14,12 @@ export default function Security() {
             <ServicesMainHeading>
                     Cyber Security
                 </ServicesMainHeading>
-            <div className="mt-[4rem]  bg-background">
+            <div className="mt-[0rem]  bg-background flex flex-col justify-center items-center">
 
                 
                 <Image
-                        src="/mockups/security-no-bg.svg"
-                        width={1900}
+                        src="/mockups/security-no-bg.png"
+                        width={1000}
                         height={10}
                         alt="Picture of the author"
                         className=""

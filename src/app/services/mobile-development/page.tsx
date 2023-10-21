@@ -14,13 +14,13 @@ export default function AppDev() {
             <ServicesMainHeading>
                     App Dev
                 </ServicesMainHeading>
-            <div className="mt-[4rem]  bg-background flex flex-col justify-center items-center">
+            <div className="mt-[0rem]  bg-background flex flex-col justify-center items-center">
 
                 
                 <Image
                         src="/mockups/app-no-bg.png"
                         width={900}
-                        height={900}
+                        height={0}
                         alt="Picture of the author"
                         className=""
                     />

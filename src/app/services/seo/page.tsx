@@ -18,8 +18,8 @@ export default function Seo() {
 
                 
                 <Image
-                        src="/mockups/seo-no-bg.svg"
-                        width={1900}
+                        src="/mockups/seo-no-bg.png"
+                        width={900}
                         height={300}
                         alt="Picture of the author"
                         className=""

@@ -1,5 +1,8 @@
+'use client'
 import Image from "next/image";
 import { Button } from "./ui/button";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const services = [
   {
@@ -46,12 +49,14 @@ const services = [
   },
 ];
 export function Services() {
+  AOS.init();
+
   return (
     <div className="bg-background dark:bg-background" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
         <h2 className="text-4xl font-bold">Our Services</h2>
 
-        <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
+        <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400 " data-aos="fade-up">
         Bit Prowler specializes in crafting cutting-edge websites and mobile apps while also providing top-notch services in marketing, SEO, and security to boost your digital presence and protect your online assets.
         </p>
       </div>
