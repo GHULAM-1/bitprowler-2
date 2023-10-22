@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
     /* --primary: 346.8 77.2% 49.8%; */
-    --primary:8, 82%, 44%;
+    --primary:8, 82%, 44% , 1;
 
     --primary-foreground: 355.7 100% 97.3%;
     --secondary: 240 4.8% 95.9%;
@@ -33,7 +33,7 @@
   }
  
   .dark {
-    --background: 20 14.3% 4.1%;
+    --background: 0, 0%, 0%;
     --foreground: 0 0% 95%;
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
@@ -66,7 +66,14 @@
 .clamp-height-48px{
   height: clamp(1rem ,1vw , 10rem);
 }
+.clamp-hero2-main-heading{
+  font-size: clamp(2rem ,4.583vw , 10rem);
 
+}
+.clamp-service-main-heading{
+  font-size: clamp(1rem ,2.083vw , 10rem);
+
+}
 
  
 /* @layer base {

@@ -10,7 +10,7 @@ export default function PackagesSection(){
     const currentPackage = useTogglingStore((state:any)=> state.currentPackage)
     const settingPackageData = () =>{
         let packageData = {}
-        if(currentPackage === "bit"){
+        if(currentPackage === "bit"){   
             packageData = bitPackageData
             
         }

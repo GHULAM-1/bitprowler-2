@@ -16,6 +16,21 @@ module.exports = {
       },
     },
     extend: {
+
+
+      fontSize: {
+        'heading':'5.5rem',
+        'sub-heading':'4rem',
+        'medium-sub-heading':'3rem',
+        'small-sub-heading':'2.5rem',
+        'large-text':'2rem',
+        'text':'1.250rem',
+        'small-text':'1rem',
+        'ss-text':'0.75rem'
+      },
+      fontWeight:{
+            "base-weight":'400'
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -23,7 +38,7 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "hsla(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {

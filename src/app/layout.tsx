@@ -36,7 +36,12 @@ export default function RootLayout({
 
 
         </ThemeProviderWrapper>
-        
+        <script src= 
+        "/node_modules/particles.js/particles.js"> 
+    </script> 
+    <script src= 
+        "/node_modules/particles.js/demo/js/app.js"> 
+    </script>         
         </body>
     </html>
   )
