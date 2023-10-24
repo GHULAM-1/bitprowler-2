@@ -2,9 +2,8 @@ import ThemeProviderWrapper from '@/components/Providers/ThemeProvider';
 import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import Head from 'next/head';
+import Navbar from '@/components/custom/Navbar';
+
 
 const inter = Poppins({
   weight: '400',
@@ -23,8 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      
        
-      <body className={`${inter.className} overflow-x-hidden bg-background`}>
+      <body className={`overflow-x-hidden bg-background `}>
         <ThemeProviderWrapper  attribute="class"
             defaultTheme="system"
             enableSystem
@@ -32,7 +32,7 @@ export default function RootLayout({
            <Navbar />
         
         {children}
-        <Footer /> 
+        
 
 
         </ThemeProviderWrapper>
@@ -46,3 +46,4 @@ export default function RootLayout({
     </html>
   )
 }
+// ${inter.className}
