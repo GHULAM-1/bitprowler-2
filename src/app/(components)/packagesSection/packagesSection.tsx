@@ -5,8 +5,8 @@ export default function PackagesSection() {
   return (
     <>
       <div className="flex flex-col items-center   mt-[4rem] ">
-        <div className="main-div  flex flex-col w-[85%]  items-center max-[750px]:items-center">
-          <div className="w-[85%] flex flex-col max-[750px]:items-center">
+        <div className="main-div  flex flex-col w-[95%]  items-center max-[750px]:items-center">
+          <div className="w-[95%] flex flex-col max-[750px]:items-center">
             <div className="heading  clamp-service-section-main-heading mt-[4rem]  ">
               Packages
             </div>
@@ -17,7 +17,7 @@ export default function PackagesSection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 max-[1480px]:grid-cols-1 max-[750px]:grid-cols-1 gap-x-[2rem] w-[85%] ">
+          <div className="grid grid-cols-3 max-[1480px]:grid-cols-1 max-[750px]:grid-cols-1 gap-x-[2rem] w-[95%] ">
             {packagesSectionCardContent.map((cardContent, index) => {
               return (
                 <PackagesSectionCard

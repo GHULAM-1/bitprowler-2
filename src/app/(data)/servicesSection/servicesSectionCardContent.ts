@@ -1,43 +1,42 @@
 export const ServicesSectionCardContent = [
   {
-    id : 1,
+    id: 1,
     mainHeading: "Web Dev",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
-    iconDarkMode: "/servicesSectionImages/webDark.svg",
-    
+    pagePath: "/services/web-development",
   },
 
   {
-    id:2,
+    id: 2,
     mainHeading: "SEO",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
-    iconDarkMode: "/servicesSectionImages/seoDark.svg",
+    pagePath: "/services/seo",
   },
 
   {
-    id:3,
+    id: 3,
     mainHeading: "Security",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
-    iconDarkMode: "/servicesSectionImages/securityDark.svg",
+    pagePath: "/services/security",
   },
 
   {
-    id:4,
+    id: 4,
     mainHeading: "Marketing",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
-    iconDarkMode: "/servicesSectionImages/marketingDark.svg",
+    pagePath: "/services/marketing",
   },
 
   {
-    id:5,
+    id: 5,
     mainHeading: "UX design",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
-    iconDarkMode: "/servicesSectionImages/uxDark.svg",
+    pagePath: "/services/uiux",
   },
 
   {
@@ -45,6 +44,6 @@ export const ServicesSectionCardContent = [
     mainHeading: "App Dev",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
-    iconDarkMode: "/servicesSectionImages/appDark.svg",
+    pagePath: "/services/mobile-development",
   },
 ];

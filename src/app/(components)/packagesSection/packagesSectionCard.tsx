@@ -1,6 +1,8 @@
-import Image from "next/image";
+"use client";
 import React from "react";
+import BDarkSVG from "../../../../public/bDarkSVG";
 import HoverButton from "@/components/custom/hoverButton";
+import { useTogglingStore } from "@/store/store";
 type PackagesCardProps = {
   name: string;
   price: number;
@@ -16,10 +18,25 @@ export default function PackagesSectionCard({
   deliverablesCount,
   pagePath,
 }: PackagesCardProps) {
+  const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
+  let currentCardGradient = "";
+
+  if (isDarkTheme) {
+    currentCardGradient = "gradient-background";
+  } else {
+    currentCardGradient = "gradient-background-lightMode";
+  }
   return (
-    <div className="relative mb-[2rem] rounded-lg  gradient-background  text-white min-w-[300px]">
-      <div className="h-[23rem] content relative z-10 p-4 flex flex-col items-start justify-between">
-        <div className="first-half flex flex-col items-start  w-full">
+    <div
+      className={`z-0 relative mb-[2rem] rounded-lg dark:text-white text-black min-w-[300px] h-[23rem] hover:scale-105 transition-all transform ${
+        isDarkTheme === true
+          ? "gradient-background"
+          : "gradient-background-lightMode"
+      }  `}
+    >
+      <BDarkSVG className="absolute z-10 h-[260px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></BDarkSVG>
+      <div className="h-[23rem] content absolute z-20 p-4 flex flex-col items-start justify-between gap-[5rem]  w-full">
+        <div className="first-half flex flex-col items-start  w-full ">
           <div className="mb-[1rem] top-content flex justify-between w-full text-large-text min-[751px]:max-[1480px]:text-[2.5rem] ">
             <div className="name">{name}</div>
 
@@ -31,12 +48,14 @@ export default function PackagesSectionCard({
           </div>
         </div>
 
-        <div className="second-half flex flex-col items-start ">
+        <div className="second-half flex flex-col items-start w-full justify-between ">
           <div className="deliverables text-text mb-[0.5rem]">
             {deliverablesCount}+ Deliverables
           </div>
 
-          <HoverButton pagePath={pagePath}>More Information</HoverButton>
+          <HoverButton pagePath={pagePath}>
+            More Information {"-->"}
+          </HoverButton>
         </div>
       </div>
     </div>

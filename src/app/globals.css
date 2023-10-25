@@ -108,6 +108,15 @@
   );
 }
 
+.gradient-background-lightMode {
+  background: linear-gradient(
+    71deg,
+    rgba(255, 97, 33, 1) 10.66%,
+    rgba(204, 43, 20, 1) 26.32%,
+    rgba(234, 234, 234, 1) 81.63%
+  );
+}
+
 .blur-background {
   backdrop-filter: blur(10px);
 }
