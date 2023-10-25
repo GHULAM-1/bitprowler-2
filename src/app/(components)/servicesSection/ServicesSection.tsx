@@ -4,23 +4,28 @@ import Image from "next/image";
 export default function ServicesSection() {
   return (
     <>
-      <div className="main-div bg-background flex flex-col">
-        {/* <div className="text-heading bg-green-500 pl-[14rem]">
-    Services
-  </div> */}
+      <div className="flex flex-col items-center  w-screen h-screen ">
+        <div className="main-div  flex flex-col w-[85%]  items-center max-[750px]:items-center">
+          <div className="w-[85%]">
+            <div className="heading text-heading clamp-service-section-main-heading my-[4rem]  ">
+              Services
+            </div>
+          </div>
 
-        <div className=" grid grid-cols-3 justify-center justify-items-center px-[10rem] max-[1222px]:grid-cols-2 max-[1146px]:px-[1rem] max-[676px]:grid-cols-1 max-[676px]:px-[1rem] ">
-          {ServicesSectionCardContent.map((cardContent, index) => {
-            return (
-              <>
-                <ServiceCard
-                  mainHeading={cardContent.mainHeading}
-                  description={cardContent.description}
-                  iconDark={cardContent.iconDarkMode}
-                ></ServiceCard>
-              </>
-            );
-          })}
+          <div className="grid grid-cols-3 max-[1100px]:grid-cols-2 max-[750px]:grid-cols-1 gap-x-[2rem] w-[85%] ">
+            {ServicesSectionCardContent.map((cardContent, index) => {
+              return (
+                <>
+                  <ServiceCard
+                    mainHeading={cardContent.mainHeading}
+                    description={cardContent.description}
+                    iconDark={cardContent.iconDarkMode}
+                    index={index}
+                  ></ServiceCard>
+                </>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
@@ -113,3 +118,17 @@ export default function ServicesSection() {
 //     </div>
 //   );
 // }
+
+// <div className=" grid grid-cols-3 justify-center justify-items-center px-[10rem] max-[1222px]:grid-cols-2 max-[1146px]:px-[1rem] max-[676px]:grid-cols-1 max-[676px]:px-[1rem] ">
+//   {ServicesSectionCardContent.map((cardContent, index) => {
+//     return (
+//       <>
+//         <ServiceCard
+//           mainHeading={cardContent.mainHeading}
+//           description={cardContent.description}
+//           iconDark={cardContent.iconDarkMode}
+//         ></ServiceCard>
+//       </>
+//     );
+//   })}
+// </div>;

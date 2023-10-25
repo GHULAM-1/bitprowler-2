@@ -7,10 +7,12 @@ import ContactusSection from "./(components)/contactusSection/contactusSection";
 export default function Home() {
   return (
     <>
-      <HeroSection></HeroSection>
-      <ServicesSection />
-      <PackagesSection></PackagesSection>
-      <ContactusSection></ContactusSection>
+      <div className="overflow-x-hidden flex flex-col items-center justify-center">
+        <HeroSection></HeroSection>
+        <ServicesSection />
+        <PackagesSection></PackagesSection>
+        {/* <ContactusSection></ContactusSection> */}
+      </div>
     </>
   );
 }

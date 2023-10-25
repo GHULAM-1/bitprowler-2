@@ -21,8 +21,8 @@ export default function HeroSection() {
   );
 
   return (
-    <div className="w-screen h-screen ">
-      <div className="top-div  flex flex-col justify-center items-center h-full">
+    <div className="w-screen h-screen flex flex-col items-center ">
+      <div className="  top-div  flex flex-col justify-center items-center h-full w-[90%]">
         <h1 className="text-sub-heading font-base-weight clamp-hero2-main-heading flex text-center">
           Revolutionizing Digital Realities,
         </h1>

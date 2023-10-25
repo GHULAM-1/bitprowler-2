@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
     /* --primary: 346.8 77.2% 49.8%; */
-    --primary:8, 82%, 44% , 1;
+    --primary: 8, 82%, 44%, 1;
 
     --primary-foreground: 355.7 100% 97.3%;
     --secondary: 240 4.8% 95.9%;
@@ -31,7 +31,7 @@
     --ring: 346.8 77.2% 49.8%;
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 0, 0%, 0%;
     --foreground: 0 0% 95%;
@@ -40,7 +40,7 @@
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
     /* --primary: 346.8 77.2% 49.8%; */
-    --primary:8, 82%, 44%;
+    --primary: 8, 82%, 44%;
 
     --primary-foreground: 355.7 100% 97.3%;
     --secondary: 240 3.7% 15.9%;
@@ -57,154 +57,172 @@
   }
 }
 
-.clamp-48px{
-  font-size: clamp(1rem ,4.739vw , 10rem);
-}
-.clamp-width-48px{
-  width: clamp(1rem ,1vw , 10rem);
-}
-.clamp-height-48px{
-  height: clamp(1rem ,1vw , 10rem);
-}
-.clamp-hero2-main-heading{
-  font-size: clamp(2rem ,4.583vw , 10rem);
-
-}
-.clamp-service-main-heading{
-  font-size: clamp(1rem ,2.083vw , 10rem);
-
+.myElement {
+  color: red;
+  filter: invert(1);
 }
 
-.custom-color{
-  color : red;
+.clamp-48px {
+  font-size: clamp(1rem, 4.739vw, 10rem);
+}
+.clamp-width-48px {
+  width: clamp(1rem, 1vw, 10rem);
+}
+.clamp-height-48px {
+  height: clamp(1rem, 1vw, 10rem);
+}
+.clamp-hero2-main-heading {
+  font-size: clamp(2rem, 4.583vw, 10rem);
+}
+.clamp-service-main-heading {
+  font-size: clamp(1.5rem, 2.083vw, 10rem);
 }
 
- 
+.clamp-service-section-main-heading {
+  font-size: clamp(3rem, 4.583vw, 10rem);
+}
+
+.custom-color {
+  color: red;
+}
+
 .gradient-background {
-  background: linear-gradient(71deg, rgb(255, 107, 49) 10.66%, rgba(204, 43, 20, 1) 26.32%, rgba(21, 21, 21, 1) 86.63%);
+  background: linear-gradient(
+    71deg,
+    rgb(255, 107, 49) 10.66%,
+    rgba(204, 43, 20, 1) 26.32%,
+    rgba(21, 21, 21, 1) 86.63%
+  );
 }
 
 .blur-background {
   backdrop-filter: blur(10px);
 }
 
+.image-container {
+  filter: blur(5px);
+  position: relative;
+}
 
-  .image-container {
-    filter: blur(5px); 
-    position: relative;
-
-  }
-
-  
 #myInput:focus + label {
   transform: translateY(-50%);
   transition: transform 0.5s ease-in-out;
 
-  font-size: 0.75rem; 
+  font-size: 0.75rem;
 }
 
-
-
-* { box-sizing:border-box; }
+* {
+  box-sizing: border-box;
+}
 
 /* basic stylings ------------------------------------------ */
 
-.container 		{ 
+.container {
   /* font-family:'Roboto'; */
-  width:600px; 
-  margin:30px auto 0; 
-  display:block; 
-  padding:10px 50px 50px;
+  width: 600px;
+  margin: 30px auto 0;
+  display: block;
+  padding: 10px 50px 50px;
 }
-h2 		 { 
-  text-align:center; 
-  margin-bottom:50px; 
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
 }
-h2 small { 
-  font-weight:normal; 
-  color:#888; 
-  display:block; 
+h2 small {
+  font-weight: normal;
+  color: #888;
+  display: block;
 }
-.footer 	{ text-align:center; }
-.footer a  { color:#53B2C8; }
+.footer {
+  text-align: center;
+}
+.footer a {
+  color: #53b2c8;
+}
 
 /* form starting stylings ------------------------------- */
-.group 			  { 
-  position:relative; 
-  margin-bottom:45px; 
+.group {
+  position: relative;
+  margin-bottom: 45px;
 }
-input 				{
-  font-size:18px;
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:300px;
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
   background-color: black;
-  border:none;
-  border-bottom:1px solid #757575;
+  border: none;
+  border-bottom: 1px solid #757575;
 }
-input:focus 		{ outline:none; }
+input:focus {
+  outline: none;
+}
 
 /* LABEL ======================================= */
-label 				 {
-  
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
+label {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label 		{
-  top:-20px;
-  font-size:14px;
-  
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
 }
 
 /* BOTTOM BARS ================================= */
-.bar 	{ position:relative; display:block; width:300px; }
-.bar:before, .bar:after 	{
-  content:'';
-  height:2px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 .bar:before {
-  left:50%;
+  left: 50%;
 }
 .bar:after {
-  right:50%; 
+  right: 50%;
 }
 
 /* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
 }
 
 /* HIGHLIGHTER ================================== */
 .highlight {
-  position:absolute;
-  height:60%; 
-  width:100px; 
-  top:25%; 
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 /* active state */
 input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
 }
-

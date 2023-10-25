@@ -17,7 +17,7 @@ export default function ServicesPageHero() {
             height={900}
             width={900}
             alt="dfdfdf"
-            className="absolute z-[-1] opacity-20 right-0 text-green-700 invert"
+            className="absolute z-[-1] opacity-20 right-0 "
           ></Image>
 
           <div className="text-[48px]">
