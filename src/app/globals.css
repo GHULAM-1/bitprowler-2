@@ -82,6 +82,10 @@
   font-size: clamp(3rem, 4.583vw, 10rem);
 }
 
+.clamp-package-section-description {
+  font-size: clamp(0.8rem, 1.667vw, 7rem);
+}
+
 .custom-color {
   color: red;
 }
