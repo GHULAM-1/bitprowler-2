@@ -1,12 +1,15 @@
 export const ServicesSectionCardContent = [
   {
+    id : 1,
     mainHeading: "Web Dev",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
     iconDarkMode: "/servicesSectionImages/webDark.svg",
+    
   },
 
   {
+    id:2,
     mainHeading: "SEO",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
@@ -14,6 +17,7 @@ export const ServicesSectionCardContent = [
   },
 
   {
+    id:3,
     mainHeading: "Security",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
@@ -21,6 +25,7 @@ export const ServicesSectionCardContent = [
   },
 
   {
+    id:4,
     mainHeading: "Marketing",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
@@ -28,6 +33,7 @@ export const ServicesSectionCardContent = [
   },
 
   {
+    id:5,
     mainHeading: "UX design",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
@@ -35,6 +41,7 @@ export const ServicesSectionCardContent = [
   },
 
   {
+    id: 6,
     mainHeading: "App Dev",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",

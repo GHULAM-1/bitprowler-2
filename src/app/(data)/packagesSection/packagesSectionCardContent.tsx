@@ -1,5 +1,6 @@
 export const packagesSectionCardContent = [
   {
+    id: 1,
     name: "bit",
     price: 1000,
     description: "the perfect blend for small scale businesses",
@@ -8,6 +9,7 @@ export const packagesSectionCardContent = [
   },
 
   {
+    id: 2,
     name: "mega bit",
     price: 2500,
     description: "optimal for mid scale businesses.",
@@ -15,6 +17,7 @@ export const packagesSectionCardContent = [
     pagePath: "/packages/gigabitPackage",
   },
   {
+    id: 3,
     name: "giga bit",
     price: 5000,
     description: "all in one combo, perfect for large scale businesses",

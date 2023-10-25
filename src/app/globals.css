@@ -57,6 +57,15 @@
   }
 }
 
+.s {
+  color: red;
+  /* background-color: red; */
+  fill: green;
+  height: 100px;
+  width: 100px;
+  stroke: peru;
+}
+
 .myElement {
   color: red;
   filter: invert(1);

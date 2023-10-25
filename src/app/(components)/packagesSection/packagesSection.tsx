@@ -20,15 +20,14 @@ export default function PackagesSection() {
           <div className="grid grid-cols-3 max-[1480px]:grid-cols-1 max-[750px]:grid-cols-1 gap-x-[2rem] w-[85%] ">
             {packagesSectionCardContent.map((cardContent, index) => {
               return (
-                <>
-                  <PackagesSectionCard
-                    name={cardContent.name}
-                    price={cardContent.price}
-                    description={cardContent.description}
-                    deliverablesCount={cardContent.deliverablesCount}
-                    pagePath={cardContent.pagePath}
-                  ></PackagesSectionCard>
-                </>
+                <PackagesSectionCard
+                  name={cardContent.name}
+                  price={cardContent.price}
+                  description={cardContent.description}
+                  deliverablesCount={cardContent.deliverablesCount}
+                  pagePath={cardContent.pagePath}
+                  key={cardContent.id}
+                ></PackagesSectionCard>
               );
             })}
           </div>

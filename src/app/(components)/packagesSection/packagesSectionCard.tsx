@@ -36,7 +36,7 @@ export default function PackagesSectionCard({
             {deliverablesCount}+ Deliverables
           </div>
 
-          <HoverButton pagePath = {pagePath}>More Information</HoverButton>
+          <HoverButton pagePath={pagePath}>More Information</HoverButton>
         </div>
       </div>
     </div>

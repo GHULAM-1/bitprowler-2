@@ -13,16 +13,14 @@ export default function ServicesSection() {
 
           <div className="grid grid-cols-3 max-[1100px]:grid-cols-2 max-[750px]:grid-cols-1 gap-x-[2rem] w-[85%] ">
             {ServicesSectionCardContent.map((cardContent, index) => {
-              return (
-                <>
-                  <ServiceCard
-                    mainHeading={cardContent.mainHeading}
-                    description={cardContent.description}
-                    iconDark={cardContent.iconDarkMode}
-                    index={index}
-                  ></ServiceCard>
-                </>
-              );
+              return <ServiceCard
+                      mainHeading={cardContent.mainHeading}
+                      description={cardContent.description}
+                      iconDark={cardContent.iconDarkMode}
+                      index={index}
+                      key={cardContent.id}
+                    ></ServiceCard>
+              
             })}
           </div>
         </div>
@@ -30,4 +28,3 @@ export default function ServicesSection() {
     </>
   );
 }
-
