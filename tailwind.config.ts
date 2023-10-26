@@ -13,13 +13,17 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+    // container: {
+    //   center: true,
+    //   padding: "2rem",
+    screens: {
+      tablet: "425px",
+      laptop_sm: "768px",
+      laptop_lg: "1024px",
+
+      desktop: "1440px",
     },
+    // },
     extend: {
       fontFamily: {
         sans: ["Poppins", "sans"],

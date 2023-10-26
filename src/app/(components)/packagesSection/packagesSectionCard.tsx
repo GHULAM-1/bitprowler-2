@@ -36,7 +36,7 @@ export default function PackagesSectionCard({
           ? "gradient-background"
           : "gradient-background-lightMode"
       }  `}
-    >``
+    >
       
       {name === "mega bit" ? (
         <MDarkSVG className="absolute z-10 h-[210px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></MDarkSVG>

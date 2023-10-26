@@ -4,14 +4,14 @@ export default function ServicesSection() {
   return (
     <>
       <div className="flex flex-col items-center ">
-        <div className="main-div  flex flex-col w-[95%]  items-center max-[750px]:items-center">
+        <div className="main-div  flex flex-col w-[95%]  items-center ">
           <div className="w-[95%]">
-            <div className="heading text-heading clamp-service-section-main-heading my-[4rem]  ">
+            <div className="heading text-heading clamp-service-section-main-heading my-[4rem] flex  justify-center tablet:justify-start ">
               Services
             </div>
           </div>
 
-          <div className="grid grid-cols-3 max-[1100px]:grid-cols-2 max-[750px]:grid-cols-1 gap-x-[2rem] w-[95%] ">
+          <div className="grid   gap-x-[2rem] w-[95%]  laptop_sm:grid-cols-2 desktop:grid-cols-3 ">
             {ServicesSectionCardContent.map((cardContent, index) => {
               return (
                 <ServiceCard

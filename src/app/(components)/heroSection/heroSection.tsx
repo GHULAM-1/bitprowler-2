@@ -27,7 +27,7 @@ export default function HeroSection() {
           Revolutionizing Digital Realities,
         </h1>
 
-        <h1 className="text-sub-heading font-base-weight clamp-hero2-main-heading">
+        <h1 className="text-sub-heading font-base-weight clamp-hero2-main-heading text-center">
           One <span className="text-primary">Bit</span> at a Time.
         </h1>
         <button className="py-[1rem] px-[2.5rem] bg-primary text-text rounded-[0.5rem] mt-[2rem]">
