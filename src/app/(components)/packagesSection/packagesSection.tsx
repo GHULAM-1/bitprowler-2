@@ -4,7 +4,7 @@ import { packagesSectionCardContent } from "@/app/(data)/packagesSection/package
 export default function PackagesSection() {
   return (
     <>
-      <div className="flex flex-col items-center   mt-[4rem] ">
+      <div className="flex flex-col items-center   mt-[4rem] mb-[6rem]">
         <div className="main-div  flex flex-col w-[95%]  items-center max-[750px]:items-center">
           <div className="w-[95%] flex flex-col max-[750px]:items-center">
             <div className="heading  clamp-service-section-main-heading mt-[4rem]  ">

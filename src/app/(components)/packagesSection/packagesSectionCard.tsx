@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
-import BDarkSVG from "../../../../public/bDarkSVG";
+import BDarkSVG from "../../../../public/letters/bDarkSVG";
+import MDarkSVG from "../../../../public/letters/mDarkSVG";
+import GDarkSVG from "../../../../public/letters/gDarkSVG";
+
 import HoverButton from "@/components/custom/hoverButton";
 import { useTogglingStore } from "@/store/store";
 type PackagesCardProps = {
@@ -33,8 +36,15 @@ export default function PackagesSectionCard({
           ? "gradient-background"
           : "gradient-background-lightMode"
       }  `}
-    >
-      <BDarkSVG className="absolute z-10 h-[260px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></BDarkSVG>
+    >``
+      
+      {name === "mega bit" ? (
+        <MDarkSVG className="absolute z-10 h-[210px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></MDarkSVG>
+      ) : name === "giga bit" ? (
+        <GDarkSVG className="absolute z-10 h-[260px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></GDarkSVG>
+      ) : (
+        <BDarkSVG className="absolute z-10 h-[260px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></BDarkSVG>
+      )}
       <div className="h-[23rem] content absolute z-20 p-4 flex flex-col items-start justify-between gap-[5rem]  w-full">
         <div className="first-half flex flex-col items-start  w-full ">
           <div className="mb-[1rem] top-content flex justify-between w-full text-large-text min-[751px]:max-[1480px]:text-[2.5rem] ">

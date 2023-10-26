@@ -1,5 +1,5 @@
-export const servicesPageWebContent = {
-  name: "Web Dev",
+export const servicesPageAppContent = {
+  name: "App Dev",
   hero: {
     quote: "Good design is as little design as possible.",
     author: "Dieter Rams",
@@ -44,18 +44,17 @@ export const servicesPageWebContent = {
       brief:
         "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
     },
-    ],
-    oneLiner: "UX is Effective.",
-    deliverables: [
-        "User Interface Design",
-        "User Personas",
-        "Competitive Analysis Report",
-        "Information Architecture",
-        "User Research",
-        "Usability Testing",
-        "Design Systems",
-        "Wireframe",
-        "Prototype"
-      
-  ]
+  ],
+  oneLiner: "UX is Effective.",
+  deliverables: [
+    "User Interface Design",
+    "User Personas",
+    "Competitive Analysis Report",
+    "Information Architecture",
+    "User Research",
+    "Usability Testing",
+    "Design Systems",
+    "Wireframe",
+    "Prototype",
+  ],
 };

@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  variants: {
+    extend: {
+      margin: ["group"],
+    },
+  },
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -16,24 +21,22 @@ module.exports = {
       },
     },
     extend: {
-      fontFamily:{
-        sans: ['Poppins', 'sans'],
-
+      fontFamily: {
+        sans: ["Poppins", "sans"],
       },
-
 
       fontSize: {
-        'heading':'5.5rem',
-        'sub-heading':'4rem',
-        'medium-sub-heading':'3rem',
-        'small-sub-heading':'2.5rem',
-        'large-text':'2rem',
-        'text':'1.250rem',
-        'small-text':'1rem',
-        'ss-text':'0.75rem'
+        heading: "5.5rem",
+        "sub-heading": "4rem",
+        "medium-sub-heading": "3rem",
+        "small-sub-heading": "2.5rem",
+        "large-text": "2rem",
+        text: "1.250rem",
+        "small-text": "1rem",
+        "ss-text": "0.75rem",
       },
-      fontWeight:{
-            "base-weight":'400'
+      fontWeight: {
+        "base-weight": "400",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -92,4 +95,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

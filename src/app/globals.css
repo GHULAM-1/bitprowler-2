@@ -95,10 +95,50 @@
   font-size: clamp(0.8rem, 1.667vw, 7rem);
 }
 
+.clamp-bigCTA {
+  font-size: clamp(1rem, 4.583vw, 15rem);
+}
+
+.clamp-bigCTA-width {
+  width: clamp(3.555rem, 7.813vw, 15rem);
+}
+
+.clamp-footer-logo {
+  width: clamp(8.555rem, 20.813vw, 30rem);
+}
+
+.clamp-footer-icons {
+  width: clamp(1.555rem, 5.813vw, 15rem);
+  width: clamp(1.555rem, 3.813vw, 10rem);
+}
+
+.clamp-packages-page-mainHeading {
+  font-size: clamp(1rem, 3.333vw, 10rem);
+}
+.clamp-services-page-mainHeading {
+  font-size: clamp(1rem, 4.583vw, 10rem);
+}
+
+.clamp-dot {
+  width: clamp(0.3rem, 1.25vw, 5rem);
+  height: clamp(0.3rem, 1.25vw, 5rem);
+}
+.clamp-arrow {
+  width: clamp(0.75rem, 2.1875vw, 5rem);
+}
+
 .custom-color {
   color: red;
 }
 
+.clamp-3rem {
+  font-size: clamp(1rem, 2vw, 10rem);
+}
+
+.clamp-900px {
+  width: clamp(20rem, 46.875vw, 70rem);
+  height: clamp(20rem, 46.875vw, 70rem);
+}
 .gradient-background {
   background: linear-gradient(
     71deg,
