@@ -37,9 +37,8 @@ export default function PackagesSectionCard({
           : "gradient-background-lightMode"
       }  `}
     >
-      
       {name === "mega bit" ? (
-        <MDarkSVG className="absolute z-10 h-[210px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></MDarkSVG>
+        <MDarkSVG className="absolute z-10 h-[170px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></MDarkSVG>
       ) : name === "giga bit" ? (
         <GDarkSVG className="absolute z-10 h-[260px] bottom-0 right-0 blur-[12px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></GDarkSVG>
       ) : (
@@ -47,19 +46,19 @@ export default function PackagesSectionCard({
       )}
       <div className="h-[23rem] content absolute z-20 p-4 flex flex-col items-start justify-between gap-[5rem]  w-full">
         <div className="first-half flex flex-col items-start  w-full ">
-          <div className="mb-[1rem] top-content flex justify-between w-full text-large-text min-[751px]:max-[1480px]:text-[2.5rem] ">
+          <div className="mb-[1rem] top-content flex justify-between w-full text-[1.5rem] tablet:text-[2.5rem] ">
             <div className="name">{name}</div>
 
             <div className="price">{price}$</div>
           </div>
 
-          <div className="description min-[751px]:max-[1480px]:text-[1.2rem]">
+          <div className="description laptop_sm:text-[1.3rem] laptop_sm:w-[50%] desktop:text-[1rem] ">
             {description}
           </div>
         </div>
 
-        <div className="second-half flex flex-col items-start w-full justify-between ">
-          <div className="deliverables text-text mb-[0.5rem]">
+        <div className="second-half flex flex-col items-start w-full justify-between  ">
+          <div className="deliverables text-text mb-[0.5rem] laptop_sm:text-[1.5rem] desktop:text-[1rem]">
             {deliverablesCount}+ Deliverables
           </div>
 

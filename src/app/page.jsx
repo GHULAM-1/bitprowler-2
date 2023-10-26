@@ -13,8 +13,8 @@ export default function Home() {
       <div className="overflow-x-hidden flex flex-col items-center justify-center">
         <HeroSection></HeroSection>
         <ServicesSection />
-        {/* <PackagesSection></PackagesSection>
-        <LongBottom></LongBottom> */}
+        <PackagesSection></PackagesSection>
+        {/* <LongBottom></LongBottom>  */}
         {/* <ContactusSection></ContactusSection> */}
       </div>
     </>
