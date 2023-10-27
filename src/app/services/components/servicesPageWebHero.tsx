@@ -10,8 +10,8 @@ export default function ServicesPageWebHero() {
         <div
           className={` ${
             isDarkTheme === true
-              ? "service-hero-light-gradient"
-              : "service-hero-dark-gradient"
+              ? "service-hero-dark-gradient"
+              : "service-hero-light-gradient"
           }  relative overflow-hidden z-[1] h-[80%] flex justify-center items-center rounded-[0.5rem]  flex-col `}
         >
           <Image
