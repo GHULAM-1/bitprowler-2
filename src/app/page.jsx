@@ -16,7 +16,7 @@ export default function Home() {
         <PackagesSection></PackagesSection>
         <Contactus></Contactus>
         {/* <BigCTA></BigCTA> */}
-        {/* <LongBottom></LongBottom> */}
+        <LongBottom></LongBottom>
       </div>
     </>
   );

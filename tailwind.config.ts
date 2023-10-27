@@ -20,7 +20,6 @@ module.exports = {
       tablet: "425px",
       laptop_sm: "768px",
       laptop_lg: "1024px",
-
       desktop: "1440px",
     },
     // },
