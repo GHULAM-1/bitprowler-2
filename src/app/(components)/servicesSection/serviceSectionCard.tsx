@@ -20,7 +20,7 @@ export default function ServiceSectionCard({
     <>
       <Link href={pagePath}>
         <div
-          className={`min-w-[262px] rounded-[0.5rem] border flex flex-col  border-primary p-[1rem] dark:bg-[#151515] bg-[#EAEAEA] max-w-[30rem] hover:bg-primary dark:hover:bg-primary transition-transform transform hover:scale-105 group max-[750px]:mr-[0rem] cursor-pointer`}
+          className={`min-w-[262px] rounded-[0.5rem] border flex flex-col  border-primary p-[1rem] dark:bg-[#151515] bg-[#EAEAEA] max-w-[30rem] hover:bg-primary dark:hover:bg-primary transition-transform transform hover:scale-105 group max-[750px]:mr-[0rem] cursor-pointer mb-[2rem]`}
         >
           <div className=" flex justify-end ">
             <ArrowLightSVG className="w-[40px] h-[40px] fill-primary dark:group-hover:fill-white group-hover:fill-black"></ArrowLightSVG>

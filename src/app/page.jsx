@@ -3,10 +3,10 @@
 import ServicesSection from "./(components)/servicesSection/ServicesSection";
 import PackagesSection from "./(components)/packagesSection/packagesSection";
 import HeroSection from "./(components)/heroSection/heroSection";
-import ContactusSection from "./(components)/contactusSection/contactusSection";
+import Contactus from "./(components)/contactusSection/contactusSection";
 
 import LongBottom from "@/components/custom/longBottom";
-
+import BigCTA from "@/components/custom/bigCTA";
 export default function Home() {
   return (
     <>
@@ -14,8 +14,9 @@ export default function Home() {
         <HeroSection></HeroSection>
         <ServicesSection />
         <PackagesSection></PackagesSection>
-        {/* <LongBottom></LongBottom>  */}
-        {/* <ContactusSection></ContactusSection> */}
+        <Contactus></Contactus>
+        {/* <BigCTA></BigCTA> */}
+        <LongBottom></LongBottom>
       </div>
     </>
   );
