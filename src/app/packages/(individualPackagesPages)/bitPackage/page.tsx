@@ -4,6 +4,8 @@ import PackagesHeader from "../../components/packagesHeader";
 import { packagesPageBitContent } from "../../data/packagesPageBitContent";
 import SinglePackageService from "../../components/singlePackageService";
 import BackArrowSVG from "../../../../../public/backArrowSVG";
+import LongBottom from "@/components/custom/longBottom";
+import BigCTA from "@/components/custom/bigCTA";
 
 export default function BitPackage() {
   return (

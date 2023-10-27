@@ -4,6 +4,8 @@ import ServicesPageWebHero from "../../components/servicesPageWebHero";
 import { servicesPageWebContent } from "../../data/servicesPageWebContent";
 import WebDarkSVG from "../../../../../public/servicesSectionImages/webDarkSVG";
 import DotHeadings from "@/components/custom/dotHeadings";
+import LongBottom from "@/components/custom/longBottom";
+import BigCTA from "@/components/custom/bigCTA";
 export default function WebDev() {
   return (
     <>
@@ -17,12 +19,14 @@ export default function WebDev() {
             ></DotHeadings>
             <ServicesPageWebHero></ServicesPageWebHero>
           </div>
-          {/* <ServicesPageExplanation></ServicesPageExplanation>
+          <ServicesPageExplanation></ServicesPageExplanation>
           <ServicesPageDeliverables
-            deliverablesData={ServicesPageWebPillsContent}
-          ></ServicesPageDeliverables> */}
+            deliverablesData={servicesPageWebContent.deliverables}
+          ></ServicesPageDeliverables>
         </div>
       </div>
+      <BigCTA></BigCTA>
+      <LongBottom></LongBottom>
     </>
   );
 }

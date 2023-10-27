@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/custom/Navbar";
+import LongBottom from "@/components/custom/longBottom";
 
 const inter = Poppins({
   weight: "400",

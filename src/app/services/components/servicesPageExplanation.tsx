@@ -67,9 +67,9 @@ export default function ServicesPageExplanation() {
         </div>
 
         <div className="third-div flex justify-center  items-center bg-black dark:bg-white text-white dark:text-black w-screen h-screen text-heading ">
-          <div className="text-primary">
-            <span className="text-black">"UX is</span> effective
-            <span className="text-black">."</span>
+          <div className="text-primary border-b-2 dark:border-black border-white">
+            <span className="dark:text-black text-white">"UX is</span> effective
+            <span className="dark:text-black text-white">."</span>
           </div>
         </div>
       </div>

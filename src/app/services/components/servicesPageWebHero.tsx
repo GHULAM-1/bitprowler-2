@@ -1,19 +1,21 @@
+"use client";
 import Image from "next/image";
 import WebDarkSVG from "../../../../public/servicesSectionImages/webDarkSVG";
-
+import { useTogglingStore } from "@/store/store";
 export default function ServicesPageWebHero() {
+  const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
   return (
     <>
       <div className="w-full h-full">
         <div
-          className="  relative overflow-hidden z-[1] h-[80%] flex justify-center items-center rounded-[0.5rem]  flex-col first-letter:bg-gradient-to-br from-red-600 to-black "
-          style={{
-            backgroundImage:
-              "linear-gradient(71deg, #EB5D48 10.66%, #CC2B14 26.32%, #151515 81.63%) ",
-          }}
+          className={` ${
+            isDarkTheme === true
+              ? "service-hero-light-gradient"
+              : "service-hero-dark-gradient"
+          }  relative overflow-hidden z-[1] h-[80%] flex justify-center items-center rounded-[0.5rem]  flex-col `}
         >
           <Image
-            src="/serviceCardImages/seoDark.svg"
+            src="/uxDark.png"
             height={900}
             width={900}
             alt="dfdfdf"

@@ -148,6 +148,22 @@
   );
 }
 
+.service-hero-light-gradient {
+  background: linear-gradient(
+    71deg,
+    #eb5d48 10.66%,
+    #cc2b14 26.32%,
+    #eaeaea 81.63%
+  );
+}
+
+.service-hero-dark-gradient {
+  background: var(
+    --BitProwler2-dark,
+    linear-gradient(71deg, #eb5d48 10.66%, #cc2b14 26.32%, #151515 81.63%)
+  );
+}
+
 .gradient-background-lightMode {
   background: linear-gradient(
     71deg,
@@ -188,7 +204,7 @@ h2 {
 }
 h2 small {
   font-weight: normal;
-  
+
   display: block;
 }
 .footer {
