@@ -87,13 +87,15 @@ export default function Navbar() {
             <div className="space-y-1 px-4 min-h-screen border-t border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900">
               {navigation.map((item) => (
                 <div>
-                  <Button
-                    key={item.name}
-                    variant="ghost"
-                    aria-current={item.current ? "page" : undefined}
-                  >
-                    {item.name}
-                  </Button>
+                  <Link href={item.href}>
+                    <Button
+                      key={item.name}
+                      variant="ghost"
+                      aria-current={item.current ? "page" : undefined}
+                    >
+                      {item.name}
+                    </Button>
+                  </Link>
                 </div>
               ))}
               <div>
