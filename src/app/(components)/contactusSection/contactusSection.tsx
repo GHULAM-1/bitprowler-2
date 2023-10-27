@@ -18,7 +18,7 @@ export default function Contactus() {
         </div>
       </div>
 
-      <div className="hidden laptop_sm:flex flex-row px-[3rem] w-screen   items-center">
+      <div className="hidden laptop_sm:flex flex-row  justify-center w-[72%]  items-center mb-[10rem] mt-[5rem]">
         <div className="left w-[50%]  h-full flex flex-col justify-between gap-[15rem]">
           <div className="left-top ">
             <div className="clamp-service-section-main-heading mb-[0.5rem]">

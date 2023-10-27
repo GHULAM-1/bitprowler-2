@@ -10,8 +10,8 @@ import { Button } from "../ui/button";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
-  { name: "Services", href: "/services", current: false },
-  { name: "Packages", href: "/packages", current: false },
+  // { name: "Services", href: "/services", current: false },
+  // { name: "Packages", href: "/packages", current: false },
   { name: "About us", href: "/about", current: false },
   { name: "Contact us", href: "/contact", current: false },
   { name: "Blog", href: "/blog", current: false },
@@ -38,7 +38,7 @@ export default function Navbar() {
                                 </Link> */}
                 </div>
 
-                <div className="hidden sm:ml-6 sm:block">
+                <div className=" hidden laptop_sm:block sm:ml-6 ">
                   <div className="flex space-x-5 items-center">
                     {navigation.map((item) => (
                       <Link href={item.href}>
@@ -68,7 +68,7 @@ export default function Navbar() {
                   <ThemeSwitchButton />
                 </div>
 
-                <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                <div className="absolute inset-y-0 right-0 flex items-center laptop_sm::hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md text-neutral-900 dark:text-white ">
                     <span className="sr-only">Open main menu</span>
@@ -83,7 +83,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="laptop_lg:hidden">
             <div className="space-y-1 px-4 min-h-screen border-t border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900">
               {navigation.map((item) => (
                 <div>

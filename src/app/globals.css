@@ -188,15 +188,15 @@ h2 {
 }
 h2 small {
   font-weight: normal;
-  color: #888;
+  
   display: block;
 }
 .footer {
   text-align: center;
 }
-.footer a {
-  color: #53b2c8;
-}
+/* .footer a {
+  
+} */
 
 /* form starting stylings ------------------------------- */
 .group {

@@ -4,7 +4,7 @@ export default function ServicesSection() {
   return (
     <>
       <div className="flex flex-col items-center  w-full ">
-        <div className="main-div  flex flex-col w-[95%]  items-center ">
+        <div className="main-div  flex flex-col w-[83%]  items-center ">
           <div className="w-[95%]">
             <div className="heading text-heading clamp-service-section-main-heading my-[4rem] flex  justify-center tablet:justify-start ">
               Services
