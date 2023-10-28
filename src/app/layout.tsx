@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={poppins.className}>
-      <body className="overflow-x-hidden ">
+      <body className="overflow-x-hidden text-[100%]">
         <ThemeProviderWrapper
           attribute="class"
           defaultTheme="system"
