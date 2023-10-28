@@ -2,8 +2,14 @@ import ThemeProviderWrapper from "@/components/Providers/ThemeProvider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+
 import Navbar from "@/components/custom/Navbar";
-import LongBottom from "@/components/custom/longBottom";
+
+const poppins: any = Poppins({
+  weight: ["400", "500", "600"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Home",
@@ -16,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className="">
-      <body className="overflow-x-hidden font-Poppins">
+    <html lang="en" suppressHydrationWarning className={poppins.className}>
+      <body className="overflow-x-hidden ">
         <ThemeProviderWrapper
           attribute="class"
           defaultTheme="system"

@@ -8,7 +8,7 @@ export default function HoverButton({ children, pagePath }: HoverButtonProps) {
   return (
     <>
       <Link href={pagePath}>
-        <button className=" rounded-[2rem] py-[0.5rem] flex hover:px-[2rem] gap-[1rem] justify-center transition-all text-small-text  text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black laptop_sm:text-[1.3rem] desktop:text-[1rem]">
+        <button className=" rounded-[2rem]  flex hover:px-[2rem] gap-[1rem] justify-center transition-all text-Mobile-S-Text  text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black laptop_sm:text-[1.3rem] desktop:text-[1rem]">
           <span className="inline">{children}</span>
           {/* <ButtonArrowSVG className="fill:black group-hover:fill-white dark:fill-white group-hover:dark:fill-black "></ButtonArrowSVG> */}
 

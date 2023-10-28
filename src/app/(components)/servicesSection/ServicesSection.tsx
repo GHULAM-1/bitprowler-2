@@ -3,10 +3,10 @@ import { ServicesSectionCardContent } from "@/app/(data)/servicesSection/service
 export default function ServicesSection() {
   return (
     <>
-      <div className="flex flex-col items-center  w-full ">
+      <div className="flex flex-col items-center  justify-center w-full ">
         <div className="main-div  flex flex-col   items-center ">
           <div className="">
-            <div className="text-Mobile-L-Head   mb-[3.5rem] flex  justify-center items-center tablet:justify-start ">
+            <div className="text-Mobile-L-Head   mb-[3.5rem] flex  justify-center items-center  ">
               Services
             </div>
           </div>

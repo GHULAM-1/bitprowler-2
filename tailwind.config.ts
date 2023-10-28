@@ -25,7 +25,7 @@ module.exports = {
     // },
     extend: {
       fontFamily: {
-        Poppins: ["Poppins", "sans-serif"],
+        // Poppins: ["Poppins", "sans-serif"],
       },
 
       fontSize: {
