@@ -4,12 +4,14 @@ import Link from "next/link";
 export default function Contactus() {
   return (
     <>
-      <div className="phone  flex w-screen  flex-col px-[1rem] laptop_sm:hidden">
-        <div className="top">
-          <div className="text-[2.5rem]">Contact</div>
-          <div className="text-[1.2rem]">say@bitprowler.com</div>
+      <div className="phone  flex w-screen  flex-col px-[4.56rem] justify-center items-center laptop_sm:hidden">
+        <div className="top flex items-center flex-col">
+          <div className="text-Mobile-L-Head ">Contact</div>
+          <div className="text-Mobile-S-Heading font-medium">
+            say@bitprowler.com
+          </div>
         </div>
-        <div className="middle  flex justify-start flex-col">
+        <div className="middle  flex justify-center items-center flex-col">
           <TransitionInput></TransitionInput>
         </div>
         <div className="bottom  mt-[4rem]">

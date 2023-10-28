@@ -1,7 +1,7 @@
 export default function TransitionInput() {
   return (
     <>
-      <div className="container  text-black">
+      <div className="container  text-black flex-col justify-center items-center text-Mobile-S-Heading">
         <form>
           <div className="laptop_lg:flex overflow-hidden laptop_lg:gap-[0.5rem]">
             <div className="group laptop_lg:w-[50%]">
@@ -40,9 +40,11 @@ export default function TransitionInput() {
             <label className="text-black dark:text-white">Message</label>
           </div>
 
-          <button className="flex justify-center items-center bg-primary rounded-[5rem] py-[1rem] px-[1.5rem] dark:text-white text-black">
-            submit {"-->"}
-          </button>
+          <div className="flex justify-center w-full">
+            <button className="flex justify-center items-center bg-primary rounded-[5rem] py-[1rem] px-[1.5rem] dark:text-white text-black text-Mobile-S-Text">
+              submit {"-->"}
+            </button>
+          </div>
         </form>
       </div>
     </>
