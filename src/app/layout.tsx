@@ -5,11 +5,6 @@ import { Poppins } from "next/font/google";
 import Navbar from "@/components/custom/Navbar";
 import LongBottom from "@/components/custom/longBottom";
 
-const inter = Poppins({
-  weight: "400",
-  subsets: ["latin", "latin", "latin-ext"],
-  display: "swap",
-});
 export const metadata: Metadata = {
   title: "Home",
   description: "bit prowler agency home page",
@@ -22,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="">
-      <body className="overflow-x-hidden">
+      <body className="overflow-x-hidden font-Poppins">
         <ThemeProviderWrapper
           attribute="class"
           defaultTheme="system"

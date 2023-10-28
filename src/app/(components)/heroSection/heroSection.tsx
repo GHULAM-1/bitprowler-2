@@ -21,16 +21,16 @@ export default function HeroSection() {
   );
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center ">
-      <div className="  top-div  flex flex-col justify-center items-center h-full w-[90%]">
-        <h1 className="text-sub-heading font-base-weight clamp-hero2-main-heading flex text-center">
+    <div className="w-screen h-screen flex flex-col items-center justify-center ">
+      <div className="  top-div  flex flex-col justify-center items-center h-full  ">
+        <h1 className="text-Mobile-Head  font-medium  flex text-center">
           Revolutionizing Digital Realities,
         </h1>
 
-        <h1 className="text-sub-heading font-base-weight clamp-hero2-main-heading text-center">
+        <h1 className="text-Mobile-Head font-medium  text-center">
           One <span className="text-primary">Bit</span> at a Time.
         </h1>
-        <button className="py-[1rem] px-[2.5rem] bg-primary text-text rounded-[0.5rem] mt-[2rem]">
+        <button className="py-[0.75rem] px-[1.5rem] bg-primary text-Mobile-Text rounded-[0.5rem] mt-[1rem]">
           Get in Touch
         </button>
       </div>

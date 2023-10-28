@@ -25,7 +25,7 @@ module.exports = {
     // },
     extend: {
       fontFamily: {
-        sans: ["Poppins", "sans"],
+        Poppins: ["Poppins", "sans-serif"],
       },
 
       fontSize: {
@@ -37,6 +37,11 @@ module.exports = {
         text: "1.250rem",
         "small-text": "1rem",
         "ss-text": "0.75rem",
+        "Mobile-L-Head": "2.5rem",
+        "Mobile-S-Heading": "1.25rem",
+        "Mobile-Head": "1.5rem",
+        "Mobile-Text": "1rem",
+        "Mobile-S-Text": "0.75rem",
       },
       fontWeight: {
         "base-weight": "400",
