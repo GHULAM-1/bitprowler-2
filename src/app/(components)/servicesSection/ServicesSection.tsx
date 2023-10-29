@@ -4,7 +4,7 @@ export default function ServicesSection() {
   return (
     <>
       <div className="flex flex-col  w-screen  ">
-        <div className="text-Mobile-L-Head   mb-[2.5rem] flex  justify-center items-center bg-orange-500  w-full">
+        <div className="text-Mobile-L-Head   mb-[2.5rem] flex  justify-center items-center   w-full">
           Services
         </div>
 

@@ -9,6 +9,6 @@ function ButtonArrowSVG(props) {
       />
     </svg>
   );
-}
+} 
 
 export default ButtonArrowSVG;

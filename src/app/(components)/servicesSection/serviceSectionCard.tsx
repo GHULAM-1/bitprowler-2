@@ -23,7 +23,7 @@ export default function ServiceSectionCard({
       >
         <div className=" flex justify-end w-full  ">
           <div className="flex justify-center items-center bg-primary  rounded-[0.3rem] h-[55px] w-[55px]">
-            <ArrowLightSVG className="w-[50%] h-[50%] fill-black dark:group-hover:fill-white group-hover:fill-black"></ArrowLightSVG>
+            <ArrowLightSVG className="w-[50%] h-[50%] dark:fill-black fill-white dark:group-hover:fill-white group-hover:fill-black"></ArrowLightSVG>
           </div>
         </div>
 

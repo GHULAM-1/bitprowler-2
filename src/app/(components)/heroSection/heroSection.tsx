@@ -15,14 +15,14 @@ export default function HeroSection() {
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
-      await console.log(container);
+    await console.log(container);
     },
     []
   );
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center px-[0.5rem] ">
-      <div className="  top-div  flex flex-col justify-center items-center h-full  ">
+    <div className="w-screen h-screen flex flex-col items-center justify-center px-[1.86%]  ">
+      <div className="  top-div  flex flex-col justify-center items-center h-full w-full  ">
         <h1 className="text-Mobile-Head  font-medium  flex text-center">
           Revolutionizing Digital Realities,
         </h1>
