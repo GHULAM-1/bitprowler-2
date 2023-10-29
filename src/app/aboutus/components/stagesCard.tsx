@@ -27,7 +27,7 @@ export default function StagesCard({
           <HexagonSVG className="fill-white dark:fill-black dark:stroke-white stroke-black w-[40px] h-[40px]"></HexagonSVG>
         )}
 
-        <div className="my-[1.62%] text-Mobile-Head font-medium">
+        <div className="my-[1.62%] text-Mobile-Head font-medium text-center">
           {mainHeading}
         </div>
         <div className="text-Mobile-Text text-center ">{description}</div>
