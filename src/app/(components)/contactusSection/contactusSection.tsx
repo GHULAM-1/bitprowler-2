@@ -4,19 +4,21 @@ import Link from "next/link";
 export default function Contactus() {
   return (
     <>
-      <div className="phone  flex w-screen  flex-col px-[4.56rem] justify-center items-center laptop_sm:hidden">
-        <div className="top flex items-center flex-col">
-          <div className="text-Mobile-L-Head ">Contact</div>
+      <div className="mt-[25.5%] phone  flex w-screen  flex-col px-[8.65%] justify-center items-center laptop_sm:hidden">
+        <div className="top flex items-center flex-col mb-[10.7%]">
+          <div className="text-Mobile-L-Head  ">Contact</div>
           <div className="text-Mobile-S-Heading font-medium">
             say@bitprowler.com
           </div>
         </div>
-        <div className="middle  flex justify-center items-center flex-col">
+        <div className="middle  flex justify-center items-center flex-col w-full">
           <TransitionInput></TransitionInput>
         </div>
-        <div className="bottom  mt-[4rem]">
-          <div className="text-[1.4rem]">Lahore,Pakistan</div>
-          <div className="text-[1.2rem]">03074593601</div>
+        <div className="bottom  my-[9.30%]  w-full flex flex-col justify-center items-center">
+          <div className="text-Mobile-S-Heading font-medium">
+            Lahore,Pakistan
+          </div>
+          <div className="text-Mobile-Text">03074593601</div>
         </div>
       </div>
 
