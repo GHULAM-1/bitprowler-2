@@ -1,10 +1,10 @@
 import ServicesPageExplanation from "../../components/servicesPageExplanation";
 import ServicesPageDeliverables from "../../components/servicesPageDeliverables";
 import ServicesPageWebHero from "../../components/servicesPageWebHero";
-import { servicesPageWebContent } from "../../data/servicesPageWebContent";
 import WebDarkSVG from "../../../../../public/servicesSectionImages/webDarkSVG";
 import DotHeadings from "@/components/custom/dotHeadings";
 import LongBottom from "@/components/custom/longBottom";
+import { servicesPageWebContent } from "../../data/servicesPageWebContent";
 import BigCTA from "@/components/custom/bigCTA";
 import ServicesPageHeroMobile from "../../components/servicesPageHeroMobile";
 import ServicesWhySection from "../../components/servicesWhySection";
