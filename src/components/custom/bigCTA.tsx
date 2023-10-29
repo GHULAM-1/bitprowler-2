@@ -5,12 +5,13 @@ export default function BigCTA() {
     <>
       <Link
         href="/contactus"
-        className="w-full flex justify-center items-center"
+        className="w-full flex items-center justify-center"
       >
-        <div className="group border  py-[2rem] rounded-[0.5rem] text-heading border-primary gap-[1rem] flex justify-center w-[98%]  text-black dark:text-white hover:bg-primary hover:text-white">
-          <div className="clamp-bigCTA transition-all">Let's Work Together</div>
-
-          <ButtonArrowSVG className="fill-black dark:fill-white group-hover:fill-white w-[150px] clamp-bigCTA-width"></ButtonArrowSVG>
+        <div className="bg-primary w-[99%]  flex py-[8.14%] justify-center items-center  gap-[1.5rem] rounded-[0.5rem] mb-[0.5rem] ">
+          <div className=" text-Mobile-S-Heading text-white font-medium">
+            Let's work together
+          </div>
+          <ButtonArrowSVG className="fill-white w-[4.5rem]"></ButtonArrowSVG>
         </div>
       </Link>
     </>

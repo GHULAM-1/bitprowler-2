@@ -1,7 +1,7 @@
 export const teamContent = [
   {
     name: "Ghulam",
-    imagePath: "/teamImages/ghulam.png",
+    imagePath: "/teamMembers/ghulam.png",
     socials: [
       {
         name: "linkedIn",
@@ -17,7 +17,7 @@ export const teamContent = [
 
   {
     name: "Sarim",
-    imagePath: "/teamImages/sarim.png",
+    imagePath: "/teamMembers/sarim.png",
     socials: [
       {
         name: "linkedIn",
@@ -33,7 +33,7 @@ export const teamContent = [
 
   {
     name: "Moiz",
-    imagePath: "/teamImages/moiz.png",
+    imagePath: "/teamMembers/moiz.png",
     socials: [
       {
         name: "linkedIn",
@@ -49,7 +49,7 @@ export const teamContent = [
 
   {
     name: "Muhammad",
-    imagePath: "/teamImages/muhammad.png",
+    imagePath: "/teamMembers/muhammad.png",
     socials: [
       {
         name: "linkedIn",

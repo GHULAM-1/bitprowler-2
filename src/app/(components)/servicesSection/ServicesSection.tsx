@@ -9,16 +9,16 @@ export default function ServicesSection() {
         </div>
 
         <div className="grid laptop_sm:grid-cols-2 desktop:grid-cols-3   w-full justify-items-center">
-          {ServicesSectionCardContent.map((cardContent, index) => {
-            return (
-              <ServiceCard
-                mainHeading={cardContent.mainHeading}
-                description={cardContent.description}
-                pagePath={cardContent.pagePath}
-                key={cardContent.id}
-              ></ServiceCard>
-            );
-          })}
+            {ServicesSectionCardContent.map((cardContent, index) => {
+              return (
+                <ServiceCard
+                  mainHeading={cardContent.mainHeading}
+                  description={cardContent.description}
+                  pagePath={cardContent.pagePath}
+                  key={cardContent.id}
+                ></ServiceCard>
+              );
+            })}
         </div>
       </div>
     </>
