@@ -32,21 +32,21 @@ export default function PackagesSectionCard({
   return (
     <div className="bg-background w-[83.2%] ">
       <div
-        className={` py-[6.8%] px-[5%] z-0  mb-[2rem] rounded-lg dark:text-white text-black w-full  hover:scale-105 transition-all transform ${
+        className={` py-[6.8%] px-[5%] z-10  mb-[2rem] rounded-lg dark:text-white text-black w-full  hover:scale-105 transition-all transform ${
           isDarkTheme === true
             ? "gradient-background"
             : "gradient-background-lightMode"
         }  `}
       >
         {name === "mega bit" ? (
-          <MDarkSVG className="absolute z-10 h-[46%] w-[83%] bottom-0 right-0 blur-[10px] dark:fill-[#F3F5F6] fill-black min-[751px]:max-[1480px]:h-[300px]"></MDarkSVG>
+          <MDarkSVG className="absolute z-0 h-[46%] w-[83%] bottom-0 right-0 blur-[10px] dark:fill-[#F3F5F6] fill-black min-[751px]:max-[1480px]:h-[300px]"></MDarkSVG>
         ) : name === "giga bit" ? (
           <GDarkSVG className="absolute z-10 h-[70.5%] w-[45.34%] bottom-0 right-0 blur-[10px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></GDarkSVG>
         ) : (
           <BDarkSVG className="absolute z-10 h-[70.5%] w-[60%] bottom-0 right-0 blur-[10px] dark:fill-white fill-black min-[751px]:max-[1480px]:h-[300px]"></BDarkSVG>
         )}
 
-        <div className=" content  z-20 p-[4.44%] flex flex-col items-start justify-between   w-full">
+        <div className=" content  z-20 p-[4.44%] flex flex-col items-start justify-between relative   w-full">
           <div className="first-half flex flex-col items-start  w-full  mb-[47%]">
             <div className="mb-[4.4%] top-content flex justify-between w-full text-Mobile-Head font-medium ">
               <div className="name">{name}</div>
