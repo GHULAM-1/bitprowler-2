@@ -32,7 +32,7 @@ export default function PackagesSectionCard({
   return (
     <div className="bg-background w-[83.2%] ">
       <div
-        className={`z-0  mb-[2rem] rounded-lg dark:text-white text-black w-full  hover:scale-105 transition-all transform ${
+        className={` py-[6.8%] px-[5%] z-0  mb-[2rem] rounded-lg dark:text-white text-black w-full  hover:scale-105 transition-all transform ${
           isDarkTheme === true
             ? "gradient-background"
             : "gradient-background-lightMode"
