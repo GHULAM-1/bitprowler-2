@@ -3,7 +3,7 @@ export const ServicesSectionCardContent = [
     id: 1,
     mainHeading: "Web Dev",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
+      "Crafting blazing fast loading pages exceeding your business expectations.",
     pagePath: "/services/web-development",
   },
 
