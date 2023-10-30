@@ -87,14 +87,14 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="laptop_lg:hidden ">
-            <div className="space-y-1 px-4 min-h-screen border-t bg-background  dark:bg-neutral-800 bg-opacity-80  sblur-[25px]">
+            <div className="space-y-1 px-4 min-h-screen border-t bg-background relative z-50  dark:bg-neutral-800 bg-opacity-80  sblur-[25px]">
               {navigation.map((item) => (
                 <div>
                   <Link href={item.href}>
                     <button
                       key={item.name}
                       aria-current={item.current ? "page" : undefined}
-                      className=" text-Mobile-L-Head mb-[7.44%] bg-green-700"
+                      className=" text-Mobile-L-Head mb-[7.44%] "
                     >
                       {item.name}
                     </button>

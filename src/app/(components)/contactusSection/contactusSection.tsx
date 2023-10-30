@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Contactus() {
   return (
     <>
-      <div className="mt-[25.5%] phone  flex w-screen  flex-col px-[8.65%] justify-center items-center laptop_sm:hidden">
+      <div className="pt-[25.5%] phone  flex w-screen  flex-col px-[8.65%] justify-center items-center laptop_sm:hidden">
         <div className="top flex items-center flex-col mb-[10.7%]">
           <div className="text-Mobile-L-Head  ">Contact</div>
           <div className="text-Mobile-S-Heading font-medium">
@@ -13,7 +13,7 @@ export default function Contactus() {
         </div>
         <div className="middle  flex justify-center items-center flex-col w-full">
           <TransitionInput></TransitionInput>
-        </div>
+        </div>    
         <div className="bottom  my-[9.30%]  w-full flex flex-col justify-center items-center">
           <div className="text-Mobile-S-Heading font-medium">
             Lahore,Pakistan
