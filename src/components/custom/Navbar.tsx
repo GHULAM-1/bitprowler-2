@@ -7,13 +7,15 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { ServicesDD } from "./dropDowns";
 import { Button } from "../ui/button";
+import { PackagesDD } from "./packagesDD";
+import NavMobileImage from "./navMobileImage";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
   // { name: "Services", href: "/services", current: false },
   // { name: "Packages", href: "/packages", current: false },
   { name: "About us", href: "/aboutus", current: false },
-  { name: "Contact us", href: "/contact", current: false },
+  { name: "Contact us", href: "/contactus", current: false },
   { name: "Blog", href: "/blog", current: false },
 ];
 
@@ -37,7 +39,6 @@ export default function Navbar() {
                     <NavbarLogoImage></NavbarLogoImage>
                                 </Link> */}
                 </div>
-
                 <div className=" hidden laptop_sm:block sm:ml-6 ">
                   <div className="flex space-x-5 items-center">
                     {navigation.map((item) => (
@@ -52,9 +53,9 @@ export default function Navbar() {
                       </Link>
                     ))}
                     <ServicesDD></ServicesDD>
+                    <PackagesDD></PackagesDD>
                   </div>
                 </div>
-
                 <div className="absolute inset-y-0 right-10 sm:right-0 flex items-center gap-2">
                   {/* <Link
                     href="https://github.com/humberni/halley"
@@ -67,8 +68,7 @@ export default function Navbar() {
                   </Link> */}
                   <ThemeSwitchButton />
                 </div>
-
-                <div className="absolute inset-y-0 right-0 flex items-center laptop_sm::hidden">
+                <div className="absolute inset-y-0 right-0 flex items-center laptop_sm::hidden ">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md text-neutral-900 dark:text-white ">
                     <span className="sr-only">Open main menu</span>
@@ -79,27 +79,33 @@ export default function Navbar() {
                     )}
                   </Disclosure.Button>
                 </div>
+                <div className="pl-[1rem]">
+                  <NavMobileImage></NavMobileImage>
+                </div>
               </div>
             </div>
           </div>
 
-          <Disclosure.Panel className="laptop_lg:hidden">
-            <div className="space-y-1 px-4 min-h-screen border-t border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900">
+          <Disclosure.Panel className="laptop_lg:hidden ">
+            <div className="space-y-1 px-4 min-h-screen border-t  dark:bg-neutral-800 bg-opacity-80 relative -z-10 sblur-[25px]">
               {navigation.map((item) => (
                 <div>
                   <Link href={item.href}>
-                    <Button
+                    <button
                       key={item.name}
-                      variant="ghost"
                       aria-current={item.current ? "page" : undefined}
+                      className=" text-Mobile-L-Head mb-[7.44%]"
                     >
                       {item.name}
-                    </Button>
+                    </button>
                   </Link>
                 </div>
               ))}
               <div>
                 <ServicesDD></ServicesDD>
+              </div>
+              <div>
+                <PackagesDD></PackagesDD>
               </div>
               <div></div>
               {/* <Link href="https://github.com/humberni/halley" target="_blank">

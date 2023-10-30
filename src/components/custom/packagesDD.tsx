@@ -16,46 +16,31 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 
-export function ServicesDD() {
+export function PackagesDD() {
   const [position, setPosition] = React.useState("bottom");
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="text-Mobile-L-Head mb-[7.44%]">Services</button>
+        <button className="text-Mobile-L-Head mb-[7.44%]">Packages</button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         {/* <DropdownMenuLabel>Panel Position</DropdownMenuLabel> */}
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-          <Link href="/services/web-development">
-            <DropdownMenuRadioItem value="web-development">
-              web development
-            </DropdownMenuRadioItem>
+          <Link href="/packages/bitPackage">
+            <DropdownMenuRadioItem value="bit">bit</DropdownMenuRadioItem>
           </Link>
 
-          <Link href="/services/mobile-development">
-            <DropdownMenuRadioItem value="mobile-development">
-              mobile Development
+          <Link href="/packages/megabitPackage">
+            <DropdownMenuRadioItem value="megabit">
+              megabit
             </DropdownMenuRadioItem>
           </Link>
-
-          <Link href="/services/security">
-            <DropdownMenuRadioItem value="security">
-              Secuity
+          <Link href="/packages/gigagabitPackage">
+            <DropdownMenuRadioItem value="gigabit">
+              gigagabit
             </DropdownMenuRadioItem>
-          </Link>
-
-          <Link href="/services/seo">
-            <DropdownMenuRadioItem value="seo">SEO</DropdownMenuRadioItem>
-          </Link>
-          <Link href="/services/marketing">
-            <DropdownMenuRadioItem value="marketing">
-              marketing
-            </DropdownMenuRadioItem>
-          </Link>
-          <Link href="/services/uiux">
-            <DropdownMenuRadioItem value="ui/ux">UI/UX</DropdownMenuRadioItem>
           </Link>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>

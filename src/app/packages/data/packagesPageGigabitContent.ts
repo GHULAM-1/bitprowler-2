@@ -17,7 +17,7 @@ export const packagesPageGigabitContent = {
       ],
     },
     {
-      mainService: "Social Media Marketing",
+      mainService: "Marketing",
       Deliverables: [
         "Content Strategy",
         "30 scheduled social media posts",

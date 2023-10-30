@@ -15,7 +15,7 @@ export const packagesPageBitContent = {
       ],
     },
     {
-      mainService: "Social Media Marketing",
+      mainService: "Marketing",
       Deliverables: [
         "Content Strategy",
         "7 scheduled social media posts",
