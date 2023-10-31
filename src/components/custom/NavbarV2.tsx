@@ -51,9 +51,9 @@ export default function NavbarV2() {
 
   return (
     <>
-      <div className="flex w-screen flex-col  h-screen fixed z-50  ">
+      <div className="flex flex-col h-screen absolute z-50 w-screen ">
         {/* top bar */}
-        <div className="flex w-full h-[8%]   dark:bg-[#242424] bg-[#DBDBDB] justify-between px-[7%]  items-center  ">
+        <div className="flex w-full h-[8%]   dark:bg-[#242424] bg-[#DBDBDB] justify-between px-[7%]  items-center  relative z-50">
           <Link href="/" className="flex  flex-col">
             <LogoSVG
               className="w-[32px] h-[32px] fill-primary"
@@ -80,7 +80,7 @@ export default function NavbarV2() {
         {/* model */}
 
         {isNavOpen === true ? (
-          <div className="h-[92%] w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white">
+          <div className="h-[92%] w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll  ">
             <Link href="/">
               <button
                 onClick={() => toggleNav()}

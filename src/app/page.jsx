@@ -10,7 +10,7 @@ import BigCTA from "@/components/custom/bigCTA";
 export default function Home() {
   return (
     <>
-      <div className="overflow-x-hidden flex flex-col items-center justify-center">
+      <div className="overflow-x-hidden flex flex-col items-center justify-center absolute z-40">
         <HeroSection></HeroSection>
         <ServicesSection />
         <PackagesSection></PackagesSection>
