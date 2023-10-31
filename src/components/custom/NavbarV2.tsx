@@ -9,6 +9,7 @@ import SunSVG from "../../../public/navImages/sunSVG";
 import { useTogglingStore } from "@/store/store";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import ThemeSwitch from "./ThemeSwitchButton";
 
 export default function NavbarV2() {
   const { theme, setTheme } = useTheme();
@@ -49,7 +50,10 @@ export default function NavbarV2() {
         {/* top bar */}
         <div className="flex w-full h-[8%]   dark:bg-[#242424] bg-[#DBDBDB] justify-between px-[7%]  items-center  ">
           <Link href="/" className="flex  flex-col">
-            <LogoSVG className="w-[32px] h-[32px] fill-primary"></LogoSVG>
+            <LogoSVG
+              className="w-[32px] h-[32px] fill-primary"
+              onClick={() => toggleNav()}
+            ></LogoSVG>
           </Link>
 
           <div className="flex justify-center items-center gap-[0.5rem] flex-row-reverse">
@@ -64,17 +68,7 @@ export default function NavbarV2() {
                 onClick={clearingHam}
               ></HamBurgerSVG>
             )}
-            {theme === "dark" ? (
-              <SunSVG
-                className="dark:fill-white fill-black w-[32px] h-[32px]"
-                onClick={() => setTheme("light")}
-              ></SunSVG>
-            ) : (
-              <MoonSVG
-                className="dark:fill-white fill-black w-[32px] h-[32px]"
-                onClick={() => setTheme("dark")}
-              ></MoonSVG>
-            )}
+            <ThemeSwitch></ThemeSwitch>
           </div>
         </div>
 
