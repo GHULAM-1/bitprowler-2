@@ -12,6 +12,28 @@ import Link from "next/link";
 export default function NavbarV2() {
   const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
   const isNavOpen = useTogglingStore((state: any) => state.isNavOpen);
+  const [isPackagesOpen, togglePackages] = useState(false);
+  const [isServicesOpen, toggleServices] = useState(false);
+
+  const handlePackagesToggle = () => {
+    togglePackages(!isPackagesOpen);
+    if (isServicesOpen) {
+      toggleServices(false);
+    }
+  };
+
+  const handleServicesToggle = () => {
+    toggleServices(!isServicesOpen);
+    if (isPackagesOpen) {
+      togglePackages(false);
+    }
+  };
+
+  const clearingHam = () => {
+    toggleNav();
+    togglePackages(false);
+    toggleServices(false);
+  };
 
   const changeCurrentTheme = useTogglingStore(
     (state: any) => state.changeCurrentTheme
@@ -22,7 +44,7 @@ export default function NavbarV2() {
     <>
       <div className="flex w-screen flex-col  h-screen fixed z-50  ">
         {/* top bar */}
-        <div className="flex w-full h-[10%]   dark:bg-[#242424] bg-[#DBDBDB] justify-between px-[7%]  items-center  ">
+        <div className="flex w-full h-[8%]   dark:bg-[#242424] bg-[#DBDBDB] justify-between px-[7%]  items-center  ">
           <Link href="/" className="flex  flex-col">
             <LogoSVG className="w-[32px] h-[32px] fill-primary"></LogoSVG>
           </Link>
@@ -36,7 +58,7 @@ export default function NavbarV2() {
             ) : (
               <HamBurgerSVG
                 className="dark:fill-white fill-black w-[44px] h-[44px]"
-                onClick={() => toggleNav()}
+                onClick={clearingHam}
               ></HamBurgerSVG>
             )}
             {isDarkTheme === true ? (
@@ -56,25 +78,133 @@ export default function NavbarV2() {
         {/* model */}
 
         {isNavOpen === true ? (
-          <div className="h-[90%] w-full flex flex-col items-start bg-black">
+          <div className="h-[92%] w-full flex flex-col items-start bg-black pl-[7.44%] ">
             <Link href="/">
-              <button onClick={() => toggleNav()}>home</button>
+              <button
+                onClick={() => toggleNav()}
+                className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] mt-[15.44%]"
+              >
+                Home
+              </button>
             </Link>
             <Link href="/aboutus">
-              <button onClick={() => toggleNav()}>About us</button>
+              <button
+                onClick={() => toggleNav()}
+                className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] "
+              >
+                About us
+              </button>
             </Link>
             <Link href="/contactus">
-              <button onClick={() => toggleNav()}>Contact us</button>
+              <button
+                onClick={() => toggleNav()}
+                className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] "
+              >
+                Contact us
+              </button>
             </Link>
             <Link href="/">
-              <button onClick={() => toggleNav()}>Blog</button>
+              <button
+                onClick={() => toggleNav()}
+                className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] "
+              >
+                Blog
+              </button>
             </Link>
-            <Link href="/">
-              <button onClick={() => toggleNav()}>Packages</button>
-            </Link>
-            <Link href="/">
-              <button onClick={() => toggleNav()}>Services</button>
-            </Link>
+
+            <div onClick={handlePackagesToggle}>
+              <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
+                Packages
+              </div>
+
+              {isPackagesOpen === true ? (
+                <div className="flex flex-col mb-[2rem]">
+                  <Link href="/packages/bitPackage">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      bit
+                    </button>
+                  </Link>
+                  <Link href="/packages/megabitPackage">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      megabit
+                    </button>
+                  </Link>
+                  <Link href="/packages/gigabitPackage">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      gigabit
+                    </button>
+                  </Link>
+                </div>
+              ) : null}
+            </div>
+
+            <div onClick={handleServicesToggle}>
+              <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
+                Services
+              </div>
+
+              {isServicesOpen === true ? (
+                <div className="flex flex-col mb-[2rem]">
+                  <Link href="/services/web-development">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      web dev
+                    </button>
+                  </Link>
+                  <Link href="/services/mobile-development">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      app dev
+                    </button>
+                  </Link>
+                  <Link href="/services/seo">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      seo
+                    </button>
+                  </Link>
+                  <Link href="/services/security">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      security
+                    </button>
+                  </Link>
+                  <Link href="/services/uiux">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      ui/ux
+                    </button>
+                  </Link>
+                  <Link href="/services/marketing">
+                    <button
+                      onClick={() => toggleNav()}
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                    >
+                      marketing
+                    </button>
+                  </Link>
+                </div>
+              ) : null}
+            </div>
           </div>
         ) : null}
         {/* model */}

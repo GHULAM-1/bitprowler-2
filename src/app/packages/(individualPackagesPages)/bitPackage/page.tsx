@@ -12,7 +12,7 @@ import PackagesMainSectionMobile from "../../components/packagesMainSectionMobil
 export default function BitPackage() {
   return (
     <>
-      <div className="mt-[28%] px-[15.1%] w-full flex flex-col justify-center items-center mb-[3rem]">
+      <div className="pt-[28%] px-[15.1%] w-full flex flex-col justify-center items-center mb-[3rem]">
         <PackagesHeaderMobile
           name={packagesPageBitContent.name}
           price={packagesPageBitContent.price}
