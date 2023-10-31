@@ -6,6 +6,7 @@ import SecurityDarkSVG from "../../../../public/servicesSectionImages/securityDa
 import MarketingDarkSVG from "../../../../public/servicesSectionImages/marketingDarkSVG";
 import UxDarkSVG from "../../../../public/servicesSectionImages/uxDarkSVG";
 import ArrowLightSVG from "../../../../public/servicesSectionImages/arrowLightSVG";
+
 type ServiceCardProps = {
   mainHeading: string;
   description: string;
@@ -18,7 +19,8 @@ export default function ServiceSectionCard({
 }: ServiceCardProps) {
   return (
     <>
-      <div
+      <Link
+        href={pagePath}
         className={`  rounded-[0.5rem] border-[2px] flex flex-col  border-primary p-[4.34%] dark:bg-[#151515] bg-[#EAEAEA] hover:bg-primary dark:hover:bg-primary transition-transform transform hover:scale-105 group cursor-pointer mb-[8.69%] w-[85.5%] items-start`}
       >
         <div className=" flex justify-end w-full  ">
@@ -48,7 +50,7 @@ export default function ServiceSectionCard({
         <div className="service-description text-Mobile-Text w-[82%]">
           {description}
         </div>
-      </div>
+      </Link>
     </>
   );
 }

@@ -38,6 +38,11 @@ export default function NavbarV2() {
     togglePackages(false);
     toggleServices(false);
   };
+  const handleLogoNav = () => {
+    if (isNavOpen) {
+      toggleNav();
+    }
+  };
 
   const changeCurrentTheme = useTogglingStore(
     (state: any) => state.changeCurrentTheme
@@ -52,7 +57,7 @@ export default function NavbarV2() {
           <Link href="/" className="flex  flex-col">
             <LogoSVG
               className="w-[32px] h-[32px] fill-primary"
-              onClick={() => toggleNav()}
+              onClick={handleLogoNav}
             ></LogoSVG>
           </Link>
 
