@@ -80,7 +80,7 @@ export default function NavbarV2() {
         {/* model */}
 
         {isNavOpen === true ? (
-          <div className="h-[92%] w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll  ">
+          <div className="h-[100%] w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll  ">
             <Link href="/">
               <button
                 onClick={() => toggleNav()}
