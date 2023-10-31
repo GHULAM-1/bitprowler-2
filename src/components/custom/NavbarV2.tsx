@@ -199,7 +199,7 @@ export default function NavbarV2() {
                   <Link href="/services/marketing">
                     <button
                       onClick={() => toggleNav()}
-                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
+                      className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] "
                     >
                       marketing
                     </button>
