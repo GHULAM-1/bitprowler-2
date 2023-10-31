@@ -4,13 +4,18 @@ import ServicesSection from "./(components)/servicesSection/ServicesSection";
 import PackagesSection from "./(components)/packagesSection/packagesSection";
 import HeroSection from "./(components)/heroSection/heroSection";
 import Contactus from "./(components)/contactusSection/contactusSection";
-
 import LongBottom from "@/components/custom/longBottom";
-import BigCTA from "@/components/custom/bigCTA";
+import { useTogglingStore } from "@/store/store";
+
 export default function Home() {
+  const isNavOpen = useTogglingStore((state) => state.isNavOpen);
   return (
     <>
-      <div className="overflow-x-hidden flex flex-col items-center justify-center absolute z-40">
+      <div
+        className={`overflow-x-hidden flex flex-col items-center justify-center absolute z-40  ${
+          isNavOpen === true ? "hidden" : null
+        }`}
+      >
         <HeroSection></HeroSection>
         <ServicesSection />
         <PackagesSection></PackagesSection>
@@ -21,3 +26,4 @@ export default function Home() {
     </>
   );
 }
+  
