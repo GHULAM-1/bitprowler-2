@@ -2,11 +2,12 @@
 import EllipseSVG from "../../../../public/ellipseSVG";
 import EllipseLightSVG from "../../../../public/ellipseLightSVG";
 import { useTogglingStore } from "@/store/store";
+import { useTheme } from "next-themes";
 export default function HeroGradient() {
-  const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
+  const { theme, setTheme } = useTheme();
   return (
     <>
-      {isDarkTheme === true ? (
+      {theme === "dark" ? (
         <EllipseSVG className="absolute blur-[63px]"></EllipseSVG>
       ) : (
         <EllipseLightSVG className="absolute blur-[63px] "></EllipseLightSVG>

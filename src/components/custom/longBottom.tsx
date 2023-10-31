@@ -7,7 +7,7 @@ import LinkedinSVG from "../../../public/socialSVSGs/linkedinSVG";
 export default function LongBottom() {
   return (
     <>
-      <div className="flex flex-col w-full justify-center items-center  mb-[1rem]">
+      <div className="flex flex-col w-full justify-center items-center  ">
         <div className="flex  items-center p-[1rem] justify-between bg-[#EAEAEA] dark:bg-[#151515] text-black dark:text-white w-[99%] rounded-t-[0.5rem] ">
           <LongBottomLogo></LongBottomLogo>
           <div className="hidden text-small-text  w-[70%] laptop_sm:flex justify-center desktop:text-[1.5rem] ">

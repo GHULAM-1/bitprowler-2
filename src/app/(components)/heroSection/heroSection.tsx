@@ -4,8 +4,10 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { useTogglingStore } from "@/store/store";
+import { useTheme } from "next-themes";
 export default function HeroSection() {
   const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
+  const { theme, setTheme } = useTheme();
 
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
@@ -15,7 +17,7 @@ export default function HeroSection() {
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
-    await console.log(container);
+      await console.log(container);
     },
     []
   );
@@ -35,7 +37,7 @@ export default function HeroSection() {
         </button>
       </div>
 
-      {isDarkTheme === true ? (
+      {theme === "dark" ? (
         <Particles
           id="tsparticles"
           init={particlesInit}

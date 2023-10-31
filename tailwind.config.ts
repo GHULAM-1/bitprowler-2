@@ -1,10 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  variants: {
-    extend: {
-      margin: ["group"],
-    },
-  },
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",

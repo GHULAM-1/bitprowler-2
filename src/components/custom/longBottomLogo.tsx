@@ -1,13 +1,15 @@
 "use client";
 import { useTogglingStore } from "@/store/store";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 export default function LongBottomLogo() {
-  const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
+  const { theme, setTheme } = useTheme();
+
   return (
     <>
       <Image
         src={
-          isDarkTheme === true
+          theme === "dark"
             ? "/brand_images/bitprowler-white.svg"
             : "/brand_images/bitprowler-black.svg"
         }

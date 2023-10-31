@@ -8,8 +8,11 @@ import MoonSVG from "../../../public/navImages/moonSVG";
 import SunSVG from "../../../public/navImages/sunSVG";
 import { useTogglingStore } from "@/store/store";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 export default function NavbarV2() {
+  const { theme, setTheme } = useTheme();
+
   const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
   const isNavOpen = useTogglingStore((state: any) => state.isNavOpen);
   const [isPackagesOpen, togglePackages] = useState(false);
@@ -61,15 +64,15 @@ export default function NavbarV2() {
                 onClick={clearingHam}
               ></HamBurgerSVG>
             )}
-            {isDarkTheme === true ? (
+            {theme === "dark" ? (
               <SunSVG
                 className="dark:fill-white fill-black w-[32px] h-[32px]"
-                onClick={() => changeCurrentTheme()}
+                onClick={() => setTheme("light")}
               ></SunSVG>
             ) : (
               <MoonSVG
                 className="dark:fill-white fill-black w-[32px] h-[32px]"
-                onClick={() => changeCurrentTheme()}
+                onClick={() => setTheme("dark")}
               ></MoonSVG>
             )}
           </div>
@@ -78,7 +81,7 @@ export default function NavbarV2() {
         {/* model */}
 
         {isNavOpen === true ? (
-          <div className="h-[92%] w-full flex flex-col items-start bg-black pl-[7.44%] ">
+          <div className="h-[92%] w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white">
             <Link href="/">
               <button
                 onClick={() => toggleNav()}
