@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <div
         className={`overflow-x-hidden flex flex-col items-center justify-center absolute z-40  ${
-          isNavOpen === true ? "hidden" : null
+          isNavOpen === true ? "hidden overscroll-none" : null
         }`}
       >
         <HeroSection></HeroSection>
@@ -26,4 +26,3 @@ export default function Home() {
     </>
   );
 }
-  
