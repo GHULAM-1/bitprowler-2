@@ -32,7 +32,7 @@ export default function ServicesPageHeroMobile({
         {/* gradient div */}
         <div className="w-full bg-background rounded-[1.5rem]">
           <div
-            className={`relative py-[31.1%]  w-full flex flex-col justify-center items-center gap-[1.8%] text-black dark:text-white text-center rounded-[1.5rem] z-0 overflow-hidden ${
+            className={`relative py-[31.1%]  w-full flex flex-col justify-center items-center gap-[1.8%] text-black dark:text-white text-center rounded-[1.5rem] z-10 overflow-hidden ${
               isDarkTheme === true
                 ? "gradient-background"
                 : "gradient-background-lightMode"
@@ -40,17 +40,17 @@ export default function ServicesPageHeroMobile({
           >
             {/* <WebDarkSVG className="opacity-20 z-10 absolute "></WebDarkSVG> */}
             {name === "Web Dev" ? (
-              <WebDarkSVG className="opacity-20 z-10 absolute "></WebDarkSVG>
+              <WebDarkSVG className="opacity-10 z-0 absolute  h-[60%] w-[60%] -bottom-5 -right-5 "></WebDarkSVG>
             ) : name === "App Dev" ? (
-              <AppDarkSVG className="opacity-20 z-10 absolute "></AppDarkSVG>
+              <AppDarkSVG className="opacity-10 z-10 absolute h-[60%] w-[60%] -bottom-5 -right-5   "></AppDarkSVG>
             ) : name === "Security" ? (
-              <SecurityDarkSVG className="opacity-20 z-10 absolute "></SecurityDarkSVG>
+              <SecurityDarkSVG className="opacity-10 z-10 absolute h-[60%] w-[60%] -bottom-5 -right-5 "></SecurityDarkSVG>
             ) : name === "Marketing" ? (
-              <MarketingDarkSVG className="opacity-20 z-10 absolute "></MarketingDarkSVG>
+              <MarketingDarkSVG className="opacity-10 z-10 absolute h-[60%] w-[60%] -bottom-5 -right-5 "></MarketingDarkSVG>
             ) : name === "SEO" ? (
-              <SeoDarkSVG className="opacity-20 z-10 absolute "></SeoDarkSVG>
+              <SeoDarkSVG className="opacity-10 z-10 absolute h-[60%] w-[60%] -bottom-5 -right-5 "></SeoDarkSVG>
             ) : (
-              <UxDarkSVG className="opacity-20 z-10 absolute "></UxDarkSVG>
+              <UxDarkSVG className="opacity-10 z-10 absolute h-[60%] w-[60%] -bottom-5 -right-5 "></UxDarkSVG>
             )}
 
             <div className="text-Mobile-S-Heading w-[70.5%] text-center relative z-30">

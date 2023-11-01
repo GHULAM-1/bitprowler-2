@@ -21,7 +21,7 @@ export default function ServiceSectionCard({
     <>
       <Link
         href={pagePath}
-        className={`  rounded-[0.5rem] border-[2px] flex flex-col  border-primary p-[4.34%] dark:bg-[#151515] bg-[#EAEAEA] hover:bg-primary dark:hover:bg-primary transition-transform transform hover:scale-105 group cursor-pointer mb-[8.69%] w-[85.5%] items-start`}
+        className={`  rounded-[0.5rem] border-[2px] flex flex-col  border-primary p-[4.34%] bg-tertiaryBackgroundColor hover:bg-primary dark:hover:bg-themeColor transition-transform transform hover:scale-105 group cursor-pointer mb-[8.69%] w-[85.5%] items-start`}
       >
         <div className=" flex justify-end w-full  ">
           <div className="flex justify-center items-center bg-primary  rounded-[0.3rem] h-[55px] w-[55px]">

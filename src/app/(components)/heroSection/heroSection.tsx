@@ -5,6 +5,7 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { useTogglingStore } from "@/store/store";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 export default function HeroSection() {
   const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
   const { theme, setTheme } = useTheme();
@@ -23,7 +24,7 @@ export default function HeroSection() {
   );
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center px-[1.86%]  ">
+    <div className="w-screen h-screen flex flex-col items-center justify-center px-[1.86%] ">
       <div className="  top-div  flex flex-col justify-center items-center h-full w-full  ">
         <h1 className="text-Mobile-Head  font-medium  flex text-center">
           Revolutionizing Digital Realities,
@@ -32,9 +33,11 @@ export default function HeroSection() {
         <h1 className="text-Mobile-Head font-medium  text-center">
           One <span className="text-primary">Bit</span> at a Time.
         </h1>
-        <button className="py-[0.75rem] px-[1.5rem] bg-primary text-Mobile-Text rounded-[0.5rem] mt-[1rem]">
-          Get in Touch
-        </button>
+        <Link href="/contactus">
+          <button className="py-[0.75rem] px-[1.5rem] bg-themeColor text-Mobile-Text rounded-[0.5rem] mt-[1rem]">
+            Get in Touch
+          </button>
+        </Link>
       </div>
 
       {theme === "dark" ? (
