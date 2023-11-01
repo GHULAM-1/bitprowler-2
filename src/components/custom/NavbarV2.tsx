@@ -49,7 +49,7 @@ export default function NavbarV2() {
   return (
     <>
       {/* top bar */}
-      <div className="flex w-full    bg-secondaryBackgroundColor justify-between px-[7%]  items-center overscroll-none relative z-50 py-[1.2%]">
+      <div className="flex w-full    bg-secondaryBackgroundColor justify-between px-[7%]  items-center overscroll-none  py-[1.2%]">
         <Link href="/" className="flex  flex-col">
           <LogoSVG
             className="w-[32px] h-[32px] fill-themeColor"
@@ -76,7 +76,7 @@ export default function NavbarV2() {
       {/* model */}
 
       {isNavOpen === true ? (
-        <div className="h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll  ">
+        <div className=" h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll     ">
           <Link href="/">
             <button
               onClick={() => toggleNav()}
