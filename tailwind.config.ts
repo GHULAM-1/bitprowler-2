@@ -12,10 +12,10 @@ module.exports = {
     //   center: true,
     //   padding: "2rem",
     screens: {
-      tablet: "425px",
-      laptop_sm: "768px",
-      laptop_lg: "1024px",
-      desktop: "1440px",
+      // tablet: "425px",
+      // laptop_sm: "768px",
+      // laptop_lg: "1024px",
+      // desktop: "1440px",
       TABLET: "700px",
       SMALL_LAPTOP: "1031px",
       LAPTOP: "1515px",
@@ -69,6 +69,8 @@ module.exports = {
         textPrimaryColor: "var(--textPrimaryColor)",
         textSecondaryColor: "var(--textSecondaryColor)",
         primaryBackgroundColorDark: "var(--primaryBackgroundColorDark)",
+        textSecondaryColorLight: "var(--textSecondaryColorLight)",
+        tertiaryBackgroundColorLight: "var(--tertiaryBackgroundColorLight)",
 
         // border: "hsl(var(--border))",
         // input: "hsl(var(--input))",
