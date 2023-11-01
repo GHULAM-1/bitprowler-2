@@ -34,17 +34,18 @@ export default function BigNavBarV2() {
 
   return (
     <>
-      <div className="flex  bg-primaryBackgroundColor border-b-[1px] dark:border-b-[#404040]   border-b-primaryBackgroundColorDark w-full  fixed z-[50] py-[1rem] justify-between px-[4.76%] ">
-        <div
-          className="flex  items-center w-full"
-          onClick={closingPackagesAndServices}
-        >
-          <Link href="/">
-            <LogoSVG className="w-[35px] h-[35px] fill-themeColor"></LogoSVG>
-          </Link>
-          <div className=" ml-[15.6%] w-full flex gap-[4.3%]">
+      <div
+        className="flex  bg-primaryBackgroundColor border-b-[1px] dark:border-b-[#404040]   border-b-primaryBackgroundColorDark w-full  fixed z-[50] py-[1rem] justify-between px-[4.76%] "
+        onClick={closingPackagesAndServices}
+      >
+        <Link href="/">
+          <LogoSVG className="w-[35px] h-[35px] fill-themeColor "></LogoSVG>
+        </Link>
+
+        <div className="w-full flex items-center justify-center">
+          <div className="   flex w-full gap-[5.3%] justify-center  whitespace-nowrap">
             <Link href="/">
-              <button className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text">
+              <button className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text ">
                 Home
               </button>
             </Link>
@@ -80,7 +81,7 @@ export default function BigNavBarV2() {
               <div
                 className={` ${
                   isServicesOpen ? "flex" : "hidden"
-                } mt-[1.4rem] ml-[2rem] bg-secondaryBackgroundColor px-[1rem] py-[1rem] gap-[0.5rem] flex flex-col absolute `}
+                } mt-[1.4rem] ml-[2rem] bg-secondaryBackgroundColor px-[1rem] py-[1rem] gap-[0.5rem] flex flex-col absolute transition-all duration-300 ease-in-out`}
               >
                 <Link href="/services/web-development">
                   <button className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text">
