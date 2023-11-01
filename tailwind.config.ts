@@ -68,6 +68,7 @@ module.exports = {
         tertiaryBackgroundColor: "var(--tertiaryBackgroundColor)",
         textPrimaryColor: "var(--textPrimaryColor)",
         textSecondaryColor: "var(--textSecondaryColor)",
+        primaryBackgroundColorDark: "var(--primaryBackgroundColorDark)",
 
         // border: "hsl(var(--border))",
         // input: "hsl(var(--input))",

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import NavbarV2 from "@/components/custom/NavbarV2";
 import Navbar from "@/components/custom/Navbar";
-
+import BigNavBarV2 from "@/components/custom/bigNavBarV2";
 const poppins: any = Poppins({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
@@ -31,7 +31,14 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {/* <Navbar /> */}
-          <NavbarV2></NavbarV2>
+
+          <div className="hidden SMALL_LAPTOP:flex ">
+            <BigNavBarV2></BigNavBarV2>
+          </div>
+
+          <div className="SMALL_LAPTOP:hidden">
+            <NavbarV2></NavbarV2>
+          </div>
 
           {children}
         </ThemeProviderWrapper>

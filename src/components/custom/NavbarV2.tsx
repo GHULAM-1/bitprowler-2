@@ -8,7 +8,7 @@ import { useTogglingStore } from "@/store/store";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import ThemeSwitch from "./ThemeSwitchButton";
-
+import DropdownArrowSVG from "../../../public/arrows/dropdownArrowSVG";
 export default function NavbarV2() {
   const { theme, setTheme } = useTheme();
 
@@ -111,10 +111,12 @@ export default function NavbarV2() {
           </Link>
 
           <div onClick={handlePackagesToggle}>
-            <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
-              Packages
+            <div className="flex gap-[1rem] items-center ">
+              <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
+                Packages
+              </div>
+              <DropdownArrowSVG className="w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem]"></DropdownArrowSVG>
             </div>
-
             {isPackagesOpen === true ? (
               <div className="flex flex-col mb-[2rem]">
                 <Link href="/packages/bitPackage">
@@ -146,10 +148,12 @@ export default function NavbarV2() {
           </div>
 
           <div onClick={handleServicesToggle}>
-            <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
-              Services
+            <div className="flex gap-[1rem] items-center ">
+              <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
+                Services
+              </div>
+              <DropdownArrowSVG className="w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem]"></DropdownArrowSVG>
             </div>
-
             {isServicesOpen === true ? (
               <div className="flex flex-col mb-[2rem]">
                 <Link href="/services/web-development">

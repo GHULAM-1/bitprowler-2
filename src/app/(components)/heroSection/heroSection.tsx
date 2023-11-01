@@ -52,7 +52,7 @@ export default function HeroSection() {
             },
             background: {
               color: {
-                value: "#000000",
+                value: "#0c0a09",
               },
             },
             fpsLimit: 120,
@@ -79,7 +79,7 @@ export default function HeroSection() {
                 value: "#cc2c14",
               },
               links: {
-                color: "#ffffff",
+                color: "#f3f5f6",
                 distance: 150,
                 enable: true,
                 opacity: 0.4,

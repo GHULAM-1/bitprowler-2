@@ -19,12 +19,12 @@ const ThemeSwitch = () => {
     <>
       {theme === "dark" ? (
         <SunSVG
-          className="dark:fill-white fill-black w-[32px] h-[32px]"
+          className="dark:fill-white fill-black w-[32px] h-[32px] cursor-pointer"
           onClick={() => setTheme("light")}
         ></SunSVG>
       ) : (
         <MoonSVG
-          className="dark:fill-white fill-black w-[32px] h-[32px]"
+          className="dark:fill-white fill-black w-[32px] h-[32px] cursor-pointer"
           onClick={() => setTheme("dark")}
         ></MoonSVG>
       )}

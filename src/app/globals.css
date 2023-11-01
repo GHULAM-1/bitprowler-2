@@ -38,6 +38,8 @@
     --tertiaryBackgroundColor: #eaeaea;
     --textPrimaryColor: #0c0a09;
     --textSecondaryColor: #151515;
+
+    --primaryBackgroundColorDark: #0c0a09;
   }
 
   .dark {
