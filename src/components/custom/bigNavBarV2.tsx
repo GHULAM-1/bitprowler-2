@@ -34,7 +34,7 @@ export default function BigNavBarV2() {
 
   return (
     <>
-      <div className="flex  bg-primaryBackgroundColor border-b-[1px] dark:border-b-[#404040]   border-b-primaryBackgroundColorDark w-full  absolute z-[50] py-[1rem] justify-between px-[4.76%]">
+      <div className="flex  bg-primaryBackgroundColor border-b-[1px] dark:border-b-[#404040]   border-b-primaryBackgroundColorDark w-full  fixed z-[50] py-[1rem] justify-between px-[4.76%] ">
         <div
           className="flex  items-center w-full"
           onClick={closingPackagesAndServices}
