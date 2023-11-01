@@ -60,12 +60,12 @@ export default function NavbarV2() {
         <div className="flex justify-center items-center gap-[0.5rem] flex-row-reverse">
           {isNavOpen === true ? (
             <CrossSVG
-              className="bg-secondaryBackgroundColor w-[44px] h-[44px]"
+              className="fill-textPrimaryColor w-[44px] h-[44px]"
               onClick={() => toggleNav()}
             ></CrossSVG>
           ) : (
             <HamBurgerSVG
-              className=" bg-secondaryBackgroundColor w-[44px] h-[44px]"
+              className=" fill-textPrimaryColor w-[44px] h-[44px]"
               onClick={clearingHam}
             ></HamBurgerSVG>
           )}
