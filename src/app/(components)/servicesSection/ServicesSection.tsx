@@ -4,8 +4,8 @@ export default function ServicesSection() {
   return (
     <>
       <div className="flex flex-col  w-screen  px-[5%]">
-        <div className="flex mb-[2rem]  justify-center TABLET:justify-start TABLET:ml-[1.5rem] TABLET:mb-[4rem]">
-          <div className="text-Mobile-L-Head   TABLET:text-Tablet-Head   ">
+        <div className="flex mb-[2rem]  justify-center TABLET:justify-start TABLET:ml-[2rem] TABLET:mb-[4.5rem] SMALL_LAPTOP:mb-[3.56rem] LAPTOP:mb-[6rem]">
+          <div className="text-Mobile-L-Head   TABLET:text-Tablet-Head SMALL_LAPTOP:text-SMALL_LAPTOP-Heading   ">
             Services
           </div>
         </div>

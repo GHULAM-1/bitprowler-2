@@ -19,7 +19,7 @@ module.exports = {
       TABLET: "700px",
       SMALL_LAPTOP: "1031px",
       LAPTOP: "1515px",
-      LARGE_LAPTOP: "1926px",
+      LARGE_LAPTOP: "1925px",
     },
     // },
     extend: {
