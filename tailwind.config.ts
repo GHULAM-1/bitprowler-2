@@ -57,6 +57,7 @@ module.exports = {
         "SMALL_LAPTOP-Text": "1.25rem",
         "SMALL_LAPTOP-S-Text": "1rem",
         "SMALL_LAPTOP-SS-Text": "0.75rem",
+        
       },
       fontWeight: {
         "base-weight": "400",
