@@ -11,7 +11,7 @@ export const ServicesSectionCardContent = [
     id: 2,
     mainHeading: "SEO",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
+      "Elevating your business's visibility.",
     pagePath: "/services/seo",
   },
 
@@ -19,7 +19,7 @@ export const ServicesSectionCardContent = [
     id: 3,
     mainHeading: "Security",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
+      "Protecting your business, safeguarding your success.",
     pagePath: "/services/security",
   },
 
@@ -27,7 +27,7 @@ export const ServicesSectionCardContent = [
     id: 4,
     mainHeading: "Marketing",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
+      "Empower your business with strategic marketing solutions for lasting success.",
     pagePath: "/services/marketing",
   },
 
@@ -35,7 +35,7 @@ export const ServicesSectionCardContent = [
     id: 5,
     mainHeading: "UX design",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
+      "Elevate user experience through thoughtful design.",
     pagePath: "/services/uiux",
   },
 
@@ -43,7 +43,7 @@ export const ServicesSectionCardContent = [
     id: 6,
     mainHeading: "App Dev",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Tortor tincidunt tortor duis malesuada.",
+      "Turn your app idea into reality.",
 
     pagePath: "/services/mobile-development",
   },
