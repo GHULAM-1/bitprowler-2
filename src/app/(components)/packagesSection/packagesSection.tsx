@@ -4,17 +4,21 @@ import { packagesSectionCardContent } from "@/app/(data)/packagesSection/package
 export default function PackagesSection() {
   return (
     <>
-      <div className="w-full flex flex-col items-center    mb-[5.5%]  justify-center">
-        <div className="text-Mobile-L-Head mt-[14.8%] w-full flex justify-center">
-          Packages
+      <div className="w-full  flex flex-col items-center px-[5%] mt-[4rem]   mb-[5.5%]  justify-center">
+        <div className=" w-full flex justify-center TABLET:justify-start TABLET:ml-[4.5rem] ">
+          <div className="text-Mobile-L-Head  text-textPrimaryColor  TABLET:text-Tablet-Head">
+            Packages
+          </div>
         </div>
 
-        <div className="text-Mobile-Text mb-[11.1%] max-[750px]:w-[80%] text-center flex justify-center w-full">
-          View our carefully crafted packages to elevate your digital
-          experiences one bit at a time
+        <div className="w-full flex  TABLET:ml-[4.5rem] TABLET:justify-start justify-center">
+          <div className="text-Mobile-Text  w-[80%] text-center TABLET:text-start  text-textSecondaryColor mb-[3rem] TABLET:text-Tablet-Text ">
+            View our carefully crafted packages to elevate your digital
+            experiences one bit at a time
+          </div>
         </div>
 
-        <div className="grid     desktop:grid-cols-3  w-full justify-center justify-items-center ">
+        <div className="grid   gap-[2rem]  TABLET:grid-cols-2 SMALL_LAPTOP:grid-cols-3  w-full justify-center justify-items-center ">
           {packagesSectionCardContent.map((cardContent, index) => {
             return (
               <PackagesSectionCard
