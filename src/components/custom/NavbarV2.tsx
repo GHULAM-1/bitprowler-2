@@ -50,7 +50,7 @@ export default function NavbarV2() {
     <>
       {/* top bar */}
       <div className="flex w-full    bg-secondaryBackgroundColor justify-between px-[7%]  items-center overscroll-none fixed z-[50] py-[1.2%]">
-        <Link href="/" className="flex  flex-col">
+        <Link href="/" className="flex  flex-col ">
           <LogoSVG
             className="w-[32px] h-[32px] fill-themeColor"
             onClick={handleLogoNav}
