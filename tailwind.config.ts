@@ -19,7 +19,7 @@ module.exports = {
       TABLET: "700px",
       SMALL_LAPTOP: "1031px",
       LAPTOP: "1515px",
-      LARGE_LAPTOP: "1925px",
+      LARGE_LAPTOP: "1926px",
     },
     // },
     extend: {
@@ -57,7 +57,6 @@ module.exports = {
         "SMALL_LAPTOP-Text": "1.25rem",
         "SMALL_LAPTOP-S-Text": "1rem",
         "SMALL_LAPTOP-SS-Text": "0.75rem",
-        
       },
       fontWeight: {
         "base-weight": "400",
