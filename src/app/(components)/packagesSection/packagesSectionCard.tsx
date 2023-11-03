@@ -64,7 +64,7 @@ export default function PackagesSectionCard({
               </div>
             </div>
 
-            <div className="text-Mobile-Text w-[100%] laptop_sm:text-[1.3rem] laptop_sm:w-[50%] desktop:text-[1rem]  LAPTOP:text-SMALL_LAPTOP-Text">
+            <div className="text-Mobile-Text w-[100%] TABLET:w-[80%]   LAPTOP:text-SMALL_LAPTOP-Text">
               {description}
             </div>
           </div>

@@ -4,30 +4,42 @@ export default function TransitionInput() {
   return (
     <>
       <form action="" className="w-full flex-col justify-center items-center">
-        <div className="flex flex-col text-Mobile-S-Heading w-full outline-none mt-[11.44%]">
-          <label htmlFor="name" className="font-medium">
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            className="w-full border-b-2 bg-transparent dark:border-b-white border-b-black outline-none"
-          />
+        {/* email and name div */}
+        <div className="flex flex-col w-full TABLET:flex-row TABLET:gap-[7.875rem]">
+          <div className="flex flex-col text-Mobile-S-Heading w-full outline-none mt-[11.44%] TABLET:mt-[0rem] TABLET:w-[240px] SMALL_LAPTOP:w-[50%]">
+            <label
+              htmlFor="name"
+              className="font-medium TABLET:text-Tablet-Large-Text "
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              className="w-full border-b-2 bg-transparent dark:border-b-white border-b-black outline-none"
+            />
+          </div>
+
+          <div className="flex flex-col text-Mobile-S-Heading w-full outline-none mt-[11.44%] TABLET:w-[240px] TABLET:mt-[0rem] SMALL_LAPTOP:w-[50%]">
+            <label
+              htmlFor="name"
+              className="font-medium TABLET:text-Tablet-Large-Text"
+            >
+              Email
+            </label>
+            <input
+              type="text"
+              name="name"
+              className="w-full border-b-2 bg-transparent dark:border-b-white border-b-black outline-none"
+            />
+          </div>
         </div>
 
-        <div className="flex flex-col text-Mobile-S-Heading w-full outline-none mt-[11.44%]">
-          <label htmlFor="name" className="font-medium">
-            Email
-          </label>
-          <input
-            type="text"
-            name="name"
-            className="w-full border-b-2 bg-transparent dark:border-b-white border-b-black outline-none"
-          />
-        </div>
-
-        <div className="flex flex-col text-Mobile-S-Heading w-full outline-none mt-[11.44%]">
-          <label htmlFor="name" className="font-medium">
+        <div className="flex flex-col text-Mobile-S-Heading w-full outline-none mt-[11.44%] TABLET:w-[610px] TABLET:my-[3rem] TABLET:mb-[7rem] SMALL_LAPTOP:w-full">
+          <label
+            htmlFor="name"
+            className="font-medium TABLET:text-Tablet-Large-Text"
+          >
             Message
           </label>
           <input
@@ -37,10 +49,10 @@ export default function TransitionInput() {
           />
         </div>
 
-        <div className="flex justify-center w-full mt-[11.16%]">
-          <button className="flex gap-[0.5rem] justify-center items-center bg-primary rounded-[48px] py-[4.72%] px-[7.58%] dark:text-white text-black text-Mobile-S-Text">
+        <div className="pt-[3rem] flex justify-center TABLET:justify-start  w-full TABLET:mt-[0rem]  ">
+          <button className="  px-[2rem] py-[1rem]   flex gap-[0.5rem] justify-center items-center bg-themeColor rounded-[48px]  TABLET:py-[1rem] TABLET:px-[2rem]  dark:text-white text-black text-Mobile-S-Text TABLET:text-Tablet-Large-Text     SMALL_LAPTOP:bg-transparent SMALL_LAPTOP:px-0 SMALL_LAPTOP:py-0 group SMALL_LAPTOP:hover:bg-themeColor SMALL_LAPTOP:hover:px-[2rem] SMALL_LAPTOP:hover:py-[1rem]   SMALL_LAPTOP:transition-all SMALL_LAPTOP:ease-linear ">
             submit
-            <ButtonArrowSVG className="dark:fill-white fill-black w-[24px]"></ButtonArrowSVG>
+            <ButtonArrowSVG className="dark:fill-white fill-black w-[24px] TABLET:w-[56px]"></ButtonArrowSVG>
           </button>
         </div>
       </form>

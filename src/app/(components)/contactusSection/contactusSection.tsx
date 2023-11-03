@@ -4,35 +4,52 @@ import Link from "next/link";
 export default function Contactus() {
   return (
     <>
-      <div className="pt-[25.5%] phone  flex w-screen  flex-col px-[8.65%] justify-center items-center laptop_sm:hidden">
-        <div className="top flex items-center flex-col mb-[10.7%]">
-          <div className="text-Mobile-L-Head  ">Contact</div>
-          <div className="text-Mobile-S-Heading font-medium">
+      <div className="pt-[25.5%] phone  flex w-screen TABLET:pt-[10rem] flex-col px-[8.65%] justify-center  items-center SMALL_LAPTOP:hidden">
+        {/* top div */}
+
+        <div className="top flex items-center flex-col mb-[10.7%] w-full TABLET:items-start TABLET:gap-[1rem] TABLET:mb-[7.25rem]">
+          <div className="text-Mobile-L-Head TABLET:text-Tablet-Head  ">
+            Contact
+          </div>
+          <div className="text-Mobile-S-Heading font-medium TABLET:text-Tablet-Text ">
             say@bitprowler.com
           </div>
         </div>
-        <div className="middle  flex justify-center items-center flex-col w-full">
-          <TransitionInput></TransitionInput>
-        </div>    
-        <div className="bottom  my-[9.30%]  w-full flex flex-col justify-center items-center">
-          <div className="text-Mobile-S-Heading font-medium">
+
+        {/* middle div */}
+
+        <TransitionInput></TransitionInput>
+
+        {/* bottom div */}
+
+        <div className="bottom  my-[9.30%] TABLET:mt-[4rem]  w-full flex flex-col justify-center items-center TABLET:items-start ">
+          <div className="text-Mobile-S-Heading font-medium TABLET:text-Tablet-Text TABLET:mb-[0.5rem] ">
             Lahore,Pakistan
           </div>
-          <div className="text-Mobile-Text">03074593601</div>
+          <div className="text-Mobile-Text TABLET:text-Tablet-Text">
+            03074593601
+          </div>
         </div>
       </div>
 
-      <div className="hidden laptop_sm:flex flex-row  justify-center w-[72%]  items-center mb-[10rem] mt-[5rem]">
+      {/* laptops */}
+      <div className="hidden SMALL_LAPTOP:flex flex-row  justify-center w-full items-center mb-[10rem] mt-[5rem] px-[8%]">
         <div className="left w-[50%]  h-full flex flex-col justify-between gap-[15rem]">
           <div className="left-top ">
-            <div className="clamp-service-section-main-heading mb-[0.5rem]">
+            <div className="clamp-service-section-main-heading mb-[0.5rem] SMALL_LAPTOP:text-SMALL_LAPTOP-Heading">
               Contact
             </div>
-            <div className="text-[1.5rem]">say@bitprowler.com</div>
+            <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-L-Text">
+              say@bitprowler.com
+            </div>
           </div>
           <div className="left-bottom">
-            <div className="text-[1.4rem]">Lahore,Pakistan</div>
-            <div className="text-[1.2rem]">03074593601</div>
+            <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-L-Text">
+              Lahore,Pakistan
+            </div>
+            <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-L-Text">
+              03074593601
+            </div>
           </div>
         </div>
         <div className="right w-[50%]  h-full ">
