@@ -4,15 +4,15 @@ import { packagesSectionCardContent } from "@/app/(data)/packagesSection/package
 export default function PackagesSection() {
   return (
     <>
-      <div className="w-full  flex flex-col items-center px-[5%] mt-[4rem]   mb-[5.5%]  justify-center">
+      <div className="w-full  flex flex-col items-center px-[5%] mt-[8rem]   mb-[5.5%]  justify-center">
         <div className=" w-full flex justify-center TABLET:justify-start TABLET:ml-[4.5rem] ">
-          <div className="text-Mobile-L-Head  text-textPrimaryColor  TABLET:text-Tablet-Head">
+          <div className="text-Mobile-L-Head  text-textPrimaryColor  TABLET:text-Tablet-Head SMALL_LAPTOP:text-SMALL_LAPTOP-Heading TABLET:ml-[1rem]">
             Packages
           </div>
         </div>
 
         <div className="w-full flex  TABLET:ml-[4.5rem] TABLET:justify-start justify-center">
-          <div className="text-Mobile-Text  w-[80%] text-center TABLET:text-start  text-textSecondaryColor mb-[3rem] TABLET:text-Tablet-Text ">
+          <div className="text-Mobile-Text  w-[75%] LAPTOP:w-[50%] text-center TABLET:text-start  text-textSecondaryColor mb-[5rem] TABLET:text-Tablet-Text SMALL_LAPTOP:text-SMALL_LAPTOP-L-Text TABLET:ml-[1rem]">
             View our carefully crafted packages to elevate your digital
             experiences one bit at a time
           </div>
