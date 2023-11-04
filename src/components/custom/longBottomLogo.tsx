@@ -1,8 +1,15 @@
 "use client";
+type LongBottomLogoPropsp = {
+  width: number;
+  height: number;
+};
 import { useTogglingStore } from "@/store/store";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-export default function LongBottomLogo() {
+export default function LongBottomLogo({
+  width,
+  height,
+}: LongBottomLogoPropsp) {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -13,10 +20,9 @@ export default function LongBottomLogo() {
             ? "/brand_images/bitprowler-white.svg"
             : "/brand_images/bitprowler-black.svg"
         }
-        width={200}
-        height={200}
+        width={width}
+        height={height}
         alt="bit prowler"
-        className="clamp-footer-logo"
       ></Image>
     </>
   );
