@@ -27,7 +27,7 @@ export default function Contactus() {
             Lahore,Pakistan
           </div>
           <div className="text-Mobile-Text TABLET:text-Tablet-Text">
-            (+92)0323-4896676
+            0323-4896676
           </div>
         </div>
       </div>
