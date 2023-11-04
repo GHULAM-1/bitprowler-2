@@ -12,7 +12,7 @@ export default function Contactus() {
             Contact
           </div>
           <div className="text-Mobile-S-Heading font-medium TABLET:text-Tablet-Text ">
-            say@bitprowler.com
+            team@bitprowler.com
           </div>
         </div>
 
@@ -27,7 +27,7 @@ export default function Contactus() {
             Lahore,Pakistan
           </div>
           <div className="text-Mobile-Text TABLET:text-Tablet-Text">
-            03074593601
+            (+92)0323-4896676
           </div>
         </div>
       </div>
