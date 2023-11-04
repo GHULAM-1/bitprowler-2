@@ -6,6 +6,7 @@ import HeroSection from "./(components)/heroSection/heroSection";
 import Contactus from "./(components)/contactusSection/contactusSection";
 import LongBottom from "@/components/custom/longBottom";
 import { useTogglingStore } from "@/store/store";
+import CustomersSection from "./(components)/customersSection/customersSection";
 
 export default function Home() {
   const isNavOpen = useTogglingStore((state) => state.isNavOpen);
@@ -19,6 +20,7 @@ export default function Home() {
         <HeroSection></HeroSection>
         <ServicesSection />
         <PackagesSection></PackagesSection>
+
         <Contactus></Contactus>
         {/* <BigCTA></BigCTA> */}
         <LongBottom></LongBottom>

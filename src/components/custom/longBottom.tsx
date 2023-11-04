@@ -14,7 +14,17 @@ export default function LongBottom() {
       {/* mobile */}
       <div className="flex flex-col w-full justify-center items-center TABLET:hidden ">
         <div className="flex  items-center p-[1rem] justify-between bg-[#EAEAEA] dark:bg-[#151515] text-black dark:text-white w-[99%] rounded-t-[0.5rem] ">
-          {/* <LongBottomLogo></LongBottomLogo> */}
+          <Image
+            src={
+              theme === "dark"
+                ? "/brand_images/bitprowler-white.svg"
+                : "/brand_images/bitprowler-black.svg"
+            }
+            width={50}
+            height={50}
+            alt="bit prowler"
+            className="w-[115px] h-[24px]"
+          ></Image>
           <div className="hidden text-small-text  w-[70%] laptop_sm:flex justify-center desktop:text-[1.5rem] ">
             © Copyright 2023. All rights reserved.
           </div>
