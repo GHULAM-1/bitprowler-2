@@ -16,21 +16,29 @@ export default function StagesCard({
   return (
     <>
       <div
-        className="w-full flex flex-col justify-center items-center mt-[7.44%] dark:text-white
-       text-black"
+        className="w-full  SMALL_LAPTOP:w-[80%] flex flex-col justify-center items-center mt-[7.44%] dark:text-white
+       text-black TABLET:items-start TABLET:border-b-[2px] TABLET:dark:border-b-white TABLET:border-b-black TABLET:w-[90%] "
       >
-        {id === 1 ? (
-          <StarSVG className="fill-white dark:fill-black dark:stroke-white stroke-black w-[40px] h-[40px]"></StarSVG>
-        ) : id === 2 ? (
-          <CircleSVG className="fill-white dark:fill-black dark:stroke-white stroke-black w-[40px] h-[40px]"></CircleSVG>
-        ) : (
-          <HexagonSVG className="fill-white dark:fill-black dark:stroke-white stroke-black w-[40px] h-[40px]"></HexagonSVG>
-        )}
+        <div className="TABLET:flex TABLET:gap-[3.5rem] TABLET:mb-[2rem]   ">
+          <div className=" flex justify-center   ">
+            {id === 1 ? (
+              <StarSVG className="fill-white  dark:fill-black dark:stroke-white stroke-black w-[40px] h-[40px] TABLET:w-[80px] TABLET:h-[80px]"></StarSVG>
+            ) : id === 2 ? (
+              <CircleSVG className="fill-white dark:fill-black dark:stroke-white stroke-black w-[40px] h-[40px] TABLET:w-[80px] TABLET:h-[80px]"></CircleSVG>
+            ) : (
+              <HexagonSVG className="fill-white dark:fill-black dark:stroke-white stroke-black w-[40px] h-[40px] TABLET:w-[80px] TABLET:h-[80px]"></HexagonSVG>
+            )}
+          </div>
 
-        <div className="my-[1.62%] text-Mobile-Head font-medium text-center">
-          {mainHeading}
+          <div className="  flex flex-col items-start">
+            <div className="my-[1.62%]  w-full justify-center TABLET:justify-start flex TABLET:m-0 text-Mobile-Head font-medium TABLET:text-Tablet-S-Heading SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading ">
+              {mainHeading}
+            </div>
+            <div className="text-Mobile-Text text-center TABLET:text-left TABLET:text-Tablet-Text TABLET:mb-[2rem]  SMALL_LAPTOP:text-SMALL_LAPTOP-L-Text LAPTOP:w-full">
+              {description}
+            </div>
+          </div>
         </div>
-        <div className="text-Mobile-Text text-center ">{description}</div>
       </div>
     </>
   );

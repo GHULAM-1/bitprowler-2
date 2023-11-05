@@ -19,7 +19,7 @@ export default function LongBottom() {
               theme === "dark"
                 ? "/brand_images/bitprowler-white.svg"
                 : "/brand_images/bitprowler-black.svg"
-            }
+            } 
             width={50}
             height={50}
             alt="bit prowler"

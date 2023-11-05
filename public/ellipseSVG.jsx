@@ -4,10 +4,8 @@ function EllipseSVG(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={185}
-      height={240}
       viewBox="0 0 185 240"
-      fill="none"
+      fill="current"
       {...props}
     >
       <circle cx={65} cy={120} r={120} fill="url(#paint0_linear_680_1667)" />
