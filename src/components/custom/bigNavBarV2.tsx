@@ -59,7 +59,7 @@ export default function BigNavBarV2() {
                 Contact us
               </button>
             </Link>
-            transition-all duration-100 ease-linear
+
             <Link href="/blog">
               <button className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text">
                 Blog
