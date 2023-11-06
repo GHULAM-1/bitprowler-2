@@ -78,7 +78,7 @@ export default function HeroSection() {
                 value: "#cc2c14",
               },
               links: {
-                color: "#f3f5f6",
+                color: "#000000",
                 distance: 150,
                 enable: true,
                 opacity: 0.4,
@@ -155,7 +155,7 @@ export default function HeroSection() {
                 value: "#cc2c14",
               },
               links: {
-                color: "#000000",
+                color: "#f3f5f6",
                 distance: 150,
                 enable: true,
                 opacity: 0.4,
