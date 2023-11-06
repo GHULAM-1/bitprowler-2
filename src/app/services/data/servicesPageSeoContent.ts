@@ -1,32 +1,32 @@
 export const servicesPageSeoContent = {
   name: "SEO",
   hero: {
-    quote: `"Good design is as little design as possible"`,
-    author: "-Dieter Rams",
+    quote: `"SEO is about being found when it matters."`,
+    author: "",
   },
 
   whySection: {
-    mainHeading: "Why Ux Design?",
+    mainHeading: "Why SEO?",
     subHeadings: [
       {
         id: 1,
-        heading: "Increases Conversions",
+        heading: " Enhanced Online Visibility",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Making it easier for potential customers to find your business when they search.",
       },
 
       {
         id: 2,
-        heading: "Data-Driven Decisions",
+        heading: "Targeted Audience Reach",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Enabling you to reach the right audience, ensuring that your content is seen by those most likely to engage with it.",
       },
 
       {
         id: 3,
         heading: "Competitive Advantage",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Outranking competitors in search results gives you a competitive edge, helping your business stand out.",
       },
     ],
   },
@@ -34,34 +34,32 @@ export const servicesPageSeoContent = {
   approachSection: [
     {
       id: 1,
-      heading: "Good design is innovative",
+      heading: "Proven Results",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "We have a track record of achieving exceptional results for our clients.",
     },
     {
       id: 2,
-      heading: "Good design is functional",
+      heading: "Tailored Strategies",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "We don't believe in one-size-fits-all solutions. Our SEO strategies are customized to your unique business goals, industry, and target audience.",
     },
     {
       id: 3,
-      heading: "Good design is simple",
+      heading: "Ethical Practices",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "We strictly adhere to ethical and white-hat SEO practices. Our approach is built on transparency, integrity, and a commitment to following industry best practices.",
     },
   ],
-  oneLinerFirst: "UX is ",
-  oneLinerSecond: "effective",
+  oneLinerFirst: "\"SEO is ",
+  oneLinerSecond: "visibility\"",
   deliverables: [
-    "User Interface Design",
-    "User Personas",
-    "Competitive Analysis Report",
-    "Information Architecture",
-    "User Research",
-    "Usability Testing",
-    "Design Systems",
-    "Wireframe",
-    "Prototype",
+    "Keyword Research and Analysis:",
+    "On-Page SEO Recommendations",
+    "Off-Page SEO Strategies",
+    "Competitor Analysis",
+    "Content Strategy",
+    "Mobile-Friendly Recommendations",
+    "Site Speed Optimization"
   ],
 };

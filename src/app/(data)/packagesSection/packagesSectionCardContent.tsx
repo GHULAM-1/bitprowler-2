@@ -10,7 +10,7 @@ export const packagesSectionCardContent = [
 
   {
     id: 2,
-    name: "mega bit",
+    name: "megabit",
     price: 2500,
     description: "Versatile solutions for medium-sized businesses' digital needs.",
     deliverablesCount: 30,
@@ -18,7 +18,7 @@ export const packagesSectionCardContent = [
   },
   {
     id: 3,
-    name: "giga bit",
+    name: "gigabit",
     price: 5000,
     description:
       "Empower large enterprises with an all-encompassing tech-stack for unrivaled digital excellence.",
@@ -28,7 +28,7 @@ export const packagesSectionCardContent = [
 
   {
     id: 4,
-    name: "dummy bit",
+    name: "dummybit",
     price: 10000,
     description: "muhammad , this is a dummy card by dumb gama",
     deliverablesCount: 40,
