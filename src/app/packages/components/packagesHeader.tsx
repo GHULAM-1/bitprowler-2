@@ -10,16 +10,14 @@ export default function PackagesHeader({ name, price }: PackagesHeaderProps) {
     <>
       <div className="mb-[4rem]  flex justify-between items-center w-full">
         <div className="   ">
-          {/* <BackArrowSVG className=" dark:fill-white fill-black clamp-arrow "></BackArrowSVG> */}
           <DotHeadings
             afterDotWord={name}
             beforeDotWord="Packages"
             secondColor="primary"
-            cssClampClass="clamp-packages-page-mainHeading"
           ></DotHeadings>
         </div>
 
-        <div className="dark:text-white text-black clamp-packages-page-mainHeading">
+        <div className="dark:text-white text-black clamp-packages-page-mainHeading pr-[4.5rem]">
           {price}$
         </div>
       </div>

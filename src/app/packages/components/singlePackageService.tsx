@@ -11,7 +11,7 @@ export default function SinglePackageService({
 }: SinglePackageServiceProps) {
   return (
     <>
-      <div className="  mb-[2rem]   flex flex-col items-start  ">
+      <div className=" px-[4.5rem]  mb-[2rem]   flex flex-col items-start  ">
         <div className=" mb-[2rem] clamp-3rem">{mainService}</div>
 
         <div className="flex gap-[1rem] text-text flex-wrap ">

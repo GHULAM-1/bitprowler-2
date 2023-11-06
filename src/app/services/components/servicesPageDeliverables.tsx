@@ -2,11 +2,13 @@ import ServicesPills from "../../../components/custom/servicesPills";
 export default function ServicesPageDeliverables({ deliverablesData }: any) {
   return (
     <>
-      <div className="flex justify-center items-center mt-[2rem] w-screen h-screen">
-        <div className="flex bg-background w-[60%] flex-wrap justify-start items-center">
-          <div className="text-[4rem] mb-[3.5rem]">Delivrables</div>
+      <div className=" px-[4.5rem] flex  justify-center items-center mt-[18rem] w-screen ">
+        <div className="flex bg-background w-full flex-col flex-wrap justify-start items-start">
+          <div className="TABLET:text-Tablet-Head SMALL_LAPTOP:text-SMALL_LAPTOP-Heading mb-[2rem] ">
+            Delivrables
+          </div>
 
-          <div className="bg-background flex flex-wrap justify-start items-center ">
+          <div className="bg-background flex SMALL_LAPTOP:w-[70%] TABLET:w-full flex-wrap justify-start items-center  ">
             {deliverablesData.map((item: any) => {
               return (
                 <>

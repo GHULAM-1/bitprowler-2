@@ -9,18 +9,21 @@ export const servicesPageWebContent = {
     mainHeading: "Why Ux Design?",
     subHeadings: [
       {
+        id: 1,
         heading: "Increases Conversions",
         brief:
           "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
       },
 
       {
+        id: 2,
         heading: "Data-Driven Decisions",
         brief:
           "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
       },
 
       {
+        id: 3,
         heading: "Competitive Advantage",
         brief:
           "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
@@ -48,8 +51,8 @@ export const servicesPageWebContent = {
         "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
     },
   ],
-  oneLinerFirst: "UX is ",
-  oneLinerSecond: "effective",
+  oneLinerFirst: `"UX is `,
+  oneLinerSecond: `effective"`,
   deliverables: [
     "User Interface Design",
     "User Personas",
