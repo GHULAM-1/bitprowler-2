@@ -12,21 +12,21 @@ export const servicesPageUxContent = {
         id: 1,
         heading: "Increases Conversions",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Streamlined user paths, clear calls to action, and an excellent user experience can lead to increased conversions and business growth.",
       },
 
       {
         id: 2,
-        heading: "Data-Driven Decisions",
+        heading: "Better User Retention",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Great UX keeps users coming back. It builds trust and loyalty, reducing churn and fostering long-term customer relationships.",
       },
 
       {
         id: 3,
-        heading: "Competitive Advantage",
+        heading: "Data-Driven Decision Making",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "UX design is rooted in data and user research, allowing for informed design decisions and continuous improvement.",
       },
     ],
   },
@@ -34,21 +34,21 @@ export const servicesPageUxContent = {
   approachSection: [
     {
       id: 1,
-      heading: "Good design is innovative",
+      heading: "Responsive and Mobile-First",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "We design for multiple devices, ensuring that your digital presence is responsive and mobile-friendly, offering a consistent experience across screens of all sizes.",
     },
     {
       id: 2,
-      heading: "Good design is functional",
+      heading: "Client-Centric Focus",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Your success is our success. We're dedicated to helping you achieve your goals, with a keen understanding of the value of exceptional user experiences in reaching them.",
     },
     {
       id: 3,
-      heading: "Good design is simple",
+      heading: "Iterative Excellence:",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Our iterative design process means we never stop improving. We learn from user testing and feedback to refine and enhance your designs continuously.",
     },
   ],
   oneLinerFirst: "UX is ",
