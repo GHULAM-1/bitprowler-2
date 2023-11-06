@@ -1,7 +1,7 @@
 export const servicesPageWebContent = {
   name: "Web Dev",
   hero: {
-    quote: "Web development is about doing more with less",
+    quote: "\"Effective web development is about doing more with less\"",
     author: "- BitProwler Technologies Pvt Ltd",
   },
 
