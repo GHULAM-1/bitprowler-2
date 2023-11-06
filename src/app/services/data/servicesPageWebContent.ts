@@ -2,7 +2,7 @@ export const servicesPageWebContent = {
   name: "Web Dev",
   hero: {
     quote: "Effective web development is about doing more with less",
-    author: "",
+    author: "- BitProwler Technologies Pvt Ltd",
   },
 
   whySection: {
@@ -49,7 +49,7 @@ export const servicesPageWebContent = {
     },
   ],
   oneLinerFirst: "Web Dev is ",
-  oneLinerSecond: "Digital Magic",
+  oneLinerSecond: "Magic",
   deliverables: [
     "Landing Pages",
     "Responsiveness",
