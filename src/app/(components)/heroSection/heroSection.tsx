@@ -39,7 +39,7 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      {theme === 'dark' ? (
+      {theme === "light" ? (
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -51,7 +51,7 @@ export default function HeroSection() {
             },
             background: {
               color: {
-                value: "#0c0a09",
+                value: "#ffffff",
               },
             },
             fpsLimit: 120,
@@ -128,7 +128,7 @@ export default function HeroSection() {
             },
             background: {
               color: {
-                value: "#ffffff",
+                value: "#0c0a09",
               },
             },
             fpsLimit: 120,
