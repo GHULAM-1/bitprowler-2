@@ -52,7 +52,7 @@ export default function CustomersSection() {
           <Link key={item.name} href={item.href} target="_blank">
             <div className="border-[1px] rounded-[8px] dark:border-white border-black">
               <Image
-                className="w-[60px] h-[60px] my-[2rem] fill-none-black justify-center text-center mx-[2rem] hover:scale-110 transition "
+                className="w-[60px] h-[60px] my-[2rem]  justify-center text-center mx-[2rem] hover:scale-110 transition "
                 src={item.src}
                 alt={item.alt}
                 width={50}

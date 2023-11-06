@@ -18,20 +18,19 @@ const ThemeSwitch = () => {
 
   return (
     <>
-      {theme === "dark" ? (
-        <SunSVG
-          className="dark:fill-white fill-black w-[32px] h-[32px] cursor-pointer"
-          onClick={() => setTheme("light")}
-        ></SunSVG>
-      ) : (
+      {theme === "light" ? (
         <MoonSVG
           className="dark:fill-white fill-black w-[32px] h-[32px] cursor-pointer"
           onClick={() => setTheme("dark")}
         ></MoonSVG>
+      ) : (
+        <SunSVG
+          className="dark:fill-white fill-black w-[32px] h-[32px] cursor-pointer"
+          onClick={() => setTheme("light")}
+        ></SunSVG>
       )}
     </>
   );
 };
 
 export default ThemeSwitch;
-  

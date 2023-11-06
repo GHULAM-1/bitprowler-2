@@ -76,12 +76,16 @@ export default function BigNavBarV2() {
                 <div className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text ">
                   Services
                 </div>
-                <DropdownArrow className="w-[25px] h-[25px] fill-textPrimaryColor"></DropdownArrow>
+                <DropdownArrow
+                  className={`w-[25px] h-[25px] fill-textPrimaryColor transition-all duration-100 ease-linear ${
+                    isServicesOpen === false ? "-rotate-90" : null
+                  }`}
+                ></DropdownArrow>
               </div>
               <div
-                className={` ${
+                className={` transition-all duration-100 ease-linear  ${
                   isServicesOpen ? "flex" : "hidden"
-                } mt-[1.4rem] ml-[2rem] bg-secondaryBackgroundColor px-[1rem] py-[1rem] gap-[0.5rem] flex flex-col absolute transition-all duration-300 ease-in-out`}
+                } mt-[1.4rem] ml-[2rem] bg-secondaryBackgroundColor px-[1rem] py-[1rem] gap-[0.5rem] flex flex-col absolute `}
               >
                 <Link href="/services/web-development">
                   <button className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text">
@@ -124,7 +128,11 @@ export default function BigNavBarV2() {
                 <div className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text">
                   Packages
                 </div>
-                <DropdownArrow className="w-[25px] h-[25px] fill-textPrimaryColor"></DropdownArrow>
+                <DropdownArrow
+                  className={`w-[25px] h-[25px] fill-textPrimaryColor transition-all duration-100 ease-linear ${
+                    isPackagesOpen === false ? "-rotate-90" : null
+                  }`}
+                ></DropdownArrow>
               </div>
               <div
                 className={` ${
