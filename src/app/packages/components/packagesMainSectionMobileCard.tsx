@@ -19,15 +19,15 @@ export default function PackagesMainSectionMobileCard({
         <div className="flex justify-center gap-[0.5rem]  mb-[8px]   items-center ">
           <div className="">
             {mainService === "Web Dev" || mainService === "Web Dev/App Dev" ? (
-              <WebDarkSVG className="fill-primary w-[1.5rem] h-[1.5rem]"></WebDarkSVG>
+              <WebDarkSVG className="fill-themeColor w-[1.5rem] h-[1.5rem]"></WebDarkSVG>
             ) : mainService === "Marketing" ? (
-              <MarketingDarkSVG className="fill-primary w-[1.5rem] h-[1.5rem]"></MarketingDarkSVG>
+              <MarketingDarkSVG className="fill-themeColor w-[1.5rem] h-[1.5rem]"></MarketingDarkSVG>
             ) : mainService === "SEO" ? (
-              <SeoDarkSVG className="fill-primary w-[1.5rem] h-[1.5rem]"></SeoDarkSVG>
+              <SeoDarkSVG className="fill-themeColor w-[1.5rem] h-[1.5rem]"></SeoDarkSVG>
             ) : mainService === "UX Design" ? (
-              <UxDarkSVG className="fill-primary w-[1.5rem] h-[1.5rem]"></UxDarkSVG>
+              <UxDarkSVG className="fill-themeColor w-[1.5rem] h-[1.5rem]"></UxDarkSVG>
             ) : (
-              <SecurityDarkSVG className="fill-primary w-[1.5rem] h-[1.5rem]"></SecurityDarkSVG>
+              <SecurityDarkSVG className="fill-themeColor w-[1.5rem] h-[1.5rem]"></SecurityDarkSVG>
             )}
           </div>
           <span className=" text-black dark:text-white font-medium text-Mobile-Head flex items-center text-center  ">

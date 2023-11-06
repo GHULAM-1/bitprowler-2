@@ -17,7 +17,7 @@ export default function BitPackage() {
   return (
     <>
       <div
-        className={`overflow-x-hidden flex flex-col items-center justify-center absolute z-40  ${
+        className={`overflow-x-hidden flex flex-col items-center justify-center absolute  z-40  ${
           isNavOpen === true ? "hidden overscroll-none" : null
         }`}
       >
@@ -30,12 +30,18 @@ export default function BitPackage() {
           <PackagesMainSectionMobile
             ServicesIncluded={packagesPageBitContent.servicesIncluded}
           ></PackagesMainSectionMobile>
-          <BigCTA></BigCTA>
-          <LongBottom></LongBottom>
+          <div className="w-screen">
+            <BigCTA></BigCTA>
+            <LongBottom></LongBottom>
+          </div>
         </div>
       </div>
 
-      <div className="relative z-0  mt-[4rem]  hidden TABLET:flex">
+      <div
+        className={`relative z-0    hidden ${
+          isNavOpen === true ? "TABLET:hidden overscroll-none" : "TABLET:flex"
+        }`}
+      >
         <BigBDarkSVG className="absolute z-10 blur-[63px] top-[400px] right-0"></BigBDarkSVG>
 
         <div className="mt-[5rem] content  absolute z-20 flex  items-start flex-col">

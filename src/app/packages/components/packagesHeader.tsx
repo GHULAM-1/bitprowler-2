@@ -8,7 +8,7 @@ type PackagesHeaderProps = {
 export default function PackagesHeader({ name, price }: PackagesHeaderProps) {
   return (
     <>
-      <div className="mb-[4rem]  flex justify-between items-center w-full">
+      <div className="mb-[4rem]  flex justify-between items-baseline w-full">
         <div className="   ">
           <DotHeadings
             afterDotWord={name}
@@ -17,7 +17,7 @@ export default function PackagesHeader({ name, price }: PackagesHeaderProps) {
           ></DotHeadings>
         </div>
 
-        <div className="dark:text-white text-black clamp-packages-page-mainHeading pr-[4.5rem]">
+        <div className="dark:text-white text-black  pr-[4.5rem] SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading TABLET:text-Tablet-S-Heading">
           {price}$
         </div>
       </div>
