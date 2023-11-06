@@ -5,69 +5,62 @@ const customers = [
   {
     name: "google-play",
     href: "https://play.google.com/",
-    src: "/images/customers/google-play.svg",
+    src: "/workedWith/google-play.svg",
     alt: "Google play logo",
   },
   {
     name: "github",
     href: "https://github.com/",
-    src: "/images/customers/github.svg",
+    src: "/workedWith/github.svg",
     alt: "Github logo",
   },
   {
     name: "docker",
     href: "https://www.docker.com/",
-    src: "/images/customers/docker.svg",
+    src: "/workedWith/docker.svg",
     alt: "Docker logo",
   },
   {
     name: "python",
     href: "https://www.python.org/",
-    src: "/images/customers/python.svg",
+    src: "/workedWith/python.svg",
     alt: "Python logo",
   },
   {
     name: "slack",
     href: "https://slack.com/",
-    src: "/images/customers/slack.svg",
+    src: "/workedWith/slack.svg",
     alt: "Slack logo",
   },
   {
     name: "discord",
     href: "https://discord.com/",
-    src: "/images/customers/discord.svg",
+    src: "/workedWith/discord.svg",
     alt: "Discord logo",
   },
 ];
 
 export default function CustomersSection() {
   return (
-    <div
-      className="bg-background dark:bg-background w-full px-4 pt-16 pb-16"
-      id="faq"
-    >
-      <h2 className="text-4xl font-bold text-center">Happy Customers</h2>
+    <div className=" bg-secondaryBackgroundColor w-full  pt-16 pb-16 flex flex-col SMALL_LAPTOP:items-start px-[4.5rem] ">
+      <h2 className=" text-center text-SMALL_LAPTOP-Subheading mb-[2rem]">
+        Clients Who Trust Us
+      </h2>
 
-      <p className="pt-6 pb-8 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit nam maxime quas
-        fugiat tempore blanditiis, eveniet quia accusantium.
-      </p>
-      <div className="mx-auto w-full max-w-4xl bg-white dark:bg-transparent">
-        <div className="text-center justify-center items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6">
-          {customers.map((item) => (
-            <Link key={item.name} href={item.href} target="_blank">
+      <div className="gap-y-[1rem] w-full text-center justify-center gap-x-[2rem] justify-items-center items-center grid grid-cols-2 sm:grid-cols-3 SMALL_LAPTOP:grid-cols-6">
+        {customers.map((item) => (
+          <Link key={item.name} href={item.href} target="_blank">
+            <div className="border-[1px] rounded-[8px] dark:border-white border-black">
               <Image
-                className="h-10 w-auto mt-6 justify-center text-center mx-auto hover:scale-110 transition"
+                className="w-[60px] h-[60px] my-[2rem] fill-none-black justify-center text-center mx-[2rem] hover:scale-110 transition "
                 src={item.src}
                 alt={item.alt}
-                width={150}
-                height={150}
-                quality={75}
-                sizes="100vw"
+                width={50}
+                height={50}
               />
-            </Link>
-          ))}
-        </div>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );

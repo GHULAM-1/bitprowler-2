@@ -16,6 +16,7 @@ import ServicesDeliverablesSection from "../../components/servicesDeliverablesSe
 import ServicesAproachSection from "../../components/servicesApproachSection";
 import ManifestoSection from "@/app/aboutus/components/manifestoSection";
 import { servicesPageAppContent } from "../../data/servicesPageAppContent";
+import CustomersSection from "@/app/(components)/customersSection/customersSection";
 export default function WebDev() {
   const isNavOpen = useTogglingStore((state: any) => state.isNavOpen);
 
@@ -66,6 +67,7 @@ export default function WebDev() {
             secondWord={servicesPageAppContent.oneLinerSecond}
           ></ManifestoSection>
 
+            <CustomersSection></CustomersSection>
           <div className="hidden TABLET:flex">
             <ServicesPageDeliverables
               deliverablesData={servicesPageAppContent.deliverables}
