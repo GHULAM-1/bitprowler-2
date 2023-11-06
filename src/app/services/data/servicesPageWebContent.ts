@@ -1,32 +1,29 @@
 export const servicesPageWebContent = {
   name: "Web Dev",
   hero: {
-    quote: `"Good design is as little design as possible"`,
-    author: "-Dieter Rams",
+    quote: "Effective web development is about doing more with less",
+    author: "",
   },
 
   whySection: {
-    mainHeading: "Why Ux Design?",
+    mainHeading: "What Sets Us Apart",
     subHeadings: [
       {
-        id: 1,
-        heading: "Increases Conversions",
+        heading: "Custom Website Design",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Tailoring your website to match your brand identity and meet your specific objectives.",
       },
 
       {
-        id: 2,
-        heading: "Data-Driven Decisions",
+        heading: "Responsive Design",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Ensuring your website is fully accessible and engaging on all devices.",
       },
 
       {
-        id: 3,
-        heading: "Competitive Advantage",
+        heading: "Performance Optimization",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Ensuring that your website loads quickly and efficiently.",
       },
     ],
   },
@@ -51,8 +48,8 @@ export const servicesPageWebContent = {
         "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
     },
   ],
-  oneLinerFirst: `"UX is `,
-  oneLinerSecond: `effective"`,
+  oneLinerFirst: "UX is ",
+  oneLinerSecond: "effective",
   deliverables: [
     "User Interface Design",
     "User Personas",
