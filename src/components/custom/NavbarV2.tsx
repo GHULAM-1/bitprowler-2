@@ -115,7 +115,11 @@ export default function NavbarV2() {
               <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
                 Packages
               </div>
-              <DropdownArrowSVG className="w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem]"></DropdownArrowSVG>
+              <DropdownArrowSVG
+                className={`w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem] ${
+                  isPackagesOpen === false ? "-rotate-90" : null
+                }`}
+              ></DropdownArrowSVG>
             </div>
             {isPackagesOpen === true ? (
               <div className="flex flex-col mb-[2rem]">
@@ -152,7 +156,11 @@ export default function NavbarV2() {
               <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
                 Services
               </div>
-              <DropdownArrowSVG className="w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem]"></DropdownArrowSVG>
+              <DropdownArrowSVG
+                className={`w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem] ${
+                  isPackagesOpen === false ? "-rotate-90" : null
+                }`}
+              ></DropdownArrowSVG>
             </div>
             {isServicesOpen === true ? (
               <div className="flex flex-col mb-[2rem]">

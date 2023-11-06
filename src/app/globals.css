@@ -76,6 +76,11 @@
   }
 }
 
+[data-theme="dark"] [data-hide-on-theme="dark"],
+[data-theme="light"] [data-hide-on-theme="light"] {
+  display: none;
+}
+
 .s {
   color: red;
   /* background-color: red; */

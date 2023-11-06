@@ -18,8 +18,13 @@ export default function TopSectionLaptops({ description }: TopSectionProps) {
           {theme === "light" ? (
             <EllipseLightSVG className="SMALL_LAPTOP:flex absolute hidden  z-50 blur-[150px] w-[520px] h-[520px] left-0"></EllipseLightSVG>
           ) : (
-            <EllipseSVG className="absolute z-50 blur-[150px] w-[520px] h-[520px]  SMALL_LAPTOP:flex hidden  fill-themeColor left-0"></EllipseSVG>
+            <EllipseSVG className="absolute z-50 blur-[150px] w-[520px] h-[520px]  SMALL_LAPTOP:flex hidden   left-0"></EllipseSVG>
           )}
+
+          {/* <EllipseLightSVG className="SMALL_LAPTOP:flex absolute hidden SMALL_LAPTOP:dark:hidden  z-50 blur-[150px] w-[520px] h-[520px] left-0"></EllipseLightSVG>
+
+          <EllipseSVG className="absolute z-50 blur-[150px] w-[520px] h-[520px]  SMALL_LAPTOP:flex hidden    left-0"></EllipseSVG> */}
+
           <div className="w-full flex flex-col relative z-50">
             <div className="text-SMALL_LAPTOP-Heading mb-[1rem] relative z-10">
               About us
