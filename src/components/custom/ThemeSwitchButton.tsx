@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import MoonSVG from "../../../public/navImages/moonSVG";
@@ -33,3 +34,4 @@ const ThemeSwitch = () => {
 };
 
 export default ThemeSwitch;
+  

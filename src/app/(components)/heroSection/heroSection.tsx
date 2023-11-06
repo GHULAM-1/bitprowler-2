@@ -7,7 +7,6 @@ import { useTogglingStore } from "@/store/store";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 export default function HeroSection() {
-  const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
   const { theme, setTheme } = useTheme();
 
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -18,7 +17,7 @@ export default function HeroSection() {
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
-      await console.log(container); 
+      await console.log(container);
     },
     []
   );
@@ -26,7 +25,7 @@ export default function HeroSection() {
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-center px-[1.86%] ">
       <div className="  top-div  flex flex-col justify-center items-center h-full w-full TABLET:px-[5%] TABLET:items-start SMALL_LAPTOP:items-center mt-[6.15%]">
-        <h1 className="text-Mobile-Head  font-medium  flex text-center TABLET:text-Tablet-S-Heading TABLET:text-left SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading SMALL_LAPTOP:text-center ">
+        <h1 className="text-Mobile-Head  font-medium  flex text-center TABLET:text-Tablet-S-Heading TABLET:text-left SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading SMALL_LAPTOP:text-center dark:text-black text-white">
           Revolutionizing Digital Realities,
         </h1>
 
@@ -40,7 +39,7 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      {theme === "dark" ? (
+      {theme === 'dark' ? (
         <Particles
           id="tsparticles"
           init={particlesInit}

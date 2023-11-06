@@ -24,12 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={poppins.className}>
       <body className="overflow-x-hidden text-[100%] relative z-0">
-        <ThemeProviderWrapper
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProviderWrapper attribute="class" disableTransitionOnChange>
           {/* <Navbar /> */}
 
           <div className="hidden SMALL_LAPTOP:flex ">
