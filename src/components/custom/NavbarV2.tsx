@@ -76,7 +76,7 @@ export default function NavbarV2() {
       {/* model */}
 
       {isNavOpen === true ? (
-        <div className=" h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll pt-[3rem]    ">
+        <div className="  h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll pt-[3rem]    ">
           <Link href="/">
             <button
               onClick={() => toggleNav()}
@@ -116,7 +116,7 @@ export default function NavbarV2() {
                 Packages
               </div>
               <DropdownArrowSVG
-                className={`w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem] ${
+                className={`transition-all duration-100 ease-linear w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem] ${
                   isPackagesOpen === false ? "-rotate-90" : null
                 }`}
               ></DropdownArrowSVG>
@@ -157,8 +157,8 @@ export default function NavbarV2() {
                 Services
               </div>
               <DropdownArrowSVG
-                className={`w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem] ${
-                  isPackagesOpen === false ? "-rotate-90" : null
+                className={` transition-all duration-100 ease-linear w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem] ${
+                  isServicesOpen === false ? "-rotate-90" : null
                 }`}
               ></DropdownArrowSVG>
             </div>
