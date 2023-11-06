@@ -51,8 +51,8 @@ export const servicesPageUxContent = {
         "Our iterative design process means we never stop improving. We learn from user testing and feedback to refine and enhance your designs continuously.",
     },
   ],
-  oneLinerFirst: "UX is ",
-  oneLinerSecond: "effective",
+  oneLinerFirst: `"UX is `,
+  oneLinerSecond: `effective"`,
   deliverables: [
     "User Interface Design",
     "User Personas",
