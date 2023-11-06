@@ -9,17 +9,33 @@ import Image from "next/image";
 
 export default function LongBottom() {
   const { theme, setTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
+  let src;
+
+  switch (resolvedTheme) {
+    case "light":
+      src = "/brand_images/bitprowler-black.svg";
+      break;
+    case "dark":
+      src = "/brand_images/bitprowler-white.svg";
+      break;
+    default:
+      src = "/brand_images/bitprowler-white.svg";
+      break;
+  }
+
   return (
     <>
       {/* mobile */}
       <div className="flex flex-col w-full justify-center items-center TABLET:hidden ">
         <div className="flex  items-center p-[1rem] justify-between bg-[#EAEAEA] dark:bg-[#151515] text-black dark:text-white w-[99%] rounded-t-[0.5rem] ">
           <Image
-            src={
-              theme === "dark"
-                ? "/brand_images/bitprowler-white.svg"
-                : "/brand_images/bitprowler-black.svg"
-            } 
+            // src={
+            //   theme === "dark"
+            //     ? "/brand_images/bitprowler-white.svg"
+            //     : "/brand_images/bitprowler-black.svg"
+            // }
+            src={src}
             width={50}
             height={50}
             alt="bit prowler"
@@ -44,11 +60,12 @@ export default function LongBottom() {
       <div className="flex w-full items-center justify-center">
         <div className="hidden TABLET:flex bg-tertiaryBackgroundColor w-[98%] rounded-[1rem] justify-between px-[2rem] py-[1rem] items-center">
           <Image
-            src={
-              theme === "dark"
-                ? "/brand_images/bitprowler-white.svg"
-                : "/brand_images/bitprowler-black.svg"
-            }
+            // src={
+            //   theme === "dark"
+            //     ? "/brand_images/bitprowler-white.svg"
+            //     : "/brand_images/bitprowler-black.svg"
+            // }
+            src={src}
             width={50}
             height={50}
             alt="bit prowler"
