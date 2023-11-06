@@ -49,13 +49,11 @@ export default function BigNavBarV2() {
                 Home
               </button>
             </Link>
-
             <Link href="/aboutus">
               <button className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text">
                 About us
               </button>
             </Link>
-
             <Link href="/contactus">
               <button className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text">
                 Contact us
@@ -67,7 +65,6 @@ export default function BigNavBarV2() {
                 Blog
               </button>
             </Link>
-
             <div>
               <div
                 className="flex gap-[0.5rem] relative cursor-pointer "
@@ -119,7 +116,6 @@ export default function BigNavBarV2() {
                 </Link>
               </div>
             </div>
-
             <div>
               <div
                 className="flex gap-[0.5rem] relative cursor-pointer"

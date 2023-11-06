@@ -1,7 +1,7 @@
 export const servicesPageWebContent = {
   name: "Web Dev",
   hero: {
-    quote: "\"Effective web development is about doing more with less\"",
+    quote: '"Effective web development is about doing more with less"',
     author: "- BitProwler Technologies Pvt Ltd",
   },
 
@@ -22,8 +22,7 @@ export const servicesPageWebContent = {
 
       {
         heading: "Performance Optimization",
-        brief:
-          "Ensuring that your website loads quickly and efficiently.",
+        brief: "Ensuring that your website loads quickly and efficiently.",
       },
     ],
   },
@@ -48,8 +47,8 @@ export const servicesPageWebContent = {
         "Our scalable solutions are designed to grow with you, ensuring performance and reliability as your web traffic expands.",
     },
   ],
-  oneLinerFirst: "Web Dev is ",
-  oneLinerSecond: "Magic",
+  oneLinerFirst: `"Web Dev is `,
+  oneLinerSecond: `Magic"`,
   deliverables: [
     "Landing Pages",
     "Responsiveness",
