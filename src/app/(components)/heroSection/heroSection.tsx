@@ -59,7 +59,7 @@ export default function HeroSection() {
               events: {
                 onHover: {
                   enable: true,
-                  mode: "repulse", // repulse for interaction
+                  mode: "repulse", // repulse "#000000"for interaction
                 },
                 resize: true,
               },
