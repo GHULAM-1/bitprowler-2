@@ -31,34 +31,34 @@ export const servicesPageWebContent = {
   approachSection: [
     {
       id: 1,
-      heading: "Good design is innovative",
+      heading: "Modern Tech Stack",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Our adaptable approach caters to your unique tech needs, harnessing versatility to drive your business forward.",
     },
     {
       id: 2,
-      heading: "Good design is functional",
+      heading: "Innovative Front-End Experiences",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "We craft immersive and cutting-edge front-end interfaces that captivate users and keep them engaged.",
     },
     {
       id: 3,
-      heading: "Good design is simple",
+      heading: "Scalability Without Compromise",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Our scalable solutions are designed to grow with you, ensuring performance and reliability as your web traffic expands.",
     },
   ],
-  oneLinerFirst: "UX is ",
-  oneLinerSecond: "effective",
+  oneLinerFirst: "Web Dev is ",
+  oneLinerSecond: "Digital Magic",
   deliverables: [
-    "User Interface Design",
-    "User Personas",
-    "Competitive Analysis Report",
-    "Information Architecture",
-    "User Research",
-    "Usability Testing",
-    "Design Systems",
-    "Wireframe",
-    "Prototype",
+    "Landing Pages",
+    "Responsiveness",
+    "Exceptional Loading Time",
+    "Cross-Browser Compatibility",
+    "Analytics and Reporting",
+    "Deployment and Hosting Setup",
+    "Performance Optimization",
+    "SEO Optimization",
+    "Post-Launch Support",
   ],
 };
