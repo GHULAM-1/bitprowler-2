@@ -44,9 +44,9 @@ export default function PackagesSectionCard({
             : "gradient-background-lightMode"
         }  `}
       >
-        {name === "mega bit" ? (
+        {name === "megabit" ? (
           <MDarkSVG className="w-[83.0%] h-[46%] absolute z-10 bottom-0 -right-10 overflow-hidden blur-[10px] dark:fill-[#F3F5F6] fill-black   "></MDarkSVG>
-        ) : name === "giga bit" ? (
+        ) : name === "gigabit" ? (
           <GDarkSVG className="w-[54.1%] h-[70.5%] absolute z-10  bottom-0 right-0 blur-[10px] dark:fill-white fill-black "></GDarkSVG>
         ) : (
           <BDarkSVG className=" w-[60.2%] h-[70.5%] absolute z-10  bottom-0 right-0 blur-[10px] dark:fill-white fill-black "></BDarkSVG>
