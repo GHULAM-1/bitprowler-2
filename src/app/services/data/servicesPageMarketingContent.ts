@@ -51,14 +51,14 @@ export const servicesPageMarketingContent = {
         "Your audience is at the heart of our strategies, creating memorable brand experiences.",
     },
   ],
-  oneLinerFirst: "Marketing is ",
-  oneLinerSecond: "storytelling",
+  oneLinerFirst: "\"Marketing is ",
+  oneLinerSecond: "storytelling\"",
   deliverables: [
     "Content Marketing Plan",
     "Social Media Content Calendar",
     "Email Marketing Campaigns",
     "PPC Advertising Campaigns",
-    "Social Media Advertising Campaigns:",
+    "Social Media Advertising Campaigns",
     "Lead Generation Strategy",
     "Brand Development",
     "Conversion Rate Optimization"

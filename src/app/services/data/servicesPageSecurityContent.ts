@@ -51,8 +51,8 @@ export const servicesPageSecurityContent = {
         "Ensuring your systems meet industry standards and regulations.",
     }
   ],
-  oneLinerFirst: "Security is ",
-  oneLinerSecond: "essential",
+  oneLinerFirst: "\"Security is ",
+  oneLinerSecond: "essential\"",
   deliverables: [
     "Security Assessment Report",
     "Security Monitoring and Alerts",

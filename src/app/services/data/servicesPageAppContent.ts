@@ -1,16 +1,16 @@
 export const servicesPageAppContent = {
   name: "App Dev",
   hero: {
-    quote: `"Good design is as little design as possible"`,
-    author: "-Dieter Rams",
+    quote: `“Simplicity is the soul to efficiency.” `,
+    author: "-Austin Freeman",
   },
 
   whySection: {
-    mainHeading: "Why Ux Design?",
+    mainHeading: "Why App Dev?",
     subHeadings: [
       {
         id: 1,
-        heading: "Increases Conversions",
+        heading: "Mobile Accessibility",
         brief:
           "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
       },
@@ -51,8 +51,8 @@ export const servicesPageAppContent = {
         "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
     },
   ],
-  oneLinerFirst: "UX is ",
-  oneLinerSecond: "effective",
+  oneLinerFirst: "\"App Dev is ",
+  oneLinerSecond: "innovation\"",
   deliverables: [
     "User Interface Design",
     "User Personas",
