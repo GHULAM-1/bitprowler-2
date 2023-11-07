@@ -24,9 +24,9 @@ export const pageContent = {
 
     {
       id: 3,
-      heading: "Flexible Services",
+      heading: "Tailored Services for Every Scale",
       brief:
-        "We understand that one size doesn't fit all. That's why we offer not only individual services but also flexible bundled packages, such as Bit, Megabit, and Gigabit. These packages are designed to empower organizations at different scales, catering to their unique needs. Whether you require individual solutions or a comprehensive package, our goal is to provide the flexibility to meet your digital requirements efficiently and effectively.",
+        "From individual solutions to our versatile Bit, Megabit, and Gigabit packages, we adapt to meet your unique digital needs with efficiency and precision.",
       number: "03 ",
     },
   ],
