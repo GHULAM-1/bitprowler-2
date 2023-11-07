@@ -1,7 +1,7 @@
 export const servicesPageMarketingContent = {
   name: "Marketing",
   hero: {
-    quote: `"Digital marketing is the art of aligning your brand with the aspirations and needs of your target audience."`,
+    quote: `"Aligning your brand with the aspirations and needs of your target audience."`,
     author: "",
   },
 
