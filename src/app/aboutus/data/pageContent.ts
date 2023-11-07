@@ -18,7 +18,7 @@ export const pageContent = {
       id: 2,
       heading: "Innovation and Creativity",
       brief:
-        "We are not bound by conventions; we redefine them. Our team's fresh ideas and creative solutions breathe life into every project, setting you apart in the digital landscape. Whether it's web development, design, or security, we inject innovation into every facet of our work.",
+        "We are not bound by conventions; we redefine them. Our team's fresh ideas and creative solutions breathe life into every project, setting you apart in the digital landscape.",
       number: "02",
     },
 
