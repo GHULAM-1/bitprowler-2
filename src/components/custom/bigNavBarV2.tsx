@@ -35,7 +35,7 @@ export default function BigNavBarV2() {
   return (
     <>
       <div
-        className="flex  bg-opacity-25  backdrop-blur-[126px] border-b-[1px] dark:border-b-[#404040]   border-b-primaryBackgroundColorDark w-full  fixed z-[50] py-[1rem] justify-between px-[4.76%] "
+        className="flex  dark:bg-opacity-20 dark:bg-black bg-opacity-20 bg-white  backdrop-blur-[126px] border-b-[1px] dark:border-b-[#404040]   border-b-primaryBackgroundColorDark w-full  fixed z-[50] py-[1rem] justify-between px-[4.76%] "
         onClick={closingPackagesAndServices}
       >
         <Link href="/">
@@ -133,7 +133,7 @@ export default function BigNavBarV2() {
               <div
                 className={` ${
                   isPackagesOpen ? "flex" : "hidden"
-                } mt-[1.4rem] ml-[2rem] bg-secondaryBackgroundColor px-[1rem] py-[1rem] gap-[0.5rem]  flex-col absolute `}
+                } mt-[1.4rem] ml-[2rem] bg-secondaryBackgroundColor px-[1rem] py-[1rem] gap-[0.5rem]  flex-col absolute  `}
               >
                 <Link href="/packages/bitPackage">
                   <button className="text-textPrimaryColor text-SMALL_LAPTOP-S-Text">

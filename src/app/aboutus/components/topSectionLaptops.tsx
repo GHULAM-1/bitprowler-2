@@ -16,7 +16,7 @@ export default function TopSectionLaptops({ description }: TopSectionProps) {
       <div className="  hidden SMALL_LAPTOP:flex   justify-center h-screen w-screen  ">
         <div className="left relative z-0  flex flex-col  w-[50%] justify-center items-start LAPTOP:pl-[10rem] SMALL_LAPTOP:pl-[4.5rem]">
           {theme === "light" ? (
-            <EllipseLightSVG className="SMALL_LAPTOP:flex absolute hidden  z-50 blur-[150px] w-[520px] h-[520px] left-0"></EllipseLightSVG>
+            <EllipseLightSVG class  Name="SMALL_LAPTOP:flex absolute hidden  z-50 blur-[150px] w-[520px] h-[520px] left-0"></EllipseLightSVG>
           ) : (
             <EllipseSVG className="absolute z-50 blur-[150px] w-[520px] h-[520px]  SMALL_LAPTOP:flex hidden   left-0"></EllipseSVG>
           )}

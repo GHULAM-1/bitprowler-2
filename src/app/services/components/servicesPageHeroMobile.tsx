@@ -23,7 +23,7 @@ export default function ServicesPageHeroMobile({
 
   return (
     <>
-      <div className=" TABLET:mt-[5.5rem] w-full h-screen px-[8.14%] text-black dark:text-white flex flex-col justify-center items-center">
+      <div className=" mt-[5.5rem] w-full h-screen  px-[8.14%] text-black dark:text-white flex flex-col justify-center items-center">
         <div className="flex items-center justify-center flex-col  w-full  TABLET:flex TABLET:flex-col TABLET:mb-[1rem] TABLET:w-full  TABLET:justify-start TABLET:items-start ">
           <div className=" text-medium text-Mobile-Head  TABLET:text-Tablet-S-Heading  ">
             Services

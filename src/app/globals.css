@@ -163,15 +163,17 @@
   width: clamp(20rem, 46.875vw, 70rem);
   height: clamp(20rem, 46.875vw, 70rem);
 }
-.gradient-background {
-  background: linear-gradient(
-    71deg,
-    rgba(255, 97, 33, 0.7) 10.66%,
-    rgba(204, 43, 20, 0.7) 26.32%,
-    rgba(21, 21, 21, 0.7) 81.63%
-  );
+@layer components {
+  .gradient-background {
+    background: linear-gradient(
+      71deg,
+      rgba(255, 97, 33, 0.7) 10.66%,
+      rgba(204, 43, 20, 0.7) 26.32%,
+      rgba(21, 21, 21, 0.7) 81.63%
+    );
 
-  backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
 }
 
 .service-hero-light-gradient {
