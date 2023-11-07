@@ -12,7 +12,8 @@ export const packagesSectionCardContent = [
     id: 2,
     name: "megabit",
     price: 2500,
-    description: "Versatile solutions for medium-sized businesses' digital needs.",
+    description:
+      "Versatile solutions for medium-sized businesses' digital needs.",
     deliverablesCount: 30,
     pagePath: "/packages/gigabitPackage",
   },
@@ -28,7 +29,7 @@ export const packagesSectionCardContent = [
 
   {
     id: 4,
-    name: "dummybit",
+    name: "dummy bit",
     price: 10000,
     description: "muhammad , this is a dummy card by dumb gama",
     deliverablesCount: 40,
