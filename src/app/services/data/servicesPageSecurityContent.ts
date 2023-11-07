@@ -1,32 +1,32 @@
 export const servicesPageSecurityContent = {
   name: "Security",
   hero: {
-    quote: `"Good design is as little design as possible"`,
-    author: "-Dieter Rams",
+    quote: `"Digital security is the currency of trust in the online world."`,
+    author: "",
   },
 
   whySection: {
-    mainHeading: "Why Ux Design?",
+    mainHeading: "Why Security?",
     subHeadings: [
       {
         id: 1,
-        heading: "Increases Conversions",
+        heading: "Protecting Data Integrity",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Security safeguards the integrity of your data, preventing unauthorized access, tampering, or loss.",
       },
 
       {
         id: 2,
-        heading: "Data-Driven Decisions",
+        heading: "Regulatory Compliance",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Many industries require security measures to meet legal and regulatory obligations.",
       },
 
       {
         id: 3,
-        heading: "Competitive Advantage",
+        heading: "Mitigating Financial Risks",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Security minimizes the financial risks associated with data breaches, lawsuits, and operational disruptions.",
       },
     ],
   },
@@ -34,34 +34,31 @@ export const servicesPageSecurityContent = {
   approachSection: [
     {
       id: 1,
-      heading: "Good design is innovative",
+      heading: "Vulnerability Assessments and Penetration Tests",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Identifying potential weaknesses and entry points for attackers.",
     },
     {
       id: 2,
-      heading: "Good design is functional",
+      heading: "Security Audits and Compliance",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Ensuring your systems meet industry standards and regulations.",
     },
     {
       id: 3,
-      heading: "Good design is simple",
+      heading: "API Testing",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Assessing the security of your APIs to ensure they are protected from vulnerabilities and threats.",
     },
   ],
-  oneLinerFirst: "UX is ",
-  oneLinerSecond: "effective",
+  oneLinerFirst: "Security is ",
+  oneLinerSecond: "essential",
   deliverables: [
-    "User Interface Design",
-    "User Personas",
-    "Competitive Analysis Report",
-    "Information Architecture",
-    "User Research",
-    "Usability Testing",
-    "Design Systems",
-    "Wireframe",
-    "Prototype",
+    "Security Assessment Report",
+    "Security Monitoring and Alerts",
+    "Firewall and Intrusion Detection System Configuration",
+    "Penetration Testing Results",
+    "Security Audit and Compliance Documentation",
+    "Security Consultation and Recommendations",
   ],
 };
