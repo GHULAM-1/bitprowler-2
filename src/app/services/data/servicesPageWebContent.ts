@@ -9,13 +9,13 @@ export const servicesPageWebContent = {
     mainHeading: "What Sets Us Apart",
     subHeadings: [
       {
-        heading: "Custom Website Design",
+        heading: "Custom Web Design",
         brief:
           "Tailoring your website to match your brand identity and meet your specific objectives.",
       },
 
       {
-        heading: "Responsive Design",
+        heading: "Responsive Layout",
         brief:
           "Ensuring your website is fully accessible and engaging on all devices.",
       },
