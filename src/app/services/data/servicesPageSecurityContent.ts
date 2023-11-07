@@ -34,22 +34,22 @@ export const servicesPageSecurityContent = {
   approachSection: [
     {
       id: 1,
-      heading: "Vulnerability Assessments and Penetration Tests",
+      heading: "Exceptional Team",
       brief:
-        "Identifying potential weaknesses and entry points for attackers.",
+        "Our security team comprises of professionals who have worked with global renowned companies such as Microsoft, Google, Apple including others Silicon Valley companies.",
     },
     {
       id: 2,
-      heading: "Security Audits and Compliance",
+      heading: "Comprehensive DAST Solutions",
       brief:
-        "Ensuring your systems meet industry standards and regulations.",
+        "We offer Dynamic Application Security Testing (DAST) services, ensuring your web applications are rigorously tested for vulnerabilities and weaknesses.",
     },
     {
       id: 3,
-      heading: "API Testing",
+      heading: "Security Audits and Compliance",
       brief:
-        "Assessing the security of your APIs to ensure they are protected from vulnerabilities and threats.",
-    },
+        "Ensuring your systems meet industry standards and regulations.",
+    }
   ],
   oneLinerFirst: "Security is ",
   oneLinerSecond: "essential",
