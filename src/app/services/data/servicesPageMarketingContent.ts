@@ -1,32 +1,32 @@
 export const servicesPageMarketingContent = {
   name: "Marketing",
   hero: {
-    quote: `"Good design is as little design as possible"`,
-    author: "-Dieter Rams",
+    quote: `“The most important thing in communication is to hear what isn't being said.”`,
+    author: "-Peter Drucker",
   },
 
   whySection: {
-    mainHeading: "Why Ux Design?",
+    mainHeading: "Why Digital Marketing?",
     subHeadings: [
       {
         id: 1,
-        heading: "Increases Conversions",
+        heading: "Unparalleled Reach",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Connects you with a global audience, expanding your reach like never before.",
       },
 
       {
         id: 2,
-        heading: "Data-Driven Decisions",
+        heading: "Targeted Engagement",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Ensuring that your marketing efforts engage the right people at the right time",
       },
 
       {
         id: 3,
-        heading: "Competitive Advantage",
+        heading: "Increased Conversions",
         brief:
-          "Lorem ipsum dolor sit amet consectetur. Justo semper libero integer blandit tempus eu sit vel.",
+          "Conversion rates soar with the ability to reach and engage your target audience directly.",
       },
     ],
   },
@@ -34,34 +34,33 @@ export const servicesPageMarketingContent = {
   approachSection: [
     {
       id: 1,
-      heading: "Good design is innovative",
+      heading: "Brand Building",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Digital marketing establishes and reinforces your brand's online presence, building credibility and trust.",
     },
     {
       id: 2,
-      heading: "Good design is functional",
+      heading: "Strategic Insights",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "We provide strategic insights that go beyond campaigns, guiding your brand with a long-term vision.",
     },
     {
       id: 3,
-      heading: "Good design is simple",
+      heading: "Customer-Centric",
       brief:
-        "Lorem ipsum dolor sit amet consectetur. Eget quis turpis molestie tellus id velit sit. Tristique imperdiet enim dapibus est neque feugiat sed nec amet. Varius est curabitur mauris viverra laoreet. Placerat duis facilisi cursus dictum.",
+        "Your audience is at the heart of our strategies, creating memorable brand experiences.",
     },
   ],
-  oneLinerFirst: "UX is ",
-  oneLinerSecond: "effective",
+  oneLinerFirst: "\"Marketing is ",
+  oneLinerSecond: "storytelling\"",
   deliverables: [
-    "User Interface Design",
-    "User Personas",
-    "Competitive Analysis Report",
-    "Information Architecture",
-    "User Research",
-    "Usability Testing",
-    "Design Systems",
-    "Wireframe",
-    "Prototype",
+    "Content Marketing Plan",
+    "Social Media Content Calendar",
+    "Email Marketing Campaigns",
+    "PPC Advertising Campaigns",
+    "Social Media Advertising Campaigns",
+    "Lead Generation Strategy",
+    "Brand Development",
+    "Conversion Rate Optimization"
   ],
 };

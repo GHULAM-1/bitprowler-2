@@ -55,7 +55,7 @@ export default function WebDev() {
 
           <StagesSection
             stages={servicesPageSecurityContent.approachSection}
-            mainHeading="Our Approach"
+            mainHeading="What Sets Us Apart"
             indicator="approach"
           ></StagesSection>
           {/* <HighLightSection

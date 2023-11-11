@@ -54,7 +54,7 @@ export default function WebDev() {
 
           <StagesSection
             stages={servicesPageWebContent.approachSection}
-            mainHeading="Your Digital Journey with Us"
+            mainHeading="What Sets Us Apart"
             indicator="approach"
           ></StagesSection>
           {/* <HighLightSection

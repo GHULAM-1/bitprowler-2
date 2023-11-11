@@ -27,7 +27,7 @@ export default function AboutUsPage() {
           ></ManifestoSection>
           <StagesSection
             stages={pageContent.stages}
-            mainHeading="Stages"
+            mainHeading="Why Us?"
           ></StagesSection>
           <TeamSection></TeamSection>
           <BigCTA></BigCTA>
