@@ -36,7 +36,7 @@ export const Email = ({ name }) => {
               of your email and appreciate your interest in our services. Our
               team is currently reviewing your message and will respond as soon
               as possible. In the meantime, you can visit our website for more
-              information about our firm.
+              information about our firm
             </Text>
             <Text style={paragraph}>Best Regards,</Text>
             <Text style={paragraph}>team , bitprowler</Text>
