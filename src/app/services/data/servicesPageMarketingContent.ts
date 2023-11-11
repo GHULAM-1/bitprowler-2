@@ -1,8 +1,8 @@
 export const servicesPageMarketingContent = {
   name: "Marketing",
   hero: {
-    quote: `"Aligning your brand with the aspirations and needs of your target audience."`,
-    author: "",
+    quote: `“The most important thing in communication is to hear what isn't being said.”`,
+    author: "-Peter Drucker",
   },
 
   whySection: {

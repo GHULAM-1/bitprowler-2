@@ -1,8 +1,8 @@
 export const servicesPageSecurityContent = {
   name: "Security",
   hero: {
-    quote: `"Digital security is the currency of trust in the online world."`,
-    author: "",
+    quote: `“Technology trust is a good thing, but control is a better one.”`,
+    author: "-Stephane Nappo",
   },
 
   whySection: {

@@ -2,7 +2,7 @@ export const servicesPageSeoContent = {
   name: "SEO",
   hero: {
     quote: `“Commit to a niche; try to stop being everything to everyone.”`,
-    author: "Andrew Davis",
+    author: "-Andrew Davis",
   },
 
   whySection: {
@@ -54,7 +54,7 @@ export const servicesPageSeoContent = {
   oneLinerFirst: "\"SEO is ",
   oneLinerSecond: "visibility\"",
   deliverables: [
-    "Keyword Research and Analysis:",
+    "Keyword Research and Analysis",
     "On-Page SEO Recommendations",
     "Off-Page SEO Strategies",
     "Competitor Analysis",

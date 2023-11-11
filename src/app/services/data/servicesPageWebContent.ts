@@ -1,28 +1,28 @@
 export const servicesPageWebContent = {
   name: "Web Dev",
   hero: {
-    quote: '"Effective web development is about doing more with less"',
-    author: "",
+    quote: '“Websites should look good from the inside and out.”',
+    author: "-Paul Cookson",
   },
 
   whySection: {
-    mainHeading: "What Sets Us Apart",
+    mainHeading: "Why Web Dev?",
     subHeadings: [
       {
-        heading: "Custom Web Design",
+        heading: "Global Visibility",
         brief:
-          "Tailoring your website to match your brand identity and meet your specific objectives.",
+          "Web development provides the gateway to a global audience, allowing individuals and businesses to establish a powerful online presence.",
       },
 
       {
-        heading: "Responsive Layout",
+        heading: "E-commerce Revolution",
         brief:
-          "Ensuring your website is fully accessible and engaging on all devices.",
+          "In the world of digital businesses, web development is the key to building solid foundations for e-commerce websites. These foundations create excellent opportunities for businesses to thrive in the e-commerce boom.",
       },
 
       {
-        heading: "Performance Optimization",
-        brief: "Ensuring that your website loads quickly and efficiently.",
+        heading: "Empowering SaaS Solutions",
+        brief: "Web development is crucial for making Software as a Service (SaaS) work smoothly. We ensure to build easy-to-use web applications that can grow with demand, so that SaaS solutions are deployed seamlessly.",
       },
     ],
   },
