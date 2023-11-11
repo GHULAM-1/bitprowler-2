@@ -1,7 +1,7 @@
 import TransitionInput from "@/components/custom/transitionInput";
 import HoverButton from "@/components/custom/hoverButton";
 import Link from "next/link";
-import Form from "@/components/custom/Form";
+
 export default function Contactus() {
   return (
     <>
