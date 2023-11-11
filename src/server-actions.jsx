@@ -1,7 +1,8 @@
 "use server";
 import { Resend } from "resend";
 const resend = new Resend("re_WfRoBWzc_91FbtiMMQgAjTUW96F6snPkG");
-import { EmailTemplate } from "./components/email-template";
+// import { EmailTemplate } from "./components/email-template";
+import Email from "./components/email-template";
 export async function formSubmission(currentState, formData) {
   const email = formData.get("email");
 
@@ -12,7 +13,7 @@ export async function formSubmission(currentState, formData) {
       from: "bitprowler <team@bitprowler.com>",
       to: [email],
       subject: "Thank you for contacting",
-      react: EmailTemplate({ name: formData.get("name") }),
+      react: <Email name={formData.get("name")} />,
     });
 
     return { message: "success" };
