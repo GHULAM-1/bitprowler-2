@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import NavbarV2 from "@/components/custom/NavbarV2";
+import Toaster from "react-hot-toast";
+
 import Navbar from "@/components/custom/Navbar";
 import BigNavBarV2 from "@/components/custom/bigNavBarV2";
 
@@ -29,7 +31,7 @@ export default function RootLayout({
           {/* <Navbar /> */}
 
           <div className="hidden SMALL_LAPTOP:flex ">
-            <BigNavBarV2></BigNavBarV2 >
+            <BigNavBarV2></BigNavBarV2>
           </div>
 
           <div className="SMALL_LAPTOP:hidden ">

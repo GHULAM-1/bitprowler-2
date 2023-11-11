@@ -1,6 +1,7 @@
 import TransitionInput from "@/components/custom/transitionInput";
 import HoverButton from "@/components/custom/hoverButton";
 import Link from "next/link";
+import Form from "@/components/custom/Form";
 export default function Contactus() {
   return (
     <>
@@ -54,6 +55,7 @@ export default function Contactus() {
         </div>
         <div className="right w-[50%]  h-full ">
           <TransitionInput></TransitionInput>
+          {/* <Form></Form> */}
         </div>
       </div>
     </>

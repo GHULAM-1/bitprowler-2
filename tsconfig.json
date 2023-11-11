@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "keystatic.config.ts", "src/components/Pricing.tsx", "src/store/store.tsx", "src/app/api/send/route.js", "src/components/ui/button.tsx", "src/app/(components)/heroSection/heroSection.tsx", "src/data/particlesConfig.tsx", "src/components/infniteCustomers.jsx", "src/app/page.jsx", "src/components/custom/bottom.jsx", "src/app/layout.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "keystatic.config.ts", "src/components/Pricing.tsx", "src/store/store.tsx", "src/app/api/send/route.js", "src/components/ui/button.tsx", "src/app/(components)/heroSection/heroSection.tsx", "src/data/particlesConfig.tsx", "src/components/infniteCustomers.jsx", "src/app/page.jsx", "src/components/custom/bottom.jsx", "src/app/layout.tsx", "src/server-actions.jsx", "src/components/custom/transitionInput.tsx", "src/components/custom/submitButton.jsx", "src/components/email-template.jsx"],
   "exclude": ["node_modules"]
 }
