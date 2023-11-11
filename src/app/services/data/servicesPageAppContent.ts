@@ -1,7 +1,7 @@
 export const servicesPageAppContent = {
   name: "App Dev",
   hero: {
-    quote: `"Apps have the power to transform dreams into digital reality, one line of code at a time."`,
+    quote: `"Apps can transform dreams into digital reality, one line of code at a time."`,
     author: "-Elon Musk",
   },
 
