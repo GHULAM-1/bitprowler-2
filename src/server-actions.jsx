@@ -11,9 +11,9 @@ export async function formSubmission(currentState, formData) {
   console.log(typeof email);
   try {
     const data = await resend.emails.send({
-      from: "bitprowler <onboarding@resend.dev>",
+      from: "bitprowler <team@bitprowler.com>",
       to: [email],
-      subject: "testing bitprowler email ... from ghulam",
+      subject: "Thank you for contacting",
       react: <Email name={formData.get("name")}></Email>,
     });
 
