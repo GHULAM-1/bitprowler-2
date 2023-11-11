@@ -29,7 +29,7 @@ export const Email = ({ name }) => {
   const previewText = `bitprowler team`;
 
   return (
-    <Html>
+    <Html style={main}>
       <Head />
       <Preview>{previewText}</Preview>
       <Body style={main}>
@@ -37,7 +37,7 @@ export const Email = ({ name }) => {
           <Section>
             <Img
               src="https://www.bitprowler.com/email_image.png"
-              width="200"
+              width="150"
               height="30"
               alt="bitprowler."
             />
@@ -73,9 +73,9 @@ const paragraph = {
 const main = {
   fontSize: "24px",
   lineHeight: "1.4",
-  // color: "#ffffff",
+  color: "#000000",
   backgroundColor: "#ffffff",
-  padding: "10px",
+  padding: "10px 10px",
   fontFamily:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
 };
@@ -84,6 +84,8 @@ const container = {
   margin: "0 auto",
   padding: "20px 0 48px",
   width: "580px",
+  backgroundColor: "#ffffff",
+
   // height: "700px",
 };
 

@@ -14,6 +14,7 @@ export async function formSubmission(currentState, formData) {
       to: [email],
       subject: "Thank you for contacting",
       react: <Email name={formData.get("name")} />,
+      
     });
 
     return { message: "success" };
