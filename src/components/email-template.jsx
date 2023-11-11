@@ -37,7 +37,7 @@ export const Email = ({ name }) => {
           <Section>
             <Img
               src="https://www.bitprowler.com/brand_images/bitprowler-white.svg"
-              width="96"
+              width="200"
               height="30"
               alt="bitprowler."
             />
