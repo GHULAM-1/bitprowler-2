@@ -34,14 +34,14 @@ export const Email = ({ name }) => {
       <Preview>{previewText}</Preview>
       <Body style={main}>
         <Container style={container}>
-          <Section>
+          {/* <Section>
             <Img
               src="https://www.bitprowler.com/email_image.png"
               width="150"
               height="30"
               alt="bitprowler."
             />
-          </Section>
+          </Section> */}
 
           <Section>
             <Text style={paragraph}>Hey {name} ,</Text>
