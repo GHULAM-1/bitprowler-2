@@ -3,7 +3,6 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import { useTogglingStore } from "@/store/store";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 export default function HeroSection() {
@@ -26,7 +25,7 @@ export default function HeroSection() {
     <div className="w-screen h-screen flex flex-col items-center justify-center px-[1.86%] ">
       <div className="  top-div  flex flex-col justify-center items-center h-full w-full TABLET:px-[5%] TABLET:items-start SMALL_LAPTOP:items-center mt-[6.15%]">
         <h1 className="text-Mobile-Head  font-medium  flex text-center TABLET:text-Tablet-S-Heading TABLET:text-left SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading SMALL_LAPTOP:text-center dark:text-white text-black">
-          Revolutionizing Digital Realities,
+          this is v2/removing shadcn
         </h1>
 
         <h1 className="text-Mobile-Head font-medium  text-center TABLET:text-Tablet-S-Heading TABLET:text-left SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading SMALL_LAPTOP:text-center dark:text-white text-black">
@@ -59,7 +58,7 @@ export default function HeroSection() {
               events: {
                 onHover: {
                   enable: true,
-                  mode: "repulse", // repulse "#000000"for interaction
+                  mode: "repulse",
                 },
                 resize: true,
               },
