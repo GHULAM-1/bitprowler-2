@@ -3,11 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import NavbarV2 from "@/components/custom/NavbarV2";
-import Toaster from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
-import Navbar from "@/components/custom/Navbar";
 import BigNavBarV2 from "@/components/custom/bigNavBarV2";
-
 const poppins: any = Poppins({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
@@ -28,8 +25,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={poppins.className}>
       <body className="overflow-x-hidden text-[100%] relative z-0">
         <ThemeProviderWrapper attribute="class" disableTransitionOnChange>
-          {/* <Navbar /> */}
-
           <div className="hidden SMALL_LAPTOP:flex ">
             <BigNavBarV2></BigNavBarV2>
           </div>
@@ -45,4 +40,3 @@ export default function RootLayout({
     </html>
   );
 }
-// ${inter.className}

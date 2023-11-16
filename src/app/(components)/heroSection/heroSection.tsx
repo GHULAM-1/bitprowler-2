@@ -3,7 +3,6 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import { useTogglingStore } from "@/store/store";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 export default function HeroSection() {
@@ -59,7 +58,7 @@ export default function HeroSection() {
               events: {
                 onHover: {
                   enable: true,
-                  mode: "repulse", // repulse "#000000"for interaction
+                  mode: "repulse",
                 },
                 resize: true,
               },
