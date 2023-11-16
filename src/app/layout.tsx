@@ -3,7 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import NavbarV2 from "@/components/custom/NavbarV2";
-import Toaster from "react-hot-toast";
+
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/custom/Navbar";
 import BigNavBarV2 from "@/components/custom/bigNavBarV2";
