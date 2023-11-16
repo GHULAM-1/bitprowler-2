@@ -1,30 +1,12 @@
-// import * as React from "react";
-
-// interface EmailTemplateProps {
-//   name: string;
-// }
-
-// export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
-//   name,
-// }) => (
-//   <div>
-//     <h1>Welcome you, {name}!</h1>
-//   </div>
-// );
-
 import { Body } from "@react-email/body";
 import { Button } from "@react-email/button";
 import { Container } from "@react-email/container";
 import { Head } from "@react-email/head";
 import { Html } from "@react-email/html";
-import { Img } from "@react-email/img";
 import { Preview } from "@react-email/preview";
-import { Row } from "@react-email/row";
 import { Section } from "@react-email/section";
 import { Text } from "@react-email/text";
-
 import * as React from "react";
-
 export const Email = ({ name }) => {
   const previewText = `bitprowler team`;
 
@@ -34,8 +16,6 @@ export const Email = ({ name }) => {
       <Preview>{previewText}</Preview>
       <Body style={main}>
         <Container style={container}>
-         
-
           <Section>
             <Text style={paragraph}>Hey {name} ,</Text>
             <Text style={paragraph}>
