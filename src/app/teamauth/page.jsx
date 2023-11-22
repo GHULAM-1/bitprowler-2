@@ -14,11 +14,11 @@ export default function Teamauth() {
 
   const handleClick = () => {
     const currentPassword = inputRef.current.value;
-    console.log(currentPassword);
-    changeMemberStatus();
+    
     console.log(isTeamMember);
     console.log("team main ho");
     if (currentPassword === "donkey") {
+      changeMemberStatus();
       router.push("/studio");
     } else {
       alert("password not correct try again!!! ");
@@ -39,8 +39,6 @@ export default function Teamauth() {
           submit
         </button>
       </div>
-
-     
     </>
   );
 }
