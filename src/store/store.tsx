@@ -5,8 +5,14 @@ export const useTogglingStore = create((set) => ({
   isNavOpen: false,
   currentFormState: "default",
   currentClientName: "",
+  isTeamMember: false,
+
   changeCurrentTheme: () =>
     set((state: any) => ({ isDarkTheme: !state.isDarkTheme })),
+
+  changeMemberStatus: () =>
+    set((state: any) => ({ isTeamMember: !state.isTeamMember })),
+
   toggleNav: () => set((state: any) => ({ isNavOpen: !state.isNavOpen })),
 
   changeCurrentPackage: (selectedPackage: string) =>
