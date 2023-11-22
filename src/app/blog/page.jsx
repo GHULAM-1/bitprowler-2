@@ -8,7 +8,7 @@ const BlogsPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await client.fetch(`*[_type == "post"][0]`, {
+        const result = await client.fetch(`*[_type == "post"]`, {
           cache: "no-store",
         });
         setData(result);
