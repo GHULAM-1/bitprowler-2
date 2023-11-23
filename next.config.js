@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  cacheBust: true,
-  disableManifest: true,
-};
+const nextConfig = {};
 
 module.exports = nextConfig;

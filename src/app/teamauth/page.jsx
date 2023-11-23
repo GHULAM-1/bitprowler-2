@@ -14,7 +14,7 @@ export default function Teamauth() {
 
   const handleClick = () => {
     const currentPassword = inputRef.current.value;
-    
+
     console.log(isTeamMember);
     console.log("team main ho");
     if (currentPassword === "donkey") {
@@ -27,17 +27,33 @@ export default function Teamauth() {
 
   return (
     <>
-      <div className="w-screen gap-[2rem] h-screen flex flex-col justify-center items-center">
-        <div className="flex gap-[1rem]">
-          <label htmlFor="password">Password : </label>
-          <input type="password" ref={inputRef} name="password" className="" />
+      <div className="w-screen gap-[2rem] h-screen  flex flex-col justify-center items-center ">
+        <div className="flex justify-center items-center flex-col gap-[2rem] ">
+          <div className="font-medium text-Mobile-Text TABLET:text-Tablet-Large-Text ">
+            BitProwler <span className="text-themeColor">Admin</span>{" "}
+            Authorization{" "}
+          </div>
+          <div className="flex TABLET:flex-row flex-col gap-[1rem] items-center TABLET:px-[1rem]">
+            <label
+              htmlFor="password"
+              className="font-medium TABLET:text-Tablet-Text"
+            >
+              Password :{" "}
+            </label>
+            <input
+              type="password"
+              ref={inputRef}
+              name="password"
+              className="py-[1rem] bg-transparent outline-none  font-extrabold TABLET:text-Tablet-Large-Text text-[1rem] border-b-[1px] border-b-gray-800 "
+            />
+          </div>
+          <button
+            onClick={handleClick}
+            className="font-medium bg-themeColor px-[2rem] py-[1rem]  rounded-[1rem]"
+          >
+            submit
+          </button>
         </div>
-        <button
-          onClick={handleClick}
-          className="bg-themeColor px-[2rem] py-[1rem] border-0 rounded-xl"
-        >
-          submit
-        </button>
       </div>
     </>
   );
