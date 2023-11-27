@@ -42,7 +42,7 @@
     "src/components/custom/transitionInput.tsx",
     "src/components/custom/submitButton.jsx",
     "src/components/email-template.jsx",
-    "src/app/blog/page.jsx"
+    "src/app/blog/page.tsx"
 , "src/app/teamauth/page.jsx"  ],
   "exclude": ["node_modules"]
 }

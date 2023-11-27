@@ -6,6 +6,11 @@ export const useTogglingStore = create((set) => ({
   currentFormState: "default",
   currentClientName: "",
   isTeamMember: false,
+  isSearchActive: false,
+  currentState: "Hot",
+
+  toggleSearchWindow: () =>
+    set((state: any) => ({ isSearchActive: !state.isSearchActive })),
 
   changeCurrentTheme: () =>
     set((state: any) => ({ isDarkTheme: !state.isDarkTheme })),
@@ -23,4 +28,6 @@ export const useTogglingStore = create((set) => ({
 
   changeCurrentClientName: (newName: string) =>
     set((state: any) => ({ currentClientName: newName })),
+  changeCurrentState: (newState: string) =>
+    set((state: any) => ({ currentState: newState })),
 }));

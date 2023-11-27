@@ -67,7 +67,7 @@ export default function WebDev() {
             secondWord={servicesPageAppContent.oneLinerSecond}
           ></ManifestoSection>
 
-            <CustomersSection></CustomersSection>
+          <CustomersSection></CustomersSection>
           <div className="hidden TABLET:flex">
             <ServicesPageDeliverables
               deliverablesData={servicesPageAppContent.deliverables}
@@ -79,7 +79,7 @@ export default function WebDev() {
               deliverables={servicesPageAppContent.deliverables}
             ></ServicesDeliverablesSection>
           </div>
-          <BigCTA></BigCTA>
+          <BigCTA>Let's Work Together</BigCTA>
           <LongBottom></LongBottom>
         </div>
       </div>

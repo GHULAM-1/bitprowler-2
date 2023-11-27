@@ -30,7 +30,7 @@ export default function AboutUsPage() {
             mainHeading="Why Us?"
           ></StagesSection>
           <TeamSection></TeamSection>
-          <BigCTA></BigCTA>
+          <BigCTA>Let's Work Together</BigCTA>
           <LongBottom></LongBottom>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={poppins.className}>
-      <body className="overflow-x-hidden text-[100%] relative z-0">
+      <body className="overflow-x-hidden  text-[100%] relative z-0">
         <ThemeProviderWrapper attribute="class" disableTransitionOnChange>
           <div className="hidden SMALL_LAPTOP:flex ">
             <BigNavBarV2></BigNavBarV2>

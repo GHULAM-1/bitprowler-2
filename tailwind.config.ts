@@ -4,7 +4,7 @@ module.exports = {
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx , jsx , js}",
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
@@ -62,6 +62,7 @@ module.exports = {
         "base-weight": "400",
       },
       colors: {
+        themeColorlight: "var(--themeColor-20)",
         themeColor: "var(--themeColor)",
         primaryBackgroundColor: "var(--primaryBackgroundColor)",
         secondaryBackgroundColor: "var(--secondaryBackgroundColor)",

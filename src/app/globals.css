@@ -42,9 +42,12 @@
     --primaryBackgroundColorDark: #0c0a09;
     --textSecondaryColorLight: #151515;
     --tertiaryBackgroundColorLight: #eaeaea;
+
+    --themeColor-20: "rgba(var(--themeColor), 0.2)";
   }
 
   .dark {
+    --themeColor-20: "rgba(var(--themeColor), 0.2)";
     --themeColor: #cc2c14;
     --primaryBackgroundColor: #0c0a09;
     --secondaryBackgroundColor: #242424;
