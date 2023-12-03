@@ -1,9 +1,7 @@
 export const blogMainPageQuerie = `*[_type == "post"]| order(publishedAt desc){
-  
-  
 "mainHeading":title ,
   "slug":slug.current ,
-  "bannerImage": bannerImage.asset._ref ,
+  "bannerImage": bannerImage.asset->url ,
   authorName,
   "tag":category[0],
   publishedAt,

@@ -1,7 +1,7 @@
 /**
  * This configuration is used to for the Sanity Studio that’s mounted on the `/app/studio/[[...index]]/page.jsx` route
  */
-
+import { codeInput } from "@sanity/code-input";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
@@ -22,6 +22,7 @@ export default defineConfig({
 
     visionTool({ defaultApiVersion: apiVersion }),
     vercelDeployTool(),
+    codeInput(),
   ],
   theme: myTheme,
 });

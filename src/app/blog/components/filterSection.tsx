@@ -61,32 +61,35 @@
 import { filterPills } from "../data/general";
 import { useState } from "react";
 import Pills, { PillsProps } from "@/components/custom/pills";
-
+import { useTogglingStore } from "@/store/store";
 type FilterSectionProps = {
   setSearchCategory: React.Dispatch<React.SetStateAction<string>>;
+  setSearchCategoryMainPage: React.Dispatch<React.SetStateAction<string>> ;
 };
 
 export default function FilterSection({
   setSearchCategory,
+  setSearchCategoryMainPage,
 }: FilterSectionProps) {
-  const [activeButton, setActiveButton] = useState<number | null>(0); // Set it initially to 0
+  const [activeButton, setActiveButton] = useState<number | null>(0);
+  const isSearchActive = useTogglingStore((state: any) => state.isSearchActive);
+
   const [intentMap, setIntentMap] = useState<Record<number, string>>({
-    0: "All", // Set the initial intent for the 0th index
+    0: "All",
   });
 
   const handleButtonClick = (buttonIndex: number, pill: string) => {
-    
     setActiveButton(buttonIndex);
     setSearchCategory(pill);
+    if (!isSearchActive) {
+      setSearchCategoryMainPage(pill);
+    }
 
-    // Update intent only for the clicked button
     setIntentMap((prevIntentMap) => {
       const newIntentMap = { ...prevIntentMap };
 
-      // Set the intent for the clicked button
       newIntentMap[buttonIndex] = pill.split(" ").join("");
 
-      // Clear intent for all other pills except the clicked button
       Object.keys(newIntentMap).forEach((key: any) => {
         if (parseInt(key) !== buttonIndex) {
           delete newIntentMap[key];

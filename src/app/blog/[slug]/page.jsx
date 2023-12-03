@@ -13,8 +13,17 @@ import LongBottom from "@/components/custom/longBottom";
 import BigCTA from "@/components/custom/bigCTA";
 import ShareSection from "./components/shareSection";
 import DateSection from "./components/dateSection";
-export default function IndividualBlog({ params }: any) {
-  const [data, setData] = useState<any | null>(null);
+import ReadNextSection from "./components/readNextSection";
+import Refractor from "react-refractor";
+import js from "refractor/lang/javascript";
+import typescript from "refractor/lang/typescript";
+import tsx from "refractor/lang/tsx";
+import CodeBlock from "./components/customCodeBlock";
+export default function IndividualBlog({ params }) {
+  Refractor.registerLanguage(js);
+  Refractor.registerLanguage(typescript);
+  Refractor.registerLanguage(tsx);
+  const [data, setData] = useState(null);
   console.log("slug in individual data", typeof params.slug, params.slug);
 
   useEffect(() => {
@@ -25,7 +34,8 @@ export default function IndividualBlog({ params }: any) {
   ...,
   "estimatedReadingTime": round(length(pt::text(body)) / 5 / 180),
   "authorImage":authorImage.asset->url,
-  "bannerImage":bannerImage.asset->url
+  "bannerImage":bannerImage.asset->url,
+  readNextArticles
 
 
 }`,
@@ -42,7 +52,21 @@ export default function IndividualBlog({ params }: any) {
     fetchData();
   }, []);
 
-  console.log("individualblog data", data);
+
+  const components = {
+    block: {
+      h2: ({ children }) => (
+        <h2 className="text-SMALL_LAPTOP-Heading text-themeColor">
+          {children}
+        </h2>
+      ),
+    },
+
+    types: {  
+      myCodeField: ({ value }) => <CodeBlock data={value.code}></CodeBlock>,
+    },
+  };
+
   if (data !== null && data !== undefined) {
     return (
       <>
@@ -65,10 +89,13 @@ export default function IndividualBlog({ params }: any) {
           </AuthorSection>
           <Divider intent="regular" className="mt-1"></Divider>
           <BannerImage imageUrl={data[0]?.bannerImage}></BannerImage>
-          <PortableText value={data[0]?.body} />
+          <PortableText value={data[0]?.body} components={components} />
           <Divider intent="regular" className="mt-1"></Divider>
           <DateSection date={data[0]?.publishedAt}></DateSection>
           <ShareSection></ShareSection>
+          <ReadNextSection
+            readNextSlugs={data[0]?.readNextArticles}
+          ></ReadNextSection>
           <BigCTA>Get to know us</BigCTA>
           <LongBottom></LongBottom>
         </div>

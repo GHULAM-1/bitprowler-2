@@ -101,6 +101,21 @@ const post = {
           type: "block",
         },
         { type: "image" },
+        {
+          type: "code",
+          name: "myCodeField",
+          title: "Code with all options",
+          _style: "code",
+          options: {
+            language: "javascript",
+            languageAlternatives: [
+              { title: "Javascript", value: "javascript" },
+              { title: "TypeScript", value: "typescript" },
+              { title: "tsx", value: "tsx" },
+            ],
+            withFilename: true,
+          },
+        },
       ],
     },
   ],

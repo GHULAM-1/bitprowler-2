@@ -46,7 +46,7 @@ export default function LongBottom() {
           </div>
           <div className="flex gap-[0.5rem] justify-end laptop_lg:gap-[1.5rem] desktop:gap-[2.5rem] items-center">
             <FacebookSVG className=" laptop_lg:h-[30px] laptop_lg:w-[30px]  dark:fill-white fill-black w-[20px] h-[20px] desktop:w-[60px] desktop:h-[60px]"></FacebookSVG>
-            <InstagramSVG className=" laptop_lg:h-[30px] laptop_lg:w-[30px] w-[20px] h-[20px] dark:fill-white fill-black desktop:w-[60px] desktop:h-[60px]"></InstagramSVG>
+            <InstagramSVG className="  laptop_lg:h-[30px] laptop_lg:w-[30px] w-[20px] h-[20px] dark:fill-white fill-black desktop:w-[60px] desktop:h-[60px]"></InstagramSVG>
             <LinkedinSVG className=" laptop_lg:h-[30px] laptop_lg:w-[30px] w-[20px] h-[20px] dark:fill-white fill-black desktop:w-[60px] desktop:h-[60px]"></LinkedinSVG>
             <FiverSVG className="w-[20px] h-[20px] laptop_lg:h-[30px] laptop_lg:w-[30px] dark:fill-white fill-black desktop:w-[60px] desktop:h-[60px]"></FiverSVG>
           </div>

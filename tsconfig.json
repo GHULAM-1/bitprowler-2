@@ -43,6 +43,6 @@
     "src/components/custom/submitButton.jsx",
     "src/components/email-template.jsx",
     "src/app/blog/page.tsx"
-, "src/app/teamauth/page.jsx"  ],
+, "src/app/teamauth/page.jsx", "src/app/blog/[slug]/page.jsx", "src/app/blog/[slug]/components/customCodeBlock.jsx"  ],
   "exclude": ["node_modules"]
 }

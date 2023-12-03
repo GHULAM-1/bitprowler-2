@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { client } from "../../lib/sanity";
 import BlogHeadingAndSearch from "./components/blogHeadingAndSearch";
 import BlogHeading from "./components/blogHeading";
@@ -13,10 +13,16 @@ import { useTogglingStore } from "@/store/store";
 import { mainPageDataT } from "../../../types";
 import HotAndFreshSectiion from "./components/hotAndFreshSection";
 import BlogGrid from "./components/blogGrid";
-
+import { ErrorBoundary } from "react-error-boundary";
+import LongBottom from "@/components/custom/longBottom";
+import BigCTA from "@/components/custom/bigCTA";
+import BlogLastSection from "./components/blogLastSection";
+import SeeMoreBtn from "./components/seeMoreBtn";
 const BlogsPage = () => {
   const [data, setData] = useState<mainPageDataT | null>(null);
   const [searchCategory, setSearchCategory] = useState("All");
+  const [searchCategoryMainPage, setSearchCategoryMainpage] =
+    useState<string>("All");
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -52,11 +58,23 @@ const BlogsPage = () => {
             <Search></Search>
           </BlogHeadingAndSearch>
           <BlogDescription></BlogDescription>
-          <FilterSection setSearchCategory={setSearchCategory}></FilterSection>
+          <FilterSection
+            setSearchCategory={setSearchCategory}
+            setSearchCategoryMainPage={setSearchCategoryMainpage} // <-- Fix here
+          ></FilterSection>
           <Divider intent="regular" className="mt-[0.75rem] "></Divider>
           <HotAndFreshSectiion></HotAndFreshSectiion>
-          <BlogGrid mainPageData={data}></BlogGrid>
+          {/* <ErrorBoundary fallback={<Error />}> */}
+          <BlogGrid
+            mainPageData={data}
+            searchCategory={searchCategoryMainPage}
+          ></BlogGrid>
+          {/* </ErrorBoundary> */}
+          <SeeMoreBtn></SeeMoreBtn>
+          <BlogLastSection></BlogLastSection>
+          <BigCTA> Get to know us</BigCTA>
         </div>
+        <LongBottom></LongBottom>
       </div>
     </>
   );

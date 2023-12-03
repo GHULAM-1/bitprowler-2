@@ -8,25 +8,14 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    // container: {
-    //   center: true,
-    //   padding: "2rem",
     screens: {
-      // tablet: "425px",
-      // laptop_sm: "768px",
-      // laptop_lg: "1024px",
-      // desktop: "1440px",
       TABLET: "700px",
       SMALL_LAPTOP: "1031px",
       LAPTOP: "1515px",
       LARGE_LAPTOP: "1925px",
     },
-    // },
-    extend: {
-      fontFamily: {
-        // Poppins: ["Poppins", "sans-serif"],
-      },
 
+    extend: {
       fontSize: {
         heading: "5.5rem",
         "sub-heading": "4rem",
@@ -72,40 +61,24 @@ module.exports = {
         primaryBackgroundColorDark: "var(--primaryBackgroundColorDark)",
         textSecondaryColorLight: "var(--textSecondaryColorLight)",
         tertiaryBackgroundColorLight: "var(--tertiaryBackgroundColorLight)",
-
-        // border: "hsl(var(--border))",
-        // input: "hsl(var(--input))",
-        // ring: "hsl(var(--ring))",
-        // background: "hsl(var(--background))",
-        // foreground: "hsl(var(--foreground))",
-        // primary: {
-        //   DEFAULT: "hsla(var(--primary))",
-        //   foreground: "hsl(var(--primary-foreground))",
-        // },
-        // secondary: {
-        //   DEFAULT: "hsl(var(--secondary))",
-        //   foreground: "hsl(var(--secondary-foreground))",
-        // },
-        // destructive: {
-        //   DEFAULT: "hsl(var(--destructive))",
-        //   foreground: "hsl(var(--destructive-foreground))",
-        // },
-        // muted: {
-        //   DEFAULT: "hsl(var(--muted))",
-        //   foreground: "hsl(var(--muted-foreground))",
-        // },
-        // accent: {
-        //   DEFAULT: "hsl(var(--accent))",
-        //   foreground: "hsl(var(--accent-foreground))",
-        // },
-        // popover: {
-        //   DEFAULT: "hsl(var(--popover))",
-        //   foreground: "hsl(var(--popover-foreground))",
-        // },
-        // card: {
-        //   DEFAULT: "hsl(var(--card))",
-        //   foreground: "hsl(var(--card-foreground))",
-        // },
+        marketingBg: "var(--marketingBg)",
+        securityBg: "var(--securityBg)",
+        appBg: "var(--appBg)",
+        seoBg: "var(--seoBg)",
+        webBg: "var(--webBg)",
+        uiBg: "var(--uiBg)",
+        marketingBorder: "var(--marketingBorder)",
+        securityBorder: "var(--securityBorder)",
+        appBorder: "var(--appBorder)",
+        seoBorder: "var(seoBorder)",
+        webBorder: "var(--webBorder)",
+        uiBorder: "var(--uiBorder)",
+        marketingText: "var(--marketingText)",
+        securityText: "var(--securityText)",
+        appText: "var(--appText)",
+        seoText: "var(--seoText)",
+        webText: "var(--webText)",
+        uiText: "var(--uiText)",
       },
 
       borderRadius: {

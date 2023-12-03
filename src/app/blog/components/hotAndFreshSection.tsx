@@ -1,6 +1,8 @@
 import Pills from "@/components/custom/pills";
 import { useState } from "react";
 import { useTogglingStore } from "@/store/store";
+import HotSVg from "../../../../public/hotSVG";
+import CupSVG from "../../../../public/cupSVG";
 export default function HotAndFreshSectiion() {
   const [isHot, toggleIsHot] = useState(false);
   const [isFresh, toggleIsFresh] = useState(false);
@@ -29,7 +31,7 @@ export default function HotAndFreshSectiion() {
   };
 
   return (
-    <>  
+    <>
       <div className="flex">
         <Pills
           intent={isHot ? "cta" : "highlight"}
@@ -37,16 +39,16 @@ export default function HotAndFreshSectiion() {
           id="1"
           onClick={() => handleClick("1")}
         >
+          <HotSVg className="w-[30px] h-[30px] text-textPrimaryColor fill-none "></HotSVg>
           <span>Hot</span>
-          <span>{"-->"}</span>
         </Pills>
         <Pills
           intent={isFresh ? "cta" : "highlight"}
           size="regularFilterPills"
           onClick={() => handleClick("2")}
         >
+          <CupSVG className="w-[30px] h-[30px] text-textPrimaryColor fill-none "></CupSVG>
           <span>Fresh</span>
-          <span>{"-->"}</span>
         </Pills>
       </div>
     </>

@@ -15,7 +15,7 @@ export default function TagAndReadTime({ tag, readTime }: TagAndReadTimeProps) {
         >
           {tag}
         </Pills>
-        <div className="text-SMALL_LAPTOP-L-Text">{readTime}</div>
+        <div className="text-SMALL_LAPTOP-L-Text">{readTime} min read</div>
       </div>
     </>
   );

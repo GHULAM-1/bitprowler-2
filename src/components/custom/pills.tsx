@@ -4,22 +4,23 @@ import React from "react";
 const pillsVariants = cva("flex flex-row justify-center items-center gap-4", {
   variants: {
     intent: {
-      cta: " bg-themeColor ",
+      cta: " bg-themeColor  ",
       highlight: "bg-secondaryBackgroundColor",
       stale: "bg-secondaryBackgroundColor",
       normal: "",
       tag: "",
       search: "",
       filterTag: "text-textPrimaryColor  hover:bg-secondaryBackgroundColor ,",
-      All: "bg-textPrimaryColor text-primaryBackgroundColor",
+      All: "bg-textPrimaryColor text-primaryBackgroundColor ",
       filterTagDropDown: "",
-      WebDev: "bg-red-500",
-      AppDev: "bg-green-500",
-      Seo: "bg-yellow-500",
-      Marketing: "bg-purple-400",
-      Security: "bg-lime-400",
-      UxDesign: "bg-orange-400",
-      
+      WebDev: "bg-webBg border-webBorder text-webText border-[1px]",
+      AppDev: "bg-appBg border-appBorder text-appText border-[1px]",
+      Seo: "bg-seoBg border-seoBorder text-seoText border-[1px]",
+      Marketing:
+        "bg-marketingBg border-marketingBorder text-marketingText border-[1px]",
+      Security:
+        "bg-securityBg border-securityBorder text-securityText border-[1px]",
+      UxDesign: "bg-uiBg border-uiBorder text-uiText border-[1px]",
     },
     size: {
       regularFilterPills:
