@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import BDarkSVG from "../../../../public/letters/bDarkSVG";
-import MDarkSVG from "../../../../public/letters/mDarkSVG";
-import GDarkSVG from "../../../../public/letters/gDarkSVG";
+import BDarkSVG from "../../../public/letters/bDarkSVG";
+import MDarkSVG from "../../../public/letters/mDarkSVG";
+import GDarkSVG from "../../../public/letters/gDarkSVG";
 
-import HoverButton from "@/components/custom/hoverButton";
+import HoverButton from "@/components/ui/hoverButton";
 import { useTogglingStore } from "@/store/store";
 type PackagesCardProps = {
   name: string;

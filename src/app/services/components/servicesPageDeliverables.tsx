@@ -1,4 +1,4 @@
-import ServicesPills from "../../../components/custom/servicesPills";
+import ServicesPills from "../../../components/ui/servicesPills";
 export default function ServicesPageDeliverables({ deliverablesData }: any) {
   return (
     <>

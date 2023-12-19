@@ -1,6 +1,9 @@
 import SearchModal from "./searchModal";
 import { useTogglingStore } from "@/store/store";
 import { mainPageDataT } from "../../../../types";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+
 type blogHeadingProps = {
   mainPageData: mainPageDataT | null;
 };
@@ -19,11 +22,13 @@ export default function BlogHeading({ mainPageData }: blogHeadingProps) {
     }
   };
 
+  const Blog = "Blog";
+
   return (
     <>
       <div onClick={handleClick}>
         <div className="font-medium text-Mobile-L-Head TABLET:text-Tablet-Head TABLET:font-normal SMALL_LAPTOP:text-SMALL_LAPTOP-Heading  ">
-          Blog
+          {Blog || <Skeleton></Skeleton>}
         </div>
         <div className="flex TABLET:hidden">
           {isSearchActive === true ? (

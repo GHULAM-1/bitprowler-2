@@ -35,11 +35,14 @@ export default function SearchBox({ mainPageData }: searchBoxProps) {
   return (
     <>
       <div
-        className="w-full h-[400px] TABLET:w-[800px] TABLET:h-[602px] dark:bg-[#242424] bg-[#DBDBDB]  TABLET:mx-[1rem]  "
+        className="w-full  TABLET:w-[800px] TABLET:h-[602px] dark:bg-[#242424] bg-[#DBDBDB]  TABLET:mx-[1rem] TABLET:px-12 TABLET:py-4 px-8 py-2 TABLET:rounded-2xl"
         onClick={handleClick}
       >
         <ActiveSearch setSearchString={setSearchString}></ActiveSearch>
-        <FilterSection setSearchCategory={setSearchCategory}></FilterSection>
+        <FilterSection
+          setSearchCategory={setSearchCategory}
+          size="blogTags"
+        ></FilterSection>
         <Divider intent="dropDown" className="mt-[0.75rem]"></Divider>
         <SearchResultBox
           searchCategory={searchCategory}

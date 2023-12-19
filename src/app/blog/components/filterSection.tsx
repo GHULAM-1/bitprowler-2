@@ -60,16 +60,18 @@
 
 import { filterPills } from "../data/general";
 import { useState } from "react";
-import Pills, { PillsProps } from "@/components/custom/pills";
+import Pills, { PillsProps } from "@/components/ui/pills";
 import { useTogglingStore } from "@/store/store";
 type FilterSectionProps = {
   setSearchCategory: React.Dispatch<React.SetStateAction<string>>;
-  setSearchCategoryMainPage: React.Dispatch<React.SetStateAction<string>> ;
+  setSearchCategoryMainPage: React.Dispatch<React.SetStateAction<string>>;
+  size?: string;
 };
 
 export default function FilterSection({
   setSearchCategory,
   setSearchCategoryMainPage,
+  size,
 }: FilterSectionProps) {
   const [activeButton, setActiveButton] = useState<number | null>(0);
   const isSearchActive = useTogglingStore((state: any) => state.isSearchActive);
@@ -106,7 +108,7 @@ export default function FilterSection({
         {filterPills.map((pill, index) => (
           <Pills
             intent={(intentMap[index] as PillsProps["intent"]) || "filterTag"}
-            size="regularFilterPills"
+            size={(size as PillsProps["size"]) || "regularFilterPills"}
             name={pill}
             key={index}
             onClick={() => handleButtonClick(index, pill)}

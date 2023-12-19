@@ -1,7 +1,7 @@
 "use server";
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_CONNECTION_STRING);
-import Email from "./components/email-template";
+import Email from "./components/home/email-template";
 export async function formSubmission(currentState, formData) {
   const email = formData.get("email");
   console.log(email);

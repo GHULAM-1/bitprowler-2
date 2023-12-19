@@ -3,11 +3,11 @@ import ServicesPageExplanation from "../../components/servicesPageExplanation";
 import ServicesPageDeliverables from "../../components/servicesPageDeliverables";
 import ServicesPageWebHero from "../../components/servicesPageWebHero";
 import WebDarkSVG from "../../../../../public/servicesSectionImages/webDarkSVG";
-import DotHeadings from "@/components/custom/dotHeadings";
-import LongBottom from "@/components/custom/longBottom";
+import DotHeadings from "@/components/ui/dotHeadings";
+import LongBottom from "@/components/ui/longBottom";
 import { useTogglingStore } from "@/store/store";
 
-import BigCTA from "@/components/custom/bigCTA";
+import BigCTA from "@/components/ui/bigCTA";
 import ServicesPageHeroMobile from "../../components/servicesPageHeroMobile";
 import ServicesWhySection from "../../components/servicesWhySection";
 import StagesSection from "@/app/aboutus/components/stagesSection";

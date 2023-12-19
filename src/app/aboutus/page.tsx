@@ -4,8 +4,8 @@ import { pageContent } from "./data/pageContent";
 import ManifestoSection from "./components/manifestoSection";
 import StagesSection from "./components/stagesSection";
 import TeamSection from "./components/teamSection";
-import LongBottom from "@/components/custom/longBottom";
-import BigCTA from "@/components/custom/bigCTA";
+import LongBottom from "@/components/ui/longBottom";
+import BigCTA from "@/components/ui/bigCTA";
 import { useTogglingStore } from "@/store/store";
 
 export default function AboutUsPage() {

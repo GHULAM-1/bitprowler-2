@@ -6,7 +6,15 @@ type BannerImageProps = {
 export default function BannerImage({ imageUrl }: BannerImageProps) {
   return (
     <>
-      <Image src={imageUrl} height={500} width={500} alt="BannerImage"></Image>
+      <Image
+        src={imageUrl}
+        height={100}
+        width={500}
+        alt="BannerImage"
+        className="w-full my-12"
+        objectFit="cover"
+        objectPosition="center"
+      ></Image> 
     </>
   );
 }

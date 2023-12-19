@@ -8,7 +8,9 @@ export default function DateSection({ date }: DateSectionProps) {
   const dateNumbers = extractingNumbersFromDate(date);
   return (
     <>
-      <div>Posted: {`${dateNumbers[2]} ${month} ${dateNumbers[0 ]}`}</div>
+      <div className="text-Mobile-S-Text TABLET:text-Mobile-Text mt-4   ">
+        Posted: {`${dateNumbers[2]} ${month} ${dateNumbers[0]}`}
+      </div>
     </>
   );
 }

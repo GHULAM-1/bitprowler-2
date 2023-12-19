@@ -1,6 +1,6 @@
 "use client";
-import ContactusSection from "../(components)/contactusSection/contactusSection";
-import LongBottom from "@/components/custom/longBottom";
+import ContactusSection from "../../components/home/contactusSection";
+import LongBottom from "@/components/ui/longBottom";
 import { useTogglingStore } from "@/store/store";
 
 export default function ContactPage() {

@@ -6,7 +6,9 @@ type AuthorSectionProps = {
 export default function AuthorSection({ children }: AuthorSectionProps) {
   return (
     <>
-      <div className="flex justify-between w-full">{children}</div>
+      <div className="flex justify-between w-full items-center  py-3">
+        {children}
+      </div>
     </>
   );
 }

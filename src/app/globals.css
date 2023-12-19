@@ -57,7 +57,25 @@
     --seoBg: #5d3902;
     --seoText: #ffdba7;
     --seoBorder: #e88d07;
+    --appBg: #1c013e;
+    --appText: #dbc1fd;
+    --appBorder: #6f06f6;
   }
+}
+
+::-webkit-scrollbar {
+  @apply w-[6px];
+}
+::-webkit-scrollbar {
+  @apply h-[6px];
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-none;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-400 rounded-[100px] bg-opacity-50;
 }
 
 [data-theme="dark"] [data-hide-on-theme="dark"],
@@ -192,6 +210,10 @@
   filter: blur(5px);
   position: relative;
 }
+pre {
+  width: 100% !important;
+  /* background-color: #111827 !important ; */
+}
 
 /*
  * Synthwave '84 Theme originally by Robb Owen [@Robb0wen] for Visual Studio Code
@@ -200,13 +222,13 @@
  * Ported for PrismJS by Marc Backes [@themarcba]
  */
 
-code[class*="language-"],
+/* code[class*="language-"],
 pre[class*="language-"] {
   color: #f92aad;
-  text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
-  /* background: none; */
-  /* font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; */
-  font-size: 1em;
+  text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3; */
+/* background: none; */
+/* font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; */
+/* font-size: 1em;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -217,30 +239,31 @@ pre[class*="language-"] {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
+  
 
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-}
+} */
 
 /* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  /* margin: 0.5em 0; */
-  overflow: auto;
-}
+/* pre[class*="language-"] { */
+/* padding: 1em; */
+/* margin: 0.5em 0; */
+/* overflow: auto; */
+/* } */
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  /* background-color: transparent !important;
+/* :not(pre) > code[class*="language-"], */
+/* pre[class*="language-"] { */
+/* background-color: transparent !important;
   background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
   background-color: var(--primaryBackgroundColor) ; */
-  @apply bg-black;
-}
+/* @apply bg-black; */
+/* } */
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+/* :not(pre) > code[class*="language-"] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
@@ -336,4 +359,14 @@ pre[class*="language-"] {
 
 .token.inserted {
   color: green;
+} */
+.progress-bar {
+  position: fixed;
+  top: 10;
+  left: 0;
+  right: 0;
+  background: var(--themeColor);
+
+  z-index: 100;
+  height: 5px;
 }

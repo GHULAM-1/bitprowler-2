@@ -14,13 +14,16 @@ import { mainPageDataT } from "../../../types";
 import HotAndFreshSectiion from "./components/hotAndFreshSection";
 import BlogGrid from "./components/blogGrid";
 import { ErrorBoundary } from "react-error-boundary";
-import LongBottom from "@/components/custom/longBottom";
-import BigCTA from "@/components/custom/bigCTA";
+import LongBottom from "@/components/ui/longBottom";
+import BigCTA from "@/components/ui/bigCTA";
 import BlogLastSection from "./components/blogLastSection";
 import SeeMoreBtn from "./components/seeMoreBtn";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 const BlogsPage = () => {
   const [data, setData] = useState<mainPageDataT | null>(null);
   const [searchCategory, setSearchCategory] = useState("All");
+  const [mainData, setMainData] = useState(null);
   const [searchCategoryMainPage, setSearchCategoryMainpage] =
     useState<string>("All");
   useEffect(() => {
@@ -48,7 +51,7 @@ const BlogsPage = () => {
 
   return (
     <>
-      <div className=" overflow-y-visible absolute z-0 transition-all ease-linear w-screen ">
+      <div className=" overflow-y-visible absolute z-0 transition-all ease-linear w-full ">
         <div className="hidden TABLET:flex">
           <SearchModal mainPageData={data}></SearchModal>
         </div>
@@ -60,17 +63,18 @@ const BlogsPage = () => {
           <BlogDescription></BlogDescription>
           <FilterSection
             setSearchCategory={setSearchCategory}
-            setSearchCategoryMainPage={setSearchCategoryMainpage} // <-- Fix here
+            setSearchCategoryMainPage={setSearchCategoryMainpage}
           ></FilterSection>
           <Divider intent="regular" className="mt-[0.75rem] "></Divider>
           <HotAndFreshSectiion></HotAndFreshSectiion>
-          {/* <ErrorBoundary fallback={<Error />}> */}
           <BlogGrid
             mainPageData={data}
             searchCategory={searchCategoryMainPage}
           ></BlogGrid>
-          {/* </ErrorBoundary> */}
-          <SeeMoreBtn></SeeMoreBtn>
+
+          <div className="flex justify-center w-full mt-14">
+            <SeeMoreBtn></SeeMoreBtn>
+          </div>
           <BlogLastSection></BlogLastSection>
           <BigCTA> Get to know us</BigCTA>
         </div>

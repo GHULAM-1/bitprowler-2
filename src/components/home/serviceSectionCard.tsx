@@ -1,11 +1,11 @@
 import Link from "next/link";
-import WebDarkSVG from "../../../../public/servicesSectionImages/webDarkSVG";
-import AppDarkSVG from "../../../../public/servicesSectionImages/appDarkSVG";
-import SeoDarkSVG from "../../../../public/servicesSectionImages/seoDarkSVG";
-import SecurityDarkSVG from "../../../../public/servicesSectionImages/securityDarkSVG";
-import MarketingDarkSVG from "../../../../public/servicesSectionImages/marketingDarkSVG";
-import UxDarkSVG from "../../../../public/servicesSectionImages/uxDarkSVG";
-import ArrowLightSVG from "../../../../public/servicesSectionImages/arrowLightSVG";
+import WebDarkSVG from "../../../public/servicesSectionImages/webDarkSVG";
+import AppDarkSVG from "../../../public/servicesSectionImages/appDarkSVG";
+import SeoDarkSVG from "../../../public/servicesSectionImages/seoDarkSVG";
+import SecurityDarkSVG from "../../../public/servicesSectionImages/securityDarkSVG";
+import MarketingDarkSVG from "../../../public/servicesSectionImages/marketingDarkSVG";
+import UxDarkSVG from "../../../public/servicesSectionImages/uxDarkSVG";
+import ArrowLightSVG from "../../../public/servicesSectionImages/arrowLightSVG";
 
 type ServiceCardProps = {
   mainHeading: string;

@@ -9,7 +9,7 @@ export default function BigCTA({ children }: BigCTAProps) {
     <>
       <Link
         href="/contactus"
-        className="w-full flex items-center justify-center  cursor-pointer TABLET:mt-[20rem]"
+        className="w-full flex items-center justify-center  cursor-pointer "
       >
         <button className=" group  bg-themeColor SMALL_LAPTOP:bg-transparent SMALL_LAPTOP:border-2 SMALL_LAPTOP:border-themeColor SMALL_LAPTOP:hover:bg-themeColor SMALL_LAPTOP:transition-all SMALL_LAPTOP:ease-linear w-[98%]  flex py-[8.14%] SMALL_LAPTOP:py-[4.8rem] justify-center items-center TABLET:justify-start TABLET:pl-[3rem]  gap-[1.5rem] rounded-[0.5rem] mb-[0.5rem] ">
           <div className=" group-hover:text-white text-Mobile-S-Heading  text-textPrimaryColor font-medium TABLET:text-Tablet-S-Heading SMALL_LAPTOP:text-SMALL_LAPTOP-M-Subheading LAPTOP:SMALL_LAPTOP:text-SMALL_LAPTOP-Heading ">

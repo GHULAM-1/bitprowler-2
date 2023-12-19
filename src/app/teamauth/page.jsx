@@ -31,14 +31,14 @@ export default function Teamauth() {
         <div className="flex justify-center items-center flex-col gap-[2rem] ">
           <div className="font-medium text-Mobile-Text TABLET:text-Tablet-Large-Text ">
             BitProwler <span className="text-themeColor">Admin</span>{" "}
-            Authorization{" "}
+            Authorization
           </div>
           <div className="flex TABLET:flex-row flex-col gap-[1rem] items-center TABLET:px-[1rem]">
             <label
               htmlFor="password"
               className="font-medium TABLET:text-Tablet-Text"
             >
-              Password :{" "}
+              Password :
             </label>
             <input
               type="password"

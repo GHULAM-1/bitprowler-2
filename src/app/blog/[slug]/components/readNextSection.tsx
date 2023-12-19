@@ -5,17 +5,25 @@ type ReadNextSectionProps = {
 export default function ReadNextSection({
   readNextSlugs,
 }: ReadNextSectionProps) {
-  console.log("in the link section", readNextSlugs);
-  return (
-    <>
-      <div>
-        <div>Related Articles</div>
+  if (readNextSlugs.length !== 0) {
+    return (
+      <>
         <div>
-          {readNextSlugs?.map((item) => {
-            return <ReadNextLinkCard readNextSlug={item}></ReadNextLinkCard>;
-          })}
+          <div className="text-Tablet-Large-Text TABLET:text-Tablet-Head">
+            Related Articles
+          </div>
+          <div className="grid grid-cols-1 TABLET:grid-cols-2 gap-y-8 TABLET:gap-x-28 TABLET:mt-12 TABLET:mb-20 mt-8 mb-12 ">
+            {readNextSlugs?.map((item, i) => {
+              return (
+                <ReadNextLinkCard
+                  readNextSlug={item}
+                  key={i}
+                ></ReadNextLinkCard>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
+  }
 }

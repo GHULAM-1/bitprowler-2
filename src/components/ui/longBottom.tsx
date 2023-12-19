@@ -27,7 +27,7 @@ export default function LongBottom() {
   return (
     <>
       {/* mobile */}
-      <div className="flex flex-col w-full justify-center items-center TABLET:hidden ">
+      <div className="flex flex-col w-full justify-center items-center TABLET:hidden  ">
         <div className="flex  items-center p-[1rem] justify-between bg-[#EAEAEA] dark:bg-[#151515] text-black dark:text-white w-[99%] rounded-t-[0.5rem] ">
           <Image
             // src={

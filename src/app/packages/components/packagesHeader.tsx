@@ -1,4 +1,4 @@
-import DotHeadings from "@/components/custom/dotHeadings";
+import DotHeadings from "@/components/ui/dotHeadings";
 import BackArrowSVG from "../../../../public/backArrowSVG";
 type PackagesHeaderProps = {
   name: string;

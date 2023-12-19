@@ -1,21 +1,23 @@
 import * as React from "react";
 
-function FacebookSVG(props) {
+function CopySVG(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+    
       viewBox="0 0 24 24"
       fill="current"
       stroke="currentColor"
-      strokeWidth={1}
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-facebook"
+      className="lucide lucide-copy"
       {...props}
     >
-      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+      <rect width={14} height={14} x={8} y={8} rx={2} ry={2} />
+      <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
     </svg>
   );
 }
 
-export default FacebookSVG;
+export default CopySVG;

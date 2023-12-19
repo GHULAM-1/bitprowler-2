@@ -1,10 +1,10 @@
-import ThemeProviderWrapper from "@/components/Providers/ThemeProvider";
+import ThemeProviderWrapper from "../providers/ThemeProvider"
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import NavbarV2 from "@/components/custom/NavbarV2";
+import NavbarV2 from "@/components/ui/NavbarV2";
 import { Analytics } from "@vercel/analytics/react";
-import BigNavBarV2 from "@/components/custom/bigNavBarV2";
+import BigNavBarV2 from "@/components/ui/bigNavBarV2";
 
 const poppins: any = Poppins({
   weight: ["400", "500", "600"],
@@ -16,8 +16,6 @@ export const metadata: Metadata = {
   description: "bit prowler agency home page",
 };
 
-console.log("font!!!!!", poppins.className);
-
 export default function RootLayout({
   children,
 }: {
@@ -25,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={poppins.className}>
-      <body className="overflow-x-hidden  text-[100%] relative z-0 ">
+      <body className="overflow-x-hidden  text-[100%] relative z-0 selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
         <ThemeProviderWrapper attribute="class" disableTransitionOnChange>
           <div className="hidden SMALL_LAPTOP:flex ">
             <BigNavBarV2></BigNavBarV2>
@@ -33,6 +31,7 @@ export default function RootLayout({
           <div className="SMALL_LAPTOP:hidden ">
             <NavbarV2></NavbarV2>
           </div>
+
           {children}
           <Analytics></Analytics>
         </ThemeProviderWrapper>

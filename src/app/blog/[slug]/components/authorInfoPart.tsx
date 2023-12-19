@@ -8,14 +8,23 @@ export default function Authorinfo({ authorName, authorImage }: AuthorInfo) {
   console.log("checking author Image", authorImage);
   return (
     <>
-      <div className="flex gap-4">
-        <Image
-          src={authorImage}
-          height={50}
-          width={50}
-          alt="BannerImage"
-        ></Image>
-        <div>{authorName}</div>
+      <div className="flex gap-4 items-center">
+        <div
+          className="w-[44px] h-[44px]  relative  rounded-full overflow-hidden "
+          title={authorName}
+        >
+          <Image
+            src={authorImage}
+            layout="fill"
+            alt="AuthorImage"
+            objectFit="cover"
+            objectPosition="top center"
+            className="rounded-full aspect-square bg-themeColor"
+          />
+        </div>
+        <div className="text-Mobile-Text TABLET:text-SMALL_LAPTOP-Text">
+          By {authorName}
+        </div>
       </div>
     </>
   );
