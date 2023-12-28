@@ -5,7 +5,6 @@ import { codeInput } from "@sanity/code-input";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
-import { vercelDeployTool } from "sanity-plugin-vercel-deploy";
 import { myTheme } from "./sanity/sanityTheme";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId } from "./sanity/env";
@@ -23,7 +22,7 @@ export default defineConfig({
     deskTool(),
 
     visionTool({ defaultApiVersion: apiVersion }),
-    vercelDeployTool(),
+  
     codeInput(),
   ],
   theme: myTheme,
