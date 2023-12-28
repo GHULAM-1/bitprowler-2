@@ -1,4 +1,4 @@
-import StagesCard from "@/app/aboutus/components/stagesCard";
+import StagesCard from "../aboutus/stagesCard";
 type StagesSectionProps = {
   stages: any[];
 };
@@ -12,13 +12,13 @@ export default function ServicesAproachSection({ stages }: StagesSectionProps) {
         </div>
         <div className="SMALL_LAPTOP:flex SMALL_LAPTOP:w-full  SMALL_LAPTOP:justify-end ">
           <div className="w-full gap-y-[1rem] TABLET:gap-[2.5rem] grid grid-cols-1   SMALL_LAPTOP:w-[70%]  SMALL_LAPTOP:justify-items-center  ">
-            {stages.map((stage) => {
+            {stages.map((stage, index) => {
               return (
                 <StagesCard
                   mainHeading={stage.heading}
                   description={stage.brief}
-                  id={stage.id}
                   key={stage.id}
+                  icon={stage.icon}
                 ></StagesCard>
               );
             })}

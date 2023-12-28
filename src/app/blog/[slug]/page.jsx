@@ -15,18 +15,19 @@ import CodeBlock from "@/components/post/customCodeBlock";
 import Link from "next/link";
 import { SanityImage } from "../../../../sanity/sanityImage";
 import { sanityFetchSinglePost } from "@/utils/sanityFetch";
-import { Metadata, ResolvingMetadata } from "next";
 
-// export async function generateMetadata() {
-//   const data = await sanityFetchSinglePost({ slug: params.slug });
-
-//   return {
-//     title: data[0]?.title,
-//     openGraph: {
-//       images: data[0]?.bannerImage,
-//     },
-//   };
-// }
+export async function generateMetadata({ params }) {
+  console.log(params);
+  console.log("in the metadata function ");
+  const data = await sanityFetchSinglePost({ slug: params.slug });
+  console.log(data[0]?.title);
+  return {
+    title: data[0]?.title,
+    openGraph: {
+      images: data[0]?.bannerImage,
+    },
+  };
+}
 
 export default async function IndividualBlog({ params }) {
   const data = await sanityFetchSinglePost({ slug: params.slug });

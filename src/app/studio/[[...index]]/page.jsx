@@ -1,5 +1,5 @@
 "use client";
-import { useTogglingStore } from "@/store/store";
+import { useTogglingStore } from "@/stores/togglingStore";
 import { NextStudio } from "next-sanity/studio";
 import config from "../../../../sanity.config";
 import { redirect } from "next/navigation";

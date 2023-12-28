@@ -1,5 +1,5 @@
 "use client";
-import { useTogglingStore } from "@/store/store";
+import { useTogglingStore } from "@/stores/togglingStore";
 // import { redirect } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";

@@ -5,7 +5,9 @@ import StagesSection from "@/components/aboutus/stagesSection";
 import TeamSection from "@/components/aboutus/teamSection";
 import Footer from "@/components/ui/footer";
 import CTASection from "@/components/ui/CTASection";
-
+export const metadata = {
+  title: "About",
+};
 export default function AboutUsPage() {
   return (
     <>

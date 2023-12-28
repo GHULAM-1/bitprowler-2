@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useTogglingStore } from "@/store/store";
+import { useTogglingStore } from "@/stores/togglingStore";
 export default function NavMobileImage() {
   const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
   return (

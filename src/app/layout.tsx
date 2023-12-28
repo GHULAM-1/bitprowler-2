@@ -12,9 +12,13 @@ const poppins: any = Poppins({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Home",
-  description: "bit prowler agency home page",
+
+export const metadata = {
+  metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
+  title: {
+    template: "%s | bitprowler",
+    default: "bitprowler",
+  },
 };
 
 export default function RootLayout({
