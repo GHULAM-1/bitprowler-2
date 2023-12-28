@@ -1,0 +1,406 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --themeColor: #cc2c14;
+    --primaryBackgroundColor: #f3f5f6;
+    --secondaryBackgroundColor: #dbdbdb;
+    --tertiaryBackgroundColor: #eaeaea;
+    --textPrimaryColor: #0c0a09;
+    --textSecondaryColor: #151515;
+    --primaryBackgroundColorDark: #0c0a09;
+    --textSecondaryColorLight: #151515;
+    --tertiaryBackgroundColorLight: #eaeaea;
+    --themeColor-20: "rgba(var(--themeColor), 0.2)";
+    --marketingBg: #d44105;
+    --marketingBorder: #d44105;
+    --securityBg: #800000;
+    --securityBorder: #800000;
+    --webBg: #0a753e;
+    --webBorder: #0a753e;
+    --appBg: #6f06f6;
+    --appBorder: #6f06f6;
+    --seoBg: #e88d07;
+    --seoBorder: #e88d07;
+    --uiBg: #005abb;
+    --uiBorder: #005abb;
+    --uiText: #f3f5f6;
+    --webText: #f3f5f6;
+    --appText: #f3f5f6;
+    --marketingText: #f3f5f6;
+    --seoText: #f3f5f6;
+    --securityText: #f3f5f6;
+  }
+
+  .dark {
+    --themeColor-20: "rgba(var(--themeColor), 0.2)";
+    --themeColor: #cc2c14;
+    --primaryBackgroundColor: #0c0a09;
+    --secondaryBackgroundColor: #242424;
+    --tertiaryBackgroundColor: #151515;
+    --textPrimaryColor: #f3f5f6;
+    --textSecondaryColor: #dbdbdb;
+    --marketingBg: #551a02;
+    --marketingText: #ffbfa6;
+    --marketingBorder: #d44105;
+    --securityBg: #400000;
+    --securityText: #ffcccc;
+    --securityBorder: #800000;
+    --webBg: #042f19;
+    --webText: #96ffc9;
+    --webBorder: #0a753e;
+    --uiBg: #011a34;
+    --uiText: #abd3ff;
+    --uiBorder: #005abb;
+    --seoBg: #5d3902;
+    --seoText: #ffdba7;
+    --seoBorder: #e88d07;
+    --appBg: #1c013e;
+    --appText: #dbc1fd;
+    --appBorder: #6f06f6;
+  }
+}
+
+::-webkit-scrollbar {
+  @apply w-[6px];
+}
+::-webkit-scrollbar {
+  @apply h-[6px];
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-none;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-400 rounded-[100px] bg-opacity-50;
+}
+
+[data-theme="dark"] [data-hide-on-theme="dark"],
+[data-theme="light"] [data-hide-on-theme="light"] {
+  display: none;
+}
+
+.s {
+  color: red;
+  fill: green;
+  height: 100px;
+  width: 100px;
+  stroke: peru;
+}
+
+.myElement {
+  color: red;
+  filter: invert(1);
+}
+
+.clamp-48px {
+  font-size: clamp(1rem, 4.739vw, 10rem);
+}
+.clamp-width-48px {
+  width: clamp(1rem, 1vw, 10rem);
+}
+.clamp-height-48px {
+  height: clamp(1rem, 1vw, 10rem);
+}
+.clamp-hero2-main-heading {
+  font-size: clamp(2rem, 4.583vw, 10rem);
+}
+.clamp-service-main-heading {
+  font-size: clamp(1.5rem, 2.083vw, 10rem);
+}
+
+.clamp-service-section-main-heading {
+  font-size: clamp(3rem, 4.583vw, 10rem);
+}
+
+.clamp-package-section-description {
+  font-size: clamp(0.8rem, 1.667vw, 7rem);
+}
+
+.clamp-CTASection {
+  font-size: clamp(1rem, 4.583vw, 15rem);
+}
+
+.clamp-CTASection-width {
+  width: clamp(3.555rem, 7.813vw, 15rem);
+}
+
+.clamp-footer-logo {
+  width: clamp(8.555rem, 20.813vw, 30rem);
+}
+
+.clamp-footer-icons {
+  width: clamp(1.555rem, 5.813vw, 15rem);
+  width: clamp(1.555rem, 3.813vw, 10rem);
+}
+
+.clamp-packages-page-mainHeading {
+  font-size: clamp(1rem, 3.333vw, 10rem);
+}
+.clamp-services-page-mainHeading {
+  font-size: clamp(1rem, 4.583vw, 10rem);
+}
+
+.clamp-dot {
+  width: clamp(0.3rem, 1.25vw, 5rem);
+  height: clamp(0.3rem, 1.25vw, 5rem);
+}
+.clamp-arrow {
+  width: clamp(0.75rem, 2.1875vw, 5rem);
+}
+
+.custom-color {
+  color: red;
+}
+
+.clamp-3rem {
+  font-size: clamp(1rem, 2vw, 10rem);
+}
+
+.clamp-900px {
+  width: clamp(20rem, 46.875vw, 70rem);
+  height: clamp(20rem, 46.875vw, 70rem);
+}
+
+@layer components {
+  .gradient-background {
+    background: linear-gradient(
+      71deg,
+      rgba(255, 97, 33, 0.7) 10.66%,
+      rgba(204, 43, 20, 0.7) 26.32%,
+      rgba(21, 21, 21, 0.7) 81.63%
+    );
+
+    backdrop-filter: blur(6px);
+  }
+}
+
+@layer components {
+  .gradient-background-lightMode {
+    background: linear-gradient(
+      71deg,
+      rgba(255, 97, 33, 0.7) 10.66%,
+      rgba(204, 43, 20, 0.7) 26.32%,
+      rgba(234, 234, 234, 0.7) 81.63%
+    );
+  }
+}
+
+@layer components {
+  .gradient-background-lightMode {
+    background: linear-gradient(
+      71deg,
+      rgba(255, 97, 33, 0.7) 10.66%,
+      rgba(204, 43, 20, 0.7) 26.32%,
+      rgba(234, 234, 234, 0.7) 81.63%
+    );
+  }
+}
+@layer components {
+  .topSectionLightGradient {
+    @apply w-[75%] h-[50%]  TABLET:w-[520px] TABLET:h-[520px] bg-gradient-to-r from-orange-500 via-red-600 to-gray-200 rounded-full TABLET:blur-[140px] blur-[120px]  absolute z-0 left-0;
+  }
+}
+
+@layer components {
+  .topSectionDarkGradient {
+    @apply w-[75%] h-[50%]  TABLET:w-[520px] TABLET:h-[520px]  TABLET:blur-[150px] blur-[140px] absolute z-0 left-0  bg-gradient-to-r from-orange-500 via-red-600 to-neutral-900 rounded-full;
+  }
+}
+
+.service-hero-light-gradient {
+  background: linear-gradient(
+    71deg,
+    #eb5d48 10.66%,
+    #cc2b14 26.32%,
+    #eaeaea 81.63%
+  );
+}
+
+.service-hero-dark-gradient {
+  background: var(
+    --BitProwler2-dark,
+    linear-gradient(71deg, #eb5d48 10.66%, #cc2b14 26.32%, #151515 81.63%)
+  );
+}
+
+.gradient-background-lightMode {
+  background: linear-gradient(
+    71deg,
+    rgba(255, 97, 33, 0.7) 10.66%,
+    rgba(204, 43, 20, 0.7) 26.32%,
+    rgba(234, 234, 234, 0.7) 81.63%
+  );
+}
+
+.blur-background {
+  backdrop-filter: blur(10px);
+}
+
+.image-container {
+  filter: blur(5px);
+  position: relative;
+}
+pre {
+  width: 100% !important;
+  /* background-color: #111827 !important ; */
+}
+
+/*
+ * Synthwave '84 Theme originally by Robb Owen [@Robb0wen] for Visual Studio Code
+ * Demo: https://marc.dev/demo/prism-synthwave84
+ *
+ * Ported for PrismJS by Marc Backes [@themarcba]
+ */
+
+/* code[class*="language-"],
+pre[class*="language-"] {
+  color: #f92aad;
+  text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3; */
+/* background: none; */
+/* font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; */
+/* font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+} */
+
+/* Code blocks */
+/* pre[class*="language-"] { */
+/* padding: 1em; */
+/* margin: 0.5em 0; */
+/* overflow: auto; */
+/* } */
+
+/* :not(pre) > code[class*="language-"], */
+/* pre[class*="language-"] { */
+/* background-color: transparent !important;
+  background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
+  background-color: var(--primaryBackgroundColor) ; */
+/* @apply bg-black; */
+/* } */
+
+/* Inline code */
+/* :not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #8e8e8e;
+}
+
+.token.punctuation {
+  color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.number,
+.token.unit,
+.token.hexcode,
+.token.deleted {
+  color: #e2777a;
+}
+
+.token.property,
+.token.selector {
+  color: #72f1b8;
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 35px #21272475;
+}
+
+.token.function-name {
+  color: #6196cc;
+}
+
+.token.boolean,
+.token.selector .token.id,
+.token.function {
+  color: #fdfdfd;
+  text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975,
+    0 0 8px #03edf975;
+}
+
+.token.class-name {
+  color: #fff5f6;
+  text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75,
+    0 0 25px #fc1f2c75;
+}
+
+.token.constant,
+.token.symbol {
+  color: #f92aad;
+  text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
+}
+
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.selector .token.class,
+.token.builtin {
+  color: #f4eee4;
+  text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: #f87c32;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.inserted {
+  color: green;
+} */
+.progress-bar {
+  position: fixed;
+  top: 10;
+  left: 0;
+  right: 0;
+  background: var(--themeColor);
+
+  z-index: 100;
+  height: 5px;
+}
