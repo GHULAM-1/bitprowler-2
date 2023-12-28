@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -23,9 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"],
+      "~/*": ["./public/*"]
     }
   },
   "include": [
@@ -33,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.jsx",
-    "**/*js"
+    "**/*js",
     // ".next/types/**/*.ts",
     // "keystatic.config.ts",
     // "src/components/Pricing.tsx",
@@ -55,10 +50,7 @@
     // "src/app/blog/[slug]/page.jsx",
     // "src/app/blog/[slug]/components/customCodeBlock.jsx",
     // "src/sanityImage.jsx",
-    ,
     ".next/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

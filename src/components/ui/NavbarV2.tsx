@@ -4,13 +4,14 @@ import { useState } from "react";
 import CrossSVG from "../../../public/navImages/crossSVG";
 import HamBurgerSVG from "../../../public/navImages/hamBurgerSVG";
 import LogoSVG from "../../../public/navImages/logoSVG";
-import { useTogglingStore } from "@/store/store";
+import { useTogglingStore } from "@/stores/togglingStore";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import ThemeSwitch from "./ThemeSwitchButton";
 import DropdownArrowSVG from "../../../public/arrows/dropdownArrowSVG";
 export default function NavbarV2() {
   const { theme, setTheme } = useTheme();
+  const toggleNav = useTogglingStore((state: any) => state.toggleNav);
 
   const isNavOpen = useTogglingStore((state: any) => state.isNavOpen);
   const [isPackagesOpen, togglePackages] = useState(false);
@@ -50,7 +51,6 @@ export default function NavbarV2() {
   const changeCurrentTheme = useTogglingStore(
     (state: any) => state.changeCurrentTheme
   );
-  const toggleNav = useTogglingStore((state: any) => state.toggleNav);
 
   return (
     <>
@@ -84,10 +84,10 @@ export default function NavbarV2() {
         {/* model */}
 
         {isNavOpen === true ? (
-          <div className="  h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll pt-[3rem]    ">
+          <div className="  h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll pt-[3rem]  relative z-0  ">
             <Link href="/">
               <button
-                onClick={() => toggleNav()}
+                onClick={handleHamBurgerClosing}
                 className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] mt-[15.44%]"
               >
                 Home
@@ -95,7 +95,7 @@ export default function NavbarV2() {
             </Link>
             <Link href="/aboutus">
               <button
-                onClick={() => toggleNav()}
+                onClick={handleHamBurgerClosing}
                 className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] "
               >
                 About us
@@ -103,7 +103,7 @@ export default function NavbarV2() {
             </Link>
             <Link href="/contactus">
               <button
-                onClick={() => toggleNav()}
+                onClick={handleHamBurgerClosing}
                 className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] "
               >
                 Contact us
@@ -111,7 +111,7 @@ export default function NavbarV2() {
             </Link>
             <Link href="/blog ">
               <button
-                onClick={() => toggleNav()}
+                onClick={handleHamBurgerClosing}
                 className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] "
               >
                 Blog
@@ -133,7 +133,7 @@ export default function NavbarV2() {
                 <div className="flex flex-col mb-[2rem]">
                   <Link href="/packages/bitPackage">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
                     >
                       bit
@@ -141,7 +141,7 @@ export default function NavbarV2() {
                   </Link>
                   <Link href="/packages/megabitPackage">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
                     >
                       megabit
@@ -149,7 +149,7 @@ export default function NavbarV2() {
                   </Link>
                   <Link href="/packages/gigabitPackage">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
                     >
                       gigabit
@@ -174,7 +174,7 @@ export default function NavbarV2() {
                 <div className="flex flex-col mb-[2rem]">
                   <Link href="/services/web-development">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
                     >
                       web dev
@@ -182,7 +182,7 @@ export default function NavbarV2() {
                   </Link>
                   <Link href="/services/mobile-development">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
                     >
                       app dev
@@ -190,7 +190,7 @@ export default function NavbarV2() {
                   </Link>
                   <Link href="/services/seo">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
                     >
                       seo
@@ -198,7 +198,7 @@ export default function NavbarV2() {
                   </Link>
                   <Link href="/services/security">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
                     >
                       security
@@ -206,7 +206,7 @@ export default function NavbarV2() {
                   </Link>
                   <Link href="/services/uiux">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] mb-[0.75rem]"
                     >
                       ui/ux
@@ -214,7 +214,7 @@ export default function NavbarV2() {
                   </Link>
                   <Link href="/services/marketing">
                     <button
-                      onClick={() => toggleNav()}
+                      onClick={handleHamBurgerClosing}
                       className="text-Mobile-Head dark:text-white text-black pl-[1.5rem] "
                     >
                       marketing

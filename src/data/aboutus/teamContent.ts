@@ -1,5 +1,7 @@
+import { nanoid } from "nanoid";
 export const teamContent = [
   {
+    id: nanoid(),
     name: "Ghulam",
     imagePath: "/teamMembers/ghulam.png",
     socials: [
@@ -16,6 +18,7 @@ export const teamContent = [
   },
 
   {
+    id: nanoid(),
     name: "Sarim",
     imagePath: "/teamMembers/sarim.png",
     socials: [
@@ -32,6 +35,7 @@ export const teamContent = [
   },
 
   {
+    id: nanoid(),
     name: "Moiz",
     imagePath: "/teamMembers/moiz.png",
     socials: [
@@ -48,6 +52,7 @@ export const teamContent = [
   },
 
   {
+    id: nanoid(),
     name: "Muhammad",
     imagePath: "/teamMembers/muhammad.png",
     socials: [

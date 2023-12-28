@@ -1,7 +1,6 @@
-import HeroParticles from "@/components/ui/heroParticles";
+import HomeParticles from "@/components/home/homeParticles";
 import Link from "next/link";
 export default function HeroSection() {
-  console.log("checking rendering state of hero section ");
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-center px-[1.86%] ">
       <div className="  top-div  flex flex-col justify-center items-center h-full w-full TABLET:px-[5%] TABLET:items-start SMALL_LAPTOP:items-center mt-[6.15%]">
@@ -19,7 +18,7 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      <HeroParticles></HeroParticles>
+      <HomeParticles></HomeParticles>
     </div>
   );
 }

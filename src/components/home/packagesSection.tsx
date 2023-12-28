@@ -1,5 +1,5 @@
-import PackagesSectionCard from "./packagesSectionCard";
-import { packagesSectionCardContent } from "@/app/(data)/packagesSection/packagesSectionCardContent";
+import PackagesSectionCard from "@/components/home/packagesSectionCard";
+import { packagesSectionCardContent } from "@/data/home/packagesSectionCardContent";
 
 export default function PackagesSection() {
   return (
@@ -19,7 +19,7 @@ export default function PackagesSection() {
         </div>
 
         <div className="grid   gap-[2rem]  TABLET:grid-cols-2 SMALL_LAPTOP:grid-cols-3  w-full justify-center justify-items-center ">
-          {packagesSectionCardContent.map((cardContent, index) => {
+          {packagesSectionCardContent.map((cardContent) => {
             return (
               <PackagesSectionCard
                 name={cardContent.name}
@@ -28,6 +28,7 @@ export default function PackagesSection() {
                 deliverablesCount={cardContent.deliverablesCount}
                 pagePath={cardContent.pagePath}
                 key={cardContent.id}
+                icon={cardContent.icon}
               ></PackagesSectionCard>
             );
           })}

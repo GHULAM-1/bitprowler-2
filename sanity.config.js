@@ -6,7 +6,7 @@ import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { vercelDeployTool } from "sanity-plugin-vercel-deploy";
-import { myTheme } from "./src/sanityTheme";
+import { myTheme } from "./sanity/sanityTheme";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId } from "./sanity/env";
 import { schema } from "./sanity/schema";
@@ -15,6 +15,8 @@ export default defineConfig({
   basePath: "/studio",
   projectId,
   dataset,
+  apiVersion: "2022-03-07",
+  useCdn: false,
 
   schema,
   plugins: [

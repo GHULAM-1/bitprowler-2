@@ -19,6 +19,7 @@ export async function sanityFetch<QueryResponse>({
   params?: QueryParams;
   tags?: string[];
 }): Promise<QueryResponse> {
+  console.log("fetching some data");
   const isDraftMode = draftMode().isEnabled;
   if (isDraftMode && !token) {
     throw new Error(
@@ -28,6 +29,39 @@ export async function sanityFetch<QueryResponse>({
   const isDevelopment = process.env.NODE_ENV === "development";
 
   return client.fetch<QueryResponse>(query, params, {
-    next: { revalidate: 10 },
+    next: { revalidate: 0 },
   });
+}
+
+export async function sanityFetchSinglePost<QueryResponse>({
+  slug,
+  params = DEFAULT_PARAMS,
+  tags = DEFAULT_TAGS,
+}: {
+  slug: string;
+  params?: QueryParams;
+  tags?: string[];
+}): Promise<QueryResponse> {
+  console.log("fetching some data");
+  const isDraftMode = draftMode().isEnabled;
+  if (isDraftMode && !token) {
+    throw new Error(
+      "The `SANITY_API_READ_TOKEN` environment variable is required."
+    );
+  }
+  const isDevelopment = process.env.NODE_ENV === "development";
+
+  return client.fetch<QueryResponse>(
+    `*[_type == "post" && slug.current == "${slug}"] {
+    ...,
+    "estimatedReadingTime": round(length(pt::text(body)) / 5 / 180),
+    "authorImage":authorImage.asset->url,
+    "bannerImage":bannerImage.asset->url,
+    readNextArticles
+  }`,
+    params,
+    {
+      next: { revalidate: 0 },
+    }
+  );
 }

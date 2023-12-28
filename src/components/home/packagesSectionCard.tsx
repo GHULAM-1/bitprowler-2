@@ -1,17 +1,12 @@
-"use client";
-import React from "react";
-import BDarkSVG from "../../../public/letters/bDarkSVG";
-import MDarkSVG from "../../../public/letters/mDarkSVG";
-import GDarkSVG from "../../../public/letters/gDarkSVG";
-
 import HoverButton from "@/components/ui/hoverButton";
-import { useTogglingStore } from "@/store/store";
-type PackagesCardProps = {
+import { ReactElement } from "react";
+type PackagesSectionCardProps = {
   name: string;
   price: number;
   description: string;
   deliverablesCount: number;
   pagePath: string;
+  icon: ReactElement;
 };
 
 export default function PackagesSectionCard({
@@ -20,37 +15,20 @@ export default function PackagesSectionCard({
   description,
   deliverablesCount,
   pagePath,
-}: PackagesCardProps) {
-  const isDarkTheme = useTogglingStore((state: any) => state.isDarkTheme);
-  let currentCardGradient = "";
-
-  if (isDarkTheme) {
-    currentCardGradient = "gradient-background";
-  } else {
-    currentCardGradient = "gradient-background-lightMode";
-  }
+  icon,
+}: PackagesSectionCardProps) {
   return (
     <div
       className={`relative h-[350px] LAPTOP:h-[450px] w-[83.2%]  bg-primaryBackgroundColor max-w-[480px]   rounded-[1rem] ${
         name === "dummy bit" ? "hidden" : null
       } ${name === "dummy bit" ? "TABLET:flex TABLET:opacity-0" : null} ${
-        name === "dummy bit" ? "SMALL_LAPTOP:hidden" : null
+        name === "dummy bit"
       }`}
     >
       <div
-        className={` h-[350px] LAPTOP:h-[450px] w-full  p-[1.25rem] LAPTOP:p-[2.5rem] z-10  relative   overflow-hidden   hover:scale-105 transition-all transform  rounded-[1rem]  ${
-          isDarkTheme === true
-            ? "gradient-background"
-            : "gradient-background-lightMode"
-        }  `}
+        className={` h-[350px] LAPTOP:h-[450px] w-full  p-[1.25rem] LAPTOP:p-[2.5rem] z-10  relative   overflow-hidden   hover:scale-105 transition-all transform  rounded-[1rem] gradient-background-lightMode dark:gradient-background`}
       >
-        {name === "megabit" ? (
-          <MDarkSVG className="w-[83.0%] h-[46%] absolute z-10 bottom-0 -right-10 overflow-hidden blur-[10px] dark:fill-[#F3F5F6] fill-black   "></MDarkSVG>
-        ) : name === "gigabit" ? (
-          <GDarkSVG className="w-[54.1%] h-[70.5%] absolute z-10  bottom-0 right-0 blur-[10px] dark:fill-white fill-black "></GDarkSVG>
-        ) : (
-          <BDarkSVG className=" w-[60.2%] h-[70.5%] absolute z-10  bottom-0 right-0 blur-[10px] dark:fill-white fill-black "></BDarkSVG>
-        )}
+        {icon}
 
         <div className=" content  z-20  flex flex-col  items-start justify-between relative  h-full   w-full rounded-[1rem] ">
           <div className="first-half flex flex-col items-start   w-full  mb-[7%]">

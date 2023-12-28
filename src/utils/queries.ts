@@ -1,4 +1,4 @@
-export const blogMainPageQuerie = `*[_type == "post"]| order(publishedAt desc){
+export const blogCardsQuery = `*[_type == "post"]| order(publishedAt desc){
 "mainHeading":title ,
   "slug":slug.current ,
   "bannerImage": bannerImage.asset->url ,

@@ -1,5 +1,5 @@
-import ThemeProviderWrapper from "../providers/ThemeProvider"
-import "./globals.css";
+import ThemeProviderWrapper from "@/providers/ThemeProvider";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import NavbarV2 from "@/components/ui/NavbarV2";
@@ -11,6 +11,7 @@ const poppins: any = Poppins({
   subsets: ["latin"],
   display: "swap",
 });
+
 export const metadata: Metadata = {
   title: "Home",
   description: "bit prowler agency home page",

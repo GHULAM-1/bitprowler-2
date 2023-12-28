@@ -1,53 +1,35 @@
-"use client";
-import { client } from "../../../lib/sanity";
-import { useEffect, useState } from "react";
-import TagAndReadTime from "./components/tagAndReadTime";
-import BlogTitle from "./components/blogTitle";
-import Divider from "../components/divider";
-import AuthorSection from "./components/authorSection";
-import Authorinfo from "./components/authorInfoPart";
-import AuthorSocialsPart from "./components/authorSocialsPart";
-import BannerImage from "./components/bannerImage";
+import TagAndReadTime from "@/components/post/tagAndReadTime";
+import BlogTitle from "@/components/post/blogTitle";
+import Divider from "@/components/blog/divider";
+import AuthorSection from "@/components/post/authorSection";
+import Authorinfo from "@/components/post/authorInfoPart";
+import AuthorSocialsPart from "@/components/post/authorSocialsPart";
+import BannerImage from "@/components/post/bannerImage";
 import { PortableText } from "@portabletext/react";
-import LongBottom from "@/components/ui/longBottom";
-import BigCTA from "@/components/ui/bigCTA";
-import ShareSection from "./components/shareSection";
-import DateSection from "./components/dateSection";
-import ReadNextSection from "./components/readNextSection";
-import CodeBlock from "./components/customCodeBlock";
+import Footer from "@/components/ui/footer";
+import CTASection from "@/components/ui/CTASection";
+import ShareSection from "@/components/post/shareSection";
+import DateSection from "@/components/post/dateSection";
+import ReadNextSection from "@/components/post/readNextSection";
+import CodeBlock from "@/components/post/customCodeBlock";
 import Link from "next/link";
-import { SanityImage } from "@/sanityImage";
+import { SanityImage } from "../../../../sanity/sanityImage";
+import { sanityFetchSinglePost } from "@/utils/sanityFetch";
+import { Metadata, ResolvingMetadata } from "next";
 
-export default function IndividualBlog({ params }) {
-  const [data, setData] = useState(null);
-  console.log("slug in individual data", typeof params.slug, params.slug);
+// export async function generateMetadata() {
+//   const data = await sanityFetchSinglePost({ slug: params.slug });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const result = await client.fetch(
-          `*[_type == "post" && slug.current == "${params.slug}"] {
-  ...,
-  "estimatedReadingTime": round(length(pt::text(body)) / 5 / 180),
-  "authorImage":authorImage.asset->url,
-  "bannerImage":bannerImage.asset->url,
-  readNextArticles
+//   return {
+//     title: data[0]?.title,
+//     openGraph: {
+//       images: data[0]?.bannerImage,
+//     },
+//   };
+// }
 
-
-}`,
-          {
-            cache: "no-store",
-          }
-        );
-        setData(result);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+export default async function IndividualBlog({ params }) {
+  const data = await sanityFetchSinglePost({ slug: params.slug });
   const components = {
     block: {
       h2: ({ children }) => (
@@ -121,37 +103,37 @@ export default function IndividualBlog({ params }) {
             <TagAndReadTime
               readTime={data[0]?.estimatedReadingTime}
               tag={data[0]?.category[0]}
-            ></TagAndReadTime>
-            <BlogTitle title={data[0]?.title}></BlogTitle>
-            <Divider intent="regular" className="mt-1"></Divider>
+            />
+            <BlogTitle title={data[0]?.title} />
+            <Divider intent="regular" className="mt-1" />
+
             <AuthorSection>
               <Authorinfo
                 authorName={data[0]?.authorName}
                 authorImage={data[0]?.authorImage}
-              ></Authorinfo>
+              />
               <AuthorSocialsPart
                 firstSocialLink={data[0]?.firstSocialLink}
                 secondSocialLink={data[0]?.secondSocialLink}
-              ></AuthorSocialsPart>
+              />
             </AuthorSection>
-            <Divider intent="regular" className="mt-1"></Divider>
-            <BannerImage imageUrl={data[0]?.bannerImage}></BannerImage>
+
+            <Divider intent="regular" className="mt-1" />
+            <BannerImage imageUrl={data[0]?.bannerImage} />
 
             <div className="flex w-full flex-col justify-center items-center">
               <PortableText value={data[0]?.body} components={components} />
             </div>
-            <Divider intent="regular" className="mt-1"></Divider>
-            <DateSection date={data[0]?.publishedAt}></DateSection>
-            <ShareSection></ShareSection>
-            <ReadNextSection
-              readNextSlugs={data[0]?.readNextArticles}
-            ></ReadNextSection>
+            <Divider intent="regular" className="mt-1" />
+            <DateSection date={data[0]?.publishedAt} />
+            <ShareSection />
+            <ReadNextSection readNextSlugs={data[0]?.readNextArticles} />
           </div>
         </div>
         <div className="px-6">
-          <BigCTA>Get to know us</BigCTA>
+          <CTASection>Get to know us</CTASection>
         </div>
-        <LongBottom></LongBottom>
+        <Footer />
       </>
     );
   } else {

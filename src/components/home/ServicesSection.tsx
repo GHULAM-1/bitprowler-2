@@ -1,5 +1,5 @@
-import ServiceCard from "./serviceSectionCard";
-import { ServicesSectionCardContent } from "@/app/(data)/servicesSection/servicesSectionCardContent";
+import ServicesSectionCard from "@/components/home/servicesSectionCard";
+import { ServicesSectionCardContent } from "@/data/home/servicesSectionCardContent";
 export default function ServicesSection() {
   return (
     <>
@@ -11,14 +11,15 @@ export default function ServicesSection() {
         </div>
 
         <div className="grid TABLET:grid-cols-2 desktop:grid-cols-3   w-full justify-items-center gap-[2rem] SMALL_LAPTOP:grid-cols-3">
-          {ServicesSectionCardContent.map((cardContent, index) => {
+          {ServicesSectionCardContent.map((cardContent) => {
             return (
-              <ServiceCard
+              <ServicesSectionCard
                 mainHeading={cardContent.mainHeading}
                 description={cardContent.description}
                 pagePath={cardContent.pagePath}
                 key={cardContent.id}
-              ></ServiceCard>
+                icon={cardContent.icon}
+              ></ServicesSectionCard>
             );
           })}
         </div>
