@@ -56,8 +56,8 @@ export default function NavbarV2() {
     <>
       {/* top bar */}
 
-      <div className="absolute w-full">
-        <div className="flex w-full top-0   dark:bg-opacity-20 dark:bg-black bg-opacity-20 bg-white  backdrop-blur-[126px] border-b-[1px] dark:border-b-[#404040]   border-b-primaryBackgroundColorDark justify-between px-[7%]  items-center overscroll-none fixed z-[50] py-[1.2%]">
+      <div className="fixed w-full z-[50]">
+        <div className="flex w-full top-0   dark:bg-opacity-20 dark:bg-black bg-opacity-20 bg-white  backdrop-blur-[126px] border-b-[1px] dark:border-b-[#404040]   border-b-primaryBackgroundColorDark justify-between px-[7%]  items-center overscroll-none   z-[50] py-[1.2%]">
           <Link href="/" className="flex  flex-col ">
             <LogoSVG
               className="w-[32px] h-[32px] fill-themeColor"
@@ -84,7 +84,7 @@ export default function NavbarV2() {
         {/* model */}
 
         {isNavOpen === true ? (
-          <div className="  h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll pt-[3rem]  relative z-0  ">
+          <div className="  h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll pt-[3rem]  z-0  ">
             <Link href="/">
               <button
                 onClick={handleHamBurgerClosing}
