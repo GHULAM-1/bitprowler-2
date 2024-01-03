@@ -32,7 +32,7 @@ export default function NavbarV2() {
   };
 
   const clearingHam = () => {
-    document.body.style.overflowY = "hidden";
+    // document.body.style.overflowY = "hidden";
     toggleNav();
     togglePackages(false);
     toggleServices(false);

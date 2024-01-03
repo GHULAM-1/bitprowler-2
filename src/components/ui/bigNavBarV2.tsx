@@ -23,6 +23,7 @@ export default function BigNavBarV2() {
   };
 
   const closingPackagesAndServices = () => {
+    console.log("in the closing");
     if (isPackagesOpen) {
       togglePackages(false);
     }
@@ -31,6 +32,7 @@ export default function BigNavBarV2() {
       toggleServices(false);
     }
   };
+  // document.addEventListener("click", closingPackagesAndServices);
 
   return (
     <>
