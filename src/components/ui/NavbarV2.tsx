@@ -43,7 +43,7 @@ export default function NavbarV2() {
     }
   };
   const handleHamBurgerClosing = () => {
-    document.body.style.overflowY = "visible";
+    // document.body.style.overflowY = "visible";
 
     toggleNav();
   };
