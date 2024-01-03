@@ -28,10 +28,10 @@ export default function FormNormal() {
     <>
       <form
         action={formAction}
-        className="w-full flex-col justify-center items-center"
+        className="w-full flex-col justify-center items-center  "
       >
         {/* email and name div */}
-        <div className="flex flex-col w-full TABLET:flex-row TABLET:gap-[7.875rem]">
+        <div className="flex  flex-col w-full TABLET:flex-row TABLET:gap-[7.875rem]">
           <div className="flex flex-col text-Mobile-S-Heading w-full outline-none mt-[11.44%] TABLET:mt-[0rem] TABLET:w-[240px] SMALL_LAPTOP:w-[50%]">
             <label
               htmlFor="name"

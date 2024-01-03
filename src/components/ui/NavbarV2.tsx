@@ -32,7 +32,7 @@ export default function NavbarV2() {
   };
 
   const clearingHam = () => {
-    // document.body.style.overflowY = "hidden";
+    document.body.style.overflowY = "hidden";
     toggleNav();
     togglePackages(false);
     toggleServices(false);
@@ -43,7 +43,7 @@ export default function NavbarV2() {
     }
   };
   const handleHamBurgerClosing = () => {
-    // document.body.style.overflowY = "visible";
+    document.body.style.overflowY = "visible";
 
     toggleNav();
   };
@@ -84,7 +84,7 @@ export default function NavbarV2() {
         {/* model */}
 
         {isNavOpen === true ? (
-          <div className="  h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll pt-[3rem]  z-0  ">
+          <div className="  h-screen w-full flex flex-col items-start dark:bg-black bg-white pl-[7.44%] text-black dark:text-white overflow-scroll pt-[3rem]   ">
             <Link href="/">
               <button
                 onClick={handleHamBurgerClosing}
@@ -159,8 +159,8 @@ export default function NavbarV2() {
               ) : null}
             </div>
 
-            <div onClick={handleServicesToggle}>
-              <div className="flex gap-[1rem] items-center ">
+            <div onClick={handleServicesToggle} className="mb-20">
+              <div className="flex gap-[1rem] items-center  ">
                 <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
                   Services
                 </div>

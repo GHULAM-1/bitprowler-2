@@ -2,7 +2,7 @@ import Form from "@/components/ui/Form";
 export default function ContactusSection() {
   return (
     <>
-      <div className="pt-[25.5%] phone  flex w-screen TABLET:pt-[10rem] flex-col px-[8.65%] justify-center  items-center SMALL_LAPTOP:hidden">
+      <div className="pt-[25.5%] phone  flex w-screen TABLET:pt-[10rem] flex-col px-[8.65%] justify-center  items-center SMALL_LAPTOP:hidden ">
         <div className="top flex items-center flex-col mb-[10.7%] w-full TABLET:items-start TABLET:gap-[1rem] TABLET:mb-[7.25rem]">
           <div className="text-Mobile-L-Head TABLET:text-Tablet-Head  ">
             Contact
@@ -25,7 +25,7 @@ export default function ContactusSection() {
       </div>
 
       {/* laptops */}
-      <div className="hidden SMALL_LAPTOP:flex flex-row   justify-center w-screen items-center mb-[10rem] mt-[5rem] px-[8%]">
+      <div className="hidden SMALL_LAPTOP:flex flex-row   justify-center w-screen items-center mb-[10rem] mt-[5rem] px-[8%] max-w-screen-LARGE_LAPTOP">
         <div className="left w-[50%]  h-full flex flex-col justify-between gap-[15rem]">
           <div className="left-top ">
             <div className="clamp-service-section-main-heading mb-[0.5rem] SMALL_LAPTOP:text-SMALL_LAPTOP-Heading">

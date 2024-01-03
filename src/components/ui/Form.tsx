@@ -10,7 +10,7 @@ export default function Form() {
   );
 
   return (
-    <div id="contact">
+    <div className="contact flex flex-col  w-full ">
       <>
         {currentFormState === "dummySuccess" ? (
           <FormSuccess />

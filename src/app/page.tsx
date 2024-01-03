@@ -7,12 +7,14 @@ import CustomersSection from "@/components/ui/customersSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <ServicesSection />
-      <PackagesSection />
-      {/* <CustomersSection /> */}
-      <ContactusSection />
-      <Footer />
+      <div className="flex flex-col items-center">
+        <HeroSection />
+        <ServicesSection />
+        <PackagesSection />
+        {/* <CustomersSection /> */}
+        <ContactusSection />
+        <Footer />
+      </div>
     </>
   );
 }

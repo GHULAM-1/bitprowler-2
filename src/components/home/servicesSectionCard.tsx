@@ -18,7 +18,7 @@ export default function ServicesSectionCard({
     <>
       <Link
         href={pagePath}
-        className={`  max-w-[360px] TABLET:max-w-none  rounded-[0.5rem] border-[2px] flex flex-col  
+        className={`  max-w-[360px] SMALL_LAPTOP:max-w-[475px]  rounded-[0.5rem] border-[2px] flex flex-col  
         dark:hover:bg-themeColor
         border-themeColor p-[4.34%] SMALL_LAPTOP:p-[1.5rem] LAPTOP:p-[2rem] dark:bg-textSecondaryColorLight bg-tertiaryBackgroundColorLight hover:bg-themeColor transition-transform transform hover:scale-105 group cursor-pointer mb-[8.69%] w-[85.5%] items-start dark:shadow-themeColor shadow-neutral-700 shadow-lg hover:shadow-none TABLET:p-[1.5rem]`}
       >

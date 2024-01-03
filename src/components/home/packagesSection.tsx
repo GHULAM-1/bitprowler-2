@@ -4,7 +4,7 @@ import { packagesSectionCardContent } from "@/data/home/packagesSectionCardConte
 export default function PackagesSection() {
   return (
     <>
-      <div className="w-full  flex flex-col items-center px-[5%] mt-[8rem]   mb-[5.5%]  justify-center ">
+      <div className="w-full  flex flex-col items-center px-[5%] mt-[8rem]   mb-[5.5%]  justify-center max-w-screen-LARGE_LAPTOP ">
         <div className=" w-full flex justify-center TABLET:justify-start TABLET:ml-[4.5rem] ">
           <div className="text-Mobile-L-Head  text-textPrimaryColor  TABLET:text-Tablet-Head SMALL_LAPTOP:text-SMALL_LAPTOP-Heading TABLET:ml-[1rem]">
             Packages
