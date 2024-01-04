@@ -12,7 +12,7 @@ export default function StagesSection({
 }: StagesSectionProps) {
   return (
     <>
-      <div className=" px-[15.11%] SMALL_LAPTOP:px-[4.5rem] flex flex-col justify-center items-center w-full my-[13rem] TABLET:items-start ">
+      <div className=" px-[15.11%] SMALL_LAPTOP:px-[4.5rem] flex flex-col justify-center items-center w-full my-[13rem] TABLET:items-start max-w-screen-LARGE_LAPTOP  ">
         <div className="text-[2rem] text-center TABLET:text-left  w-full TABLET:text-Tablet-Head TABLET:mb-[5rem] SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading">
           {mainHeading}
         </div>

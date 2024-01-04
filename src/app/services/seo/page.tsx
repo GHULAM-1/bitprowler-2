@@ -8,11 +8,12 @@ import ServicesPageHeroM from "@/components/services/servicesPageHeroM";
 import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
+import CustomersSection from "@/components/ui/customersSection";
 
 export default function Seo() {
   return (
     <>
-      <div className="w-full flex-col justify-center items-center">
+      <div className="w-full flex flex-col justify-center items-center">
         <div className="flex SMALL_LAPTOP:hidden">
           <ServicesPageHeroM
             name={servicesPageSeoContent.name}
@@ -59,6 +60,7 @@ export default function Seo() {
             deliverables={servicesPageSeoContent.deliverables}
           />
         </div>
+        <CustomersSection />
         <CTASection>Let's Work Together</CTASection>
         <Footer />
       </div>

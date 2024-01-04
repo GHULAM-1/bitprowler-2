@@ -159,11 +159,11 @@ export default function NavbarV2() {
               ) : null}
             </div>
 
-            <div onClick={handleServicesToggle} className="mb-20">
+            <div onClick={handleServicesToggle} className="mb-28">
               <div className="flex gap-[1rem] items-center  ">
                 <div className="text-Mobile-L-Head text-black dark:text-white mb-[7.44%] ">
                   Services
-                </div>
+                </div>  
                 <DropdownArrowSVG
                   className={` transition-all duration-100 ease-linear w-[48px] h-[48px] fill-textPrimaryColor mb-[1rem] ${
                     isServicesOpen === false ? "-rotate-90" : null

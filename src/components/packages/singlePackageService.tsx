@@ -11,7 +11,7 @@ export default function SinglePackageService({
 }: SinglePackageServiceProps) {
   return (
     <>
-      <div className=" px-[4.5rem]  mb-[2rem]   flex flex-col items-start SMALL_LAPTOP:w-[80%] ">
+      <div className=" px-[4.5rem]  mb-[2rem]   flex flex-col items-start SMALL_LAPTOP:w-[80%]   ">
         <div className=" mb-[2rem] SMALL_LAPTOP:text-SMALL_LAPTOP-S-Subheading mt-[4rem] TABLET:text-Tablet-Subheading">
           {mainService}
         </div>

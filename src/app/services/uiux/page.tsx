@@ -12,7 +12,7 @@ import ManifestoSection from "@/components/aboutus/manifestoSection";
 export default function Ux() {
   return (
     <>
-      <div className="w-full flex-col justify-center items-center">
+      <div className="w-full flex flex-col justify-center items-center">
         <div className="flex SMALL_LAPTOP:hidden">
           <ServicesPageHeroM
             name={servicesPageUxContent.name}
@@ -21,7 +21,7 @@ export default function Ux() {
           />
         </div>
 
-        <div className="hidden SMALL_LAPTOP:flex SMALL_LAPTOP:flex-col mt-[5.5rem] h-screen">
+        <div className="hidden    SMALL_LAPTOP:flex SMALL_LAPTOP:flex-col mt-[5.5rem] h-screen">
           <DotHeadings
             afterDotWord={servicesPageUxContent.name}
             beforeDotWord="Services"

@@ -13,9 +13,9 @@ export default function ServicesPageHeroL({
 }: ServicesPageWebHeroProps) {
   return (
     <>
-      <div className="w-full h-[90%] px-[4.5rem] ">
+      <div className="w-screen h-[90%] px-[4.5rem] max-w-screen-LARGE_LAPTOP flex  ">
         <div
-          className={`  gradient-background-lightMode dark:gradient-background     relative overflow-hidden z-[1] h-[85%] flex justify-center items-center rounded-[0.5rem]  flex-col `}
+          className={` w-full  gradient-background-lightMode dark:gradient-background     relative overflow-hidden z-[1] h-[85%] flex justify-center items-center rounded-[0.5rem]  flex-col `}
         >
           {icon}
 

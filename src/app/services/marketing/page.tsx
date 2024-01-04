@@ -13,7 +13,7 @@ import CustomersSection from "@/components/ui/customersSection";
 export default function WebDev() {
   return (
     <>
-      <div className="w-full flex-col justify-center items-center">
+      <div className="w-full flex  flex-col justify-center items-center ">
         <div className="flex SMALL_LAPTOP:hidden">
           <ServicesPageHeroM
             name={servicesPageMarketingContent.name}
@@ -22,7 +22,7 @@ export default function WebDev() {
           />
         </div>
 
-        <div className="hidden SMALL_LAPTOP:flex SMALL_LAPTOP:flex-col mt-[5.5rem] h-screen">
+        <div className="hidden SMALL_LAPTOP:flex SMALL_LAPTOP:flex-col mt-[5.5rem] h-screen  items-center ">
           <DotHeadings
             afterDotWord={servicesPageMarketingContent.name}
             beforeDotWord="Services"
@@ -60,7 +60,7 @@ export default function WebDev() {
             deliverables={servicesPageMarketingContent.deliverables}
           />
         </div>
-        <CustomersSection></CustomersSection>
+        <CustomersSection />
         <CTASection>Let's Work Together</CTASection>
         <Footer />
       </div>

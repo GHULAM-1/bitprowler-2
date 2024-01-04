@@ -1,7 +1,7 @@
 export default function CustomersSection() {
   return (
     <>
-      <section className=" h-screen flex justify-center items-center w-screen mb-10 TABLET:my-24 SMALL_LAPTOP:my-0 SMALL_LAPTOP:mb-0">
+      <section className=" h-screen flex justify-center items-center w-screen mb-10 TABLET:my-24 SMALL_LAPTOP:my-0 SMALL_LAPTOP:mb-0 max-w-screen-LARGE_LAPTOP">
         <div className=" px-4 w-full  ">
           <h2 className="mb-16 TABLET:mb-32  flex justify-center SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading TABLET:text-Tablet-Subheading font-medium text-Mobile-Head text-center">
             Trusted Partners and Clients

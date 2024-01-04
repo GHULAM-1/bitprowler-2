@@ -8,11 +8,12 @@ import ServicesPageHeroM from "@/components/services/servicesPageHeroM";
 import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
+import CustomersSection from "@/components/ui/customersSection";
 
 export default function Security() {
   return (
     <>
-      <div className="w-full flex-col justify-center items-center">
+      <div className="w-full flex flex-col justify-center items-center">
         <div className="flex SMALL_LAPTOP:hidden">
           <ServicesPageHeroM
             name={servicesPageSecurityContent.name}
@@ -59,6 +60,7 @@ export default function Security() {
             deliverables={servicesPageSecurityContent.deliverables}
           />
         </div>
+        <CustomersSection />
         <CTASection>Let's Work Together</CTASection>
         <Footer />
       </div>

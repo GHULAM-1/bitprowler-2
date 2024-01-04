@@ -11,7 +11,7 @@ export default function DotHeadings({
 }: DotHeadingsProps) {
   return (
     <>
-      <div className="flex justify-center items-center gap-[1rem]  TABLET:px-[4.5rem] TABLET:justify-start TABLET:h-[10%] TABLET::mb-[2.5rem] mt-[3rem]">
+      <div className="flex justify-center items-center gap-[1rem]  TABLET:px-[4.5rem] TABLET:justify-start TABLET:h-[10%] TABLET:mb-[2.5rem] mt-[3rem] max-w-screen-LARGE_LAPTOP  w-full">
         <div
           className={`dark:text-white text-black SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading TABLET:text-Tablet-S-Heading `}
         >

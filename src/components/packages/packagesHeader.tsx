@@ -7,7 +7,7 @@ type PackagesHeaderProps = {
 export default function PackagesHeader({ name, price }: PackagesHeaderProps) {
   return (
     <>
-      <div className="mb-[4rem]  flex justify-between items-baseline w-full">
+      <div className="mb-[4rem]  flex justify-between items-baseline w-full max-w-screen-LARGE_LAPTOP ">
         <div className="   ">
           <DotHeadings
             afterDotWord={name}

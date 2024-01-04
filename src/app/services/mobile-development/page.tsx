@@ -8,11 +8,12 @@ import ServicesPageHeroM from "@/components/services/servicesPageHeroM";
 import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
+import CustomersSection from "@/components/ui/customersSection";
 
 export default function AppDev() {
   return (
     <>
-      <div className="w-full flex-col justify-center items-center">
+      <div className="w-full flex  flex-col justify-center items-center">
         <div className="flex SMALL_LAPTOP:hidden">
           <ServicesPageHeroM
             name={servicesPageAppContent.name}
@@ -21,7 +22,7 @@ export default function AppDev() {
           />
         </div>
 
-        <div className="hidden SMALL_LAPTOP:flex SMALL_LAPTOP:flex-col mt-[5.5rem] h-screen">
+        <div className="hidden SMALL_LAPTOP:flex SMALL_LAPTOP:flex-col mt-[5.5rem] h-screen items-center">
           <DotHeadings
             afterDotWord={servicesPageAppContent.name}
             beforeDotWord="Services"
@@ -59,6 +60,7 @@ export default function AppDev() {
             deliverables={servicesPageAppContent.deliverables}
           />
         </div>
+        <CustomersSection/>
         <CTASection>Let's Work Together</CTASection>
         <Footer />
       </div>
