@@ -22,7 +22,7 @@ export default function PackagesMainSectionMobileCard({
         <div className=" flex   items-center justify-center flex-wrap text-center">
           {Deliverables.map((deliverable, index) => {
             return (
-              <span className="inline text-Mobile-Text">
+              <span className="inline text-Mobile-Text" key={index}>
                 {deliverable}
                 {index !== Deliverables.length - 1 ? <span>,</span> : null}
               </span>
