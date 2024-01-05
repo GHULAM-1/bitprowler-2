@@ -12,7 +12,6 @@ const poppins: any = Poppins({
   display: "swap",
 });
 
-
 export const metadata = {
   metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
   title: {

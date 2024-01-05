@@ -127,7 +127,7 @@ export default async function IndividualBlog({ params }) {
             </div>
             <Divider intent="regular" className="mt-1" />
             <DateSection date={data[0]?.publishedAt} />
-            <ShareSection />
+            <ShareSection slug={params.slug} />
             <ReadNextSection readNextSlugs={data[0]?.readNextArticles} />
           </div>
         </div>

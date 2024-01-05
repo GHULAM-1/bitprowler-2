@@ -70,7 +70,7 @@ module.exports = {
         marketingBorder: "var(--marketingBorder)",
         securityBorder: "var(--securityBorder)",
         appBorder: "var(--appBorder)",
-        seoBorder: "var(seoBorder)",
+        seoBorder: "var(--seoBorder)",
         webBorder: "var(--webBorder)",
         uiBorder: "var(--uiBorder)",
         marketingText: "var(--marketingText)",

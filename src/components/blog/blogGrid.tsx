@@ -6,7 +6,9 @@ type BlogGridProps = {
   blogCardsData: blogCardsDataT;
 };
 export default function BlogGrid({ blogCardsData }: BlogGridProps) {
-  const searchCategoryMainPage = useTogglingStore((state: any) => state.searchCategoryMainPage);
+  const searchCategoryMainPage = useTogglingStore(
+    (state: any) => state.searchCategoryMainPage
+  );
 
   const filteredData = blogCardsData?.filter((item: any) => {
     if (searchCategoryMainPage !== "All") {
@@ -36,7 +38,9 @@ export default function BlogGrid({ blogCardsData }: BlogGridProps) {
           })}
         </div>
       ) : (
-        <div>No result !!!!!!!!!</div>
+        <div className=" flex justify-center SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading mt-20 opacity-50">
+          No Articles Found
+        </div>
       )}
     </>
   );
