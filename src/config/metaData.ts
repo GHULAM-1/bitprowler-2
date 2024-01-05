@@ -7,7 +7,7 @@ export const siteConfig: Metadata = {
 
 export const homeMetadata: Metadata = {
 
-      description : 
+description : 
 "BitProwler: Elevate your startup with web/app dev, marketing, UI/UX, security, SEO expertise. Tailored packages for digital success. Let's innovate together!"
     
 }
