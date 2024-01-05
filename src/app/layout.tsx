@@ -15,9 +15,10 @@ const poppins: any = Poppins({
 export const metadata = {
   metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
   title: {
-    template: "%s | bitprowler",
+    template: "%s - bitprowler",
     default: "bitprowler",
   },
+  description: "",
 };
 
 export default function RootLayout({
