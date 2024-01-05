@@ -52,7 +52,9 @@ export default function BitPackage() {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="hidden TABLET:flex">
+        <Footer />
+      </div>
     </>
   );
 }
