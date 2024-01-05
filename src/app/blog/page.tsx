@@ -23,11 +23,11 @@ export default async function BlogsPage() {
 
   return (
     <>
-      <div className=" overflow-y-visible absolute z-0 transition-all ease-linear w-full ">
+      <div className=" overflow-y-visible absolute z-0 transition-all ease-linear w-full  flex items-center flex-col">
         <div className="hidden TABLET:flex">
           <SearchModal blogCardsData={blogCardsData} />
         </div>
-        <div className=" w-full  mt-[4rem] pt-[2rem]  px-[2rem]  TABLET:px-[7rem] TABLET:pt-[3.5rem]  SMALL_LAPTOP:px-[10rem] SMALL_LAPTOP:pt-[5rem] text-textPrimaryColor  overflow-y-visible    ">
+        <div className=" max-w-screen-LARGE_LAPTOP   flex flex-col w-full  mt-[4rem] pt-[2rem]  px-[2rem]  TABLET:px-[7rem] TABLET:pt-[3.5rem]  SMALL_LAPTOP:px-[10rem] SMALL_LAPTOP:pt-[5rem] text-textPrimaryColor  overflow-y-visible    ">
           <BlogHeadingAndSearch>
             <BlogHeading blogCardsData={blogCardsData} />
             <Search />

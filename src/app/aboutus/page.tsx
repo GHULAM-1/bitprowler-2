@@ -11,13 +11,15 @@ export const metadata = {
 export default function AboutUsPage() {
   return (
     <>
-      <div className="flex flex-col w-full  relative -z-10 ">
+      <div className="flex flex-col w-full  relative -z-10 items-center justify-center   ">
         <TopSection description={pageContent.aboutusDescription} />
+
         <ManifestoSection
           manifesto={pageContent.manifesto}
           firstWord="Our"
           secondWord="manifesto"
         />
+
         <StagesSection stages={pageContent.stages} mainHeading="Why Us?" />
         <TeamSection />
         <CTASection>Let's Work Together</CTASection>
@@ -25,4 +27,4 @@ export default function AboutUsPage() {
       </div>
     </>
   );
-} 
+}

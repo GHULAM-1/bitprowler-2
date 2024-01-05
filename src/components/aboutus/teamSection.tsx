@@ -3,7 +3,7 @@ import TeamMember from "./teamMember";
 export default function TeamSection() {
   return (
     <>
-      <div className=" px-[15.11%] SMALL_LAPTOP:px-[4.5rem]   flex flex-col justify-center items-center h-full TABLET:items-start">
+      <div className=" px-[15.11%] SMALL_LAPTOP:px-[4.5rem] w-full  TABLET:mb-32 SMALL_LAPTOP:mb-40   flex flex-col justify-center items-center h-full TABLET:items-start max-w-screen-LARGE_LAPTOP">
         <div className="text-Mobile-L-Head mb-[11%] TABLET:mb-[5%] TABLET:text-Tablet-Head ">
           Team
         </div>

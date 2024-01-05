@@ -131,9 +131,10 @@ export default async function IndividualBlog({ params }) {
             <ReadNextSection readNextSlugs={data[0]?.readNextArticles} />
           </div>
         </div>
-        <div className="px-6">
-          <CTASection>Get to know us</CTASection>
+        <div className="px-6 flex  justify-center  items-center">
+          <CTASection>Get to know us</CTASection>x
         </div>
+
         <Footer />
       </>
     );

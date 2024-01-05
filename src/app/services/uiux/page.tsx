@@ -8,6 +8,7 @@ import ServicesPageHeroM from "@/components/services/servicesPageHeroM";
 import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
+import CustomersSection from "@/components/ui/customersSection";
 
 export default function Ux() {
   return (
@@ -59,7 +60,9 @@ export default function Ux() {
             deliverables={servicesPageUxContent.deliverables}
           />
         </div>
+        <CustomersSection />
         <CTASection>Let's Work Together</CTASection>
+
         <Footer />
       </div>
     </>

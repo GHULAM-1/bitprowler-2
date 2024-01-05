@@ -19,7 +19,7 @@ export default function ServicesPageHeroL({
         >
           {icon}
 
-          <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-Subheading SMALL_LAPTOP:w-[50%] SMALL_LAPTOP:text-center">
+          <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-S-Subheading  SMALL_LAPTOP:w-[50%] SMALL_LAPTOP:text-center">
             {hero.quote}
           </div>
           <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-L-Text">

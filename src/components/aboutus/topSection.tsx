@@ -5,7 +5,7 @@ type TopSectionProps = {
 export default function TopSection({ description }: TopSectionProps) {
   return (
     <>
-      <div className=" w-full h-screen flex ">
+      <div className=" w-full h-screen flex max-w-screen-LARGE_LAPTOP ">
         <div className="SMALL_LAPTOP:w-1/2 p-10 SMALL_LAPTOP:pl-16 TABLET:p-16 h-full flex flex-col justify-center items-center relative -z-10">
           <div className="dark:topSectionDarkGradient topSectionLightGradient"></div>
 
@@ -19,7 +19,7 @@ export default function TopSection({ description }: TopSectionProps) {
           </div>
         </div>
 
-        <div className=" hidden SMALL_LAPTOP:flex justify-center items-center w-1/2  h-full">
+        <div className=" hidden SMALL_LAPTOP:flex justify-center items-center w-1/2  h-full LARGE_LAPTOP:justify-end LARGE_LAPTOP:pr-8">
           <AboutusBSVG className="w-[261px] h-[240px] fill-textPrimaryColor"></AboutusBSVG>
         </div>
       </div>

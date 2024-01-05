@@ -29,7 +29,7 @@ export default function ServicesPageHeroM({
           <div className="relative py-[31.1%]  w-full flex flex-col justify-center items-center gap-[1.8%] text-black dark:text-white text-center rounded-[1.5rem] z-10 overflow-hidden gradient-background-lightMode dark:gradient-background">
             {icon}
 
-            <div className="text-Mobile-S-Heading w-[70.5%] text-center relative z-30 TABLET:text-Tablet-Subheading">
+            <div className="text-Mobile-S-Heading w-[70.5%] text-center relative z-30 TABLET:text-Tablet-Large-Text">
               {hero.quote}
             </div>
             <div className="text-Mobile-Text relative z-30 TABLET:text-Tablet-Text TABLET:mt-[1rem]">
