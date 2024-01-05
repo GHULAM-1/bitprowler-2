@@ -26,12 +26,7 @@ export default function FilterSection({ size }: FilterSectionProps) {
   const [intentMap, setIntentMap] = useState<Record<number, string>>({
     0: "All",
   });
-  console.log("active button index , ", activeButton);
-  console.log(
-    searchCategory,
-    searchCategoryMainPage,
-    "categories in filter section "
-  );
+  
 
   const handleButtonClick = (buttonIndex: number, pill: string) => {
     setActiveButton(buttonIndex);

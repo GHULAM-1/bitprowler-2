@@ -35,7 +35,7 @@ export default async function BlogsPage() {
           <BlogDescription />
           <FilterSection />
           <Divider intent="regular" className="mt-[0.75rem] " />
-          <HotAndFreshSectiion />
+          {/* <HotAndFreshSectiion /> */}
           <BlogGrid blogCardsData={blogCardsData} />
 
           <div className="flex justify-center w-full mt-14">
