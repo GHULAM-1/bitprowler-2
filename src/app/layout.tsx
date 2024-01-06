@@ -5,6 +5,7 @@ import { Poppins } from "next/font/google";
 import NavbarV2 from "@/components/ui/NavbarV2";
 import { Analytics } from "@vercel/analytics/react";
 import BigNavBarV2 from "@/components/ui/bigNavBarV2";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins: any = Poppins({
   weight: ["400", "500", "600"],
@@ -85,14 +86,15 @@ export default function RootLayout({
       <body className="overflow-x-hidden  text-[100%] relative z-0 selection:bg-fuchsia-300 selection:text-fuchsia-900 ">
         <ThemeProviderWrapper attribute="class" disableTransitionOnChange>
           <div className="hidden SMALL_LAPTOP:flex ">
-            <BigNavBarV2></BigNavBarV2>
+            <BigNavBarV2 />
           </div>
           <div className="SMALL_LAPTOP:hidden ">
-            <NavbarV2></NavbarV2>
+            <NavbarV2 />
           </div>
 
           {children}
-          <Analytics></Analytics>
+          <SpeedInsights />
+          <Analytics />
         </ThemeProviderWrapper>
       </body>
     </html>
