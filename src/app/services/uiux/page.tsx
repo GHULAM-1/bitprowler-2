@@ -9,7 +9,10 @@ import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
 import CustomersSection from "@/components/ui/customersSection";
-
+export const metadata = {
+  title: "ui/ux services",
+  description: "Elevate user experience through thoughtful design.",
+};
 export default function Ux() {
   return (
     <>

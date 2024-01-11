@@ -9,7 +9,6 @@ import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
 import CustomersSection from "@/components/ui/customersSection";
-import CusSection from "@/components/ui/cusSection";
 export const metadata = {
   title: "seo service",
   description:
@@ -66,8 +65,7 @@ export default function Seo() {
             deliverables={servicesPageSeoContent.deliverables}
           />
         </div>
-        {/* <CustomersSection /> */}
-        <CusSection></CusSection>
+        <CustomersSection />
         <CTASection>Let's Work Together</CTASection>
         <Footer />
       </div>

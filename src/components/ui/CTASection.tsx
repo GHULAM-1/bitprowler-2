@@ -1,14 +1,16 @@
 type CTASectionProps = {
   children: ReactNode;
+  path?: string;
 };
 import Link from "next/link";
 import ButtonArrowSVG from "../../../public/buttonArrowSVG";
 import { ReactNode } from "react";
-export default function CTASection({ children }: CTASectionProps) {
+export default function CTASection({ children, path }: CTASectionProps) {
+  const href = path || "/contactus";
   return (
     <>
       <Link
-        href="/contactus"
+        href={href}
         className="w-full flex items-center justify-center  cursor-pointer max-w-screen-LARGE_LAPTOP "
       >
         <button className=" group  bg-themeColor SMALL_LAPTOP:bg-transparent SMALL_LAPTOP:border-2 SMALL_LAPTOP:border-themeColor SMALL_LAPTOP:hover:bg-themeColor SMALL_LAPTOP:transition-all SMALL_LAPTOP:ease-linear w-[98%]  flex py-[8.14%] SMALL_LAPTOP:py-[4.8rem] justify-center items-center TABLET:justify-start TABLET:pl-[3rem]  gap-[1.5rem] rounded-[0.5rem] mb-[0.5rem] ">

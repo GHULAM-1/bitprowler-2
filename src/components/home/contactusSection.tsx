@@ -25,7 +25,7 @@ export default function ContactusSection() {
       </div>
 
       {/* laptops */}
-      <div className="hidden SMALL_LAPTOP:flex flex-row   justify-center w-screen items-center mb-[10rem] mt-[5rem] px-[8%] max-w-screen-LARGE_LAPTOP">
+      <div className="hidden SMALL_LAPTOP:flex flex-row    justify-center w-screen items-center mb-[10rem] mt-[5rem] px-[8%] max-w-screen-LARGE_LAPTOP">
         <div className="left w-[50%]  h-full flex flex-col justify-between gap-[15rem]">
           <div className="left-top ">
             <div className="clamp-service-section-main-heading mb-[0.5rem] SMALL_LAPTOP:text-SMALL_LAPTOP-Heading">

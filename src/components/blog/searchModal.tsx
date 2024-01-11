@@ -19,7 +19,7 @@ export default function SearchModal({ blogCardsData }: searchModalProps) {
   );
 
   const handleClick = () => {
-    console.log("closing via search model");
+    
     document.body.style.overflow = "visible";
     setSearchCategory("All");
 

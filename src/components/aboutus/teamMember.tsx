@@ -20,7 +20,7 @@ export default function TeamMember({ name, pic }: TeamMemberProps) {
             width={270}
             height={300}
             alt={name}
-            className="relative z-20 SMALL_LAPTOP:grayscale SMALL_LAPTOP:group-hover:grayscale-0  "
+            className="relative z-20 SMALL_LAPTOP:grayscale SMALL_LAPTOP:group-hover:grayscale-0 bottom-0 "
           />
         </div>
 

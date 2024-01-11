@@ -11,7 +11,7 @@ const sanityConfig = createClient({
 });
 
 export const SanityImage = ({ asset, caption }) => {
-  console.log("checking inline image", asset);
+
   const imageProps = useNextSanityImage(sanityConfig, asset);
 
   if (!imageProps) return null;

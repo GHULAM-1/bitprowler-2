@@ -9,7 +9,10 @@ import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
 import CustomersSection from "@/components/ui/customersSection";
-
+export const metadata = {
+  title: "security services",
+  description: "Protecting your business, safeguarding your success.",
+};
 export default function Security() {
   return (
     <>

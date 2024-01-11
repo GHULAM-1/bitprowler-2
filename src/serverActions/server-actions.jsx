@@ -26,7 +26,7 @@ export async function formSubmission(currentState, formData) {
 
     return { message: "success" };
   } catch (error) {
-    console.log(error);
+    
     return { message: "failure" };
   }
 }

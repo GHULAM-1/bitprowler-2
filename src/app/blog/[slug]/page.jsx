@@ -17,10 +17,7 @@ import { SanityImage } from "../../../../sanity/sanityImage";
 import { sanityFetchSinglePost } from "@/utils/sanityFetch";
 
 export async function generateMetadata({ params }) {
-  console.log(params);
-  console.log("in the metadata function ");
   const data = await sanityFetchSinglePost({ slug: params.slug });
-  console.log(data[0]?.title);
   return {
     title: data[0]?.title,
     openGraph: {
@@ -132,7 +129,7 @@ export default async function IndividualBlog({ params }) {
           </div>
         </div>
         <div className="px-6 flex  justify-center  items-center">
-          <CTASection>Get to know us</CTASection>x
+          <CTASection path="/">Get to know us</CTASection>x
         </div>
 
         <Footer />

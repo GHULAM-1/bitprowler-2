@@ -3,20 +3,24 @@ import { useTogglingStore } from "@/stores/togglingStore";
 // import { redirect } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "admin access",
+  description: "This is bitprowler's team authentication",
+};
 
 export default function Teamauth() {
-  const inputRef = useRef(null);
+  const inputRef: any = useRef(null);
   const router = useRouter();
   const changeMemberStatus = useTogglingStore(
-    (state) => state.changeMemberStatus
+    (state: any) => state.changeMemberStatus
   );
-  const isTeamMember = useTogglingStore((state) => state.isTeamMember);
+  const isTeamMember = useTogglingStore((state: any) => state.isTeamMember);
 
   const handleClick = () => {
     const currentPassword = inputRef.current.value;
 
-    console.log(isTeamMember);
-    console.log("team main ho");
     if (currentPassword === "donkey") {
       changeMemberStatus();
       router.push("/studio");
@@ -30,7 +34,7 @@ export default function Teamauth() {
       <div className="w-screen gap-[2rem] h-screen  flex flex-col justify-center items-center ">
         <div className="flex justify-center items-center flex-col gap-[2rem] ">
           <div className="font-medium text-Mobile-Text TABLET:text-Tablet-Large-Text ">
-            BitProwler <span className="text-themeColor">Admin</span>{" "}
+            BitProwler <span className="text-themeColor">Admin</span>
             Authorization
           </div>
           <div className="flex TABLET:flex-row flex-col gap-[1rem] items-center TABLET:px-[1rem]">

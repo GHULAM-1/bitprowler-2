@@ -9,7 +9,10 @@ import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
 import CustomersSection from "@/components/ui/customersSection";
-
+export const metadata = {
+  title: "app services",
+  description: "Turn your app idea into reality.",
+};
 export default function AppDev() {
   return (
     <>
@@ -60,7 +63,7 @@ export default function AppDev() {
             deliverables={servicesPageAppContent.deliverables}
           />
         </div>
-        <CustomersSection/>
+        <CustomersSection />
         <CTASection>Let's Work Together</CTASection>
         <Footer />
       </div>

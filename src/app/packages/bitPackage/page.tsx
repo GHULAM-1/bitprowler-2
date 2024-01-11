@@ -6,7 +6,10 @@ import Footer from "@/components/ui/footer";
 import CTASection from "@/components/ui/CTASection";
 import PackagesHeaderMobile from "@/components/packages/packagesHeaderMobile";
 import PackagesMainSectionMobile from "@/components/packages/packagesMainSectionMobile";
-
+export const metadata = {
+  title: "bit package",
+  description: "The perfect blend for small scale businesses",
+};
 export default function BitPackage() {
   return (
     <>

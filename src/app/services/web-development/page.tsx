@@ -9,7 +9,11 @@ import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
 import CustomersSection from "@/components/ui/customersSection";
-
+export const metadata = {
+  title: "web services",
+  description:
+    "Crafting blazing fast loading pages exceeding your business expectations.",
+};
 export default function WebDev() {
   return (
     <>

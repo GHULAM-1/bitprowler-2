@@ -19,7 +19,6 @@ export async function sanityFetch<QueryResponse>({
   params?: QueryParams;
   tags?: string[];
 }): Promise<QueryResponse> {
-  console.log("fetching some data");
   const isDraftMode = draftMode().isEnabled;
   if (isDraftMode && !token) {
     throw new Error(
@@ -42,7 +41,6 @@ export async function sanityFetchSinglePost<QueryResponse>({
   params?: QueryParams;
   tags?: string[];
 }): Promise<QueryResponse> {
-  console.log("fetching some data");
   const isDraftMode = draftMode().isEnabled;
   if (isDraftMode && !token) {
     throw new Error(

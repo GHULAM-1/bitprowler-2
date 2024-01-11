@@ -6,7 +6,11 @@ import Footer from "@/components/ui/footer";
 import CTASection from "@/components/ui/CTASection";
 import PackagesHeaderMobile from "@/components/packages/packagesHeaderMobile";
 import PackagesMainSectionMobile from "@/components/packages/packagesMainSectionMobile";
-
+export const metadata = {
+  title: "gigabit package",
+  description:
+    "Empower large enterprises with an all-encompassing tech-stack for unrivaled digital excellence.",
+};
 export default function GigabitPackage() {
   return (
     <>

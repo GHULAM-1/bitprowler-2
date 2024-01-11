@@ -9,8 +9,12 @@ import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
 import CustomersSection from "@/components/ui/customersSection";
-import CusSection from "@/components/ui/cusSection";
-export default function WebDev() {
+export const metadata = {
+  title: "marketing services",
+  description:
+    "Crafting blazing fast loading pages exceeding your business expectations.",
+};
+export default function Marketing() {
   return (
     <>
       <div className="w-full flex  flex-col justify-center items-center ">

@@ -13,7 +13,6 @@ export default function BlogHeading({ blogCardsData }: blogHeadingProps) {
     (state: any) => state.toggleSearchWindow
   );
   {
-    console.log(isSearchActive);
   }
 
   const handleClick = () => {

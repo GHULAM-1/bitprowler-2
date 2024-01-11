@@ -14,9 +14,14 @@ import { sanityFetch } from "@/utils/sanityFetch";
 import { blogCardsQuery } from "@/utils/queries";
 import { blogCardsDataT } from "@/types/types";
 import FilterSection from "@/components/blog/filterSection";
+import { Metadata } from "next";
+export const metadata : Metadata= {
+  title: "Blog",
+   description : "This is bitprowler's blog"
+
+}
 
 export default async function BlogsPage() {
-  console.log("in the main blog page");
   const blogCardsData: blogCardsDataT = await sanityFetch({
     query: blogCardsQuery,
   });
@@ -42,7 +47,7 @@ export default async function BlogsPage() {
             <SeeMoreBtn />
           </div>
           <BlogLastSection />
-          <CTASection> Get to know us</CTASection>
+          <CTASection path="/"> Get to know us</CTASection>
         </div>
         <Footer />
       </div>
