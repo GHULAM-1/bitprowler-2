@@ -5,11 +5,6 @@ import { useRouter } from "next/navigation";
 import { useRef } from "react";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "admin access",
-  description: "This is bitprowler's team authentication",
-};
-
 export default function Teamauth() {
   const inputRef: any = useRef(null);
   const router = useRouter();
