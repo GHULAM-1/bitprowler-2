@@ -8,9 +8,13 @@ export async function formSubmission(currentState, formData) {
   try {
     await resend.emails.send({
       from: "bitprowler <team@bitprowler.com>",
-      to: ["ilyasghulam35@gmail.com"], // Update with your email address
-      subject: "Guys We Have A Client",
-      text: message, // Include the message in the email body
+      to: [
+        "ilyasghulam35@gmail.com , mbinshahz@gmail.com , sarimibrahim16@gmail.com",
+      ],
+      subject: "Guys We Have A Client !!!",
+      text: `client's email id is -----${email}----- and client's name ----- ${formData.get(
+        "name"
+      )} ----- and the message is -----${message} ---------`,
     });
 
     await resend.emails.send({
