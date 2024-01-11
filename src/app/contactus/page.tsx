@@ -4,8 +4,10 @@ import Footer from "@/components/ui/footer";
 export default function ContactPage() {
   return (
     <>
-      <div className="pt-[5.5rem] w-full">
-        <ContactusSection />
+      <div className=" w-full h-screen flex justify-center items-center flex-col ">
+        <div>
+          <ContactusSection />
+        </div>
         <Footer />
       </div>
     </>

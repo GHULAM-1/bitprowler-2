@@ -16,7 +16,9 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <PackagesSection />
-        {/* <CustomersSection /> */}
+        <div className="mt-28 TABLET:mt-0">
+          <CustomersSection />
+        </div>
         <ContactusSection />
         <Footer />
       </div>
