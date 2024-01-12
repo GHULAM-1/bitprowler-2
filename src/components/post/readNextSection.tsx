@@ -5,7 +5,7 @@ type ReadNextSectionProps = {
 export default function ReadNextSection({
   readNextSlugs,
 }: ReadNextSectionProps) {
-  if (readNextSlugs.length !== 0) {
+  if (readNextSlugs) {
     return (
       <>
         <div>
