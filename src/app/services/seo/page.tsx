@@ -9,6 +9,7 @@ import StagesSection from "@/components/aboutus/stagesSection";
 import ServicesDeliverablesSection from "@/components/services/servicesDeliverablesSection";
 import ManifestoSection from "@/components/aboutus/manifestoSection";
 import CustomersSection from "@/components/ui/customersSection";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
 export const metadata = {
   title: "seo service",
   description:
@@ -66,6 +67,7 @@ export default function Seo() {
           />
         </div>
         <CustomersSection />
+        <CalendlyEmbed />
         <CTASection>Let's Work Together</CTASection>
         <Footer />
       </div>

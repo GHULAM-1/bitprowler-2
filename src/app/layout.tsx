@@ -6,7 +6,7 @@ import NavbarV2 from "@/components/ui/NavbarV2";
 import { Analytics } from "@vercel/analytics/react";
 import BigNavBarV2 from "@/components/ui/bigNavBarV2";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
+import Script from "next/script";
 const poppins: any = Poppins({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
@@ -90,6 +90,12 @@ export default function RootLayout({
           </div>
 
           {children}
+          <link
+            href="https://assets.calendly.com/assets/external/widget.css"
+            rel="stylesheet"
+          />
+          <Script src="https://assets.calendly.com/assets/external/widget.js" />
+
           <SpeedInsights />
           <Analytics />
         </ThemeProviderWrapper>

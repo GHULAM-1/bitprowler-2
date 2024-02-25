@@ -19,12 +19,12 @@ export async function sanityFetch<QueryResponse>({
   params?: QueryParams;
   tags?: string[];
 }): Promise<QueryResponse> {
-  // const isDraftMode = draftMode().isEnabled;
-  // if ( !token) {
-  //   throw new Error(
-  //     "The `SANITY_API_READ_TOKEN` environment variable is required."
-  //   );
-  // }
+  const isDraftMode = draftMode().isEnabled;
+  if (isDraftMode && !token) {
+    throw new Error(
+      "The `SANITY_API_READ_TOKEN` environment variable is required."
+    );
+  }
   const isDevelopment = process.env.NODE_ENV === "development";
 
   return client.fetch<QueryResponse>(query, params, {
@@ -41,11 +41,13 @@ export async function sanityFetchSinglePost<QueryResponse>({
   params?: QueryParams;
   tags?: string[];
 }): Promise<QueryResponse> {
-  // if (!token) {
-  //   throw new Error(
-  //     "The `SANITY_API_READ_TOKEN` environment variable is required."
-  //   );
-  // }
+  const isDraftMode = draftMode().isEnabled;
+
+  if (isDraftMode && !token) {
+    throw new Error(
+      "The `SANITY_API_READ_TOKEN` environment variable is required."
+    );
+  }
   const isDevelopment = process.env.NODE_ENV === "development";
 
   return client.fetch<QueryResponse>(

@@ -17,18 +17,16 @@ export default function AuthorSocialsPart({
 }: AuthorSocialsPartprops) {
   const firstPlatform = linkToPlatform(firstSocialLink);
   const secondPlatform = linkToPlatform(secondSocialLink);
-
   const iconsClasses =
     "TABLET:w-8 TABLET:h-8 w-6 h-6 stroke-textPrimaryColor  ";
- 
+
   function platformToIcon(platform: string) {
     switch (platform) {
       case "instagram":
         return <InstagramSVG className={`${iconsClasses} fill-none`} />;
       case "twitter":
         return (
-          <TwitterSVG
-            className={`${iconsClasses} fill-textPrimaryColor`}/>
+          <TwitterSVG className={`${iconsClasses} fill-textPrimaryColor`} />
         );
       case "linkedin":
         return <LinkedinSVG className={`${iconsClasses} fill-none`} />;
@@ -43,7 +41,7 @@ export default function AuthorSocialsPart({
 
   return (
     <>
-      <div className="flex gap-4">
+      <div className="flex gap-4">  
         <Link href={firstSocialLink} target="_blank">
           {platformToIcon(firstPlatform)}
         </Link>

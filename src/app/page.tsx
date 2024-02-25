@@ -6,6 +6,8 @@ import Footer from "@/components/ui/footer";
 import { Metadata } from "next";
 import CustomersSection from "@/components/ui/customersSection";
 import { homeMetadata } from "@/config/metaData";
+import CalendlyEmbed from "../components/CalendlyEmbed";
+
 export const metadata: Metadata = {
   description: homeMetadata.description,
 };
@@ -20,6 +22,7 @@ export default function Home() {
           <CustomersSection />
         </div>
         <ContactusSection />
+        <CalendlyEmbed />"
         <Footer />
       </div>
     </>

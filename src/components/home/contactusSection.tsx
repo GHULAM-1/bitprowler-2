@@ -14,12 +14,13 @@ export default function ContactusSection() {
 
         <Form />
 
-        <div className="bottom  my-[9.30%] TABLET:mt-[4rem]  w-full flex flex-col justify-center items-center TABLET:items-start ">
-          <div className="text-Mobile-S-Heading font-medium TABLET:text-Tablet-Text TABLET:mb-[0.5rem] ">
-            Lahore,Pakistan
+        <div className="bottom  my-[9.30%] TABLET:mt-[4rem]  w-full flex flex-col justify-center items-center TABLET:items-start TABLET:justify-start ">
+          <div className="text-Mobile-Text TABLET:text-Tablet-Text TABLET:mb-[0.5rem] TABLET:text-left text-center my-4  ">
+            Arfa Software Technology Park, Kasur Rd, Block H Model Town, Lahore,
+            Punjab
           </div>
           <div className="text-Mobile-Text TABLET:text-Tablet-Text">
-            0323-4896676
+            (+92)323-4896676
           </div>
         </div>
       </div>
@@ -36,11 +37,12 @@ export default function ContactusSection() {
             </div>
           </div>
           <div className="left-bottom">
-            <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-L-Text">
-              Lahore,Pakistan
+            <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-Text w-1/2 mb-4 text-left">
+              Arfa Software Technology Park, Kasur Rd, Block H Model Town,
+              Lahore, Punjab
             </div>
             <div className="SMALL_LAPTOP:text-SMALL_LAPTOP-L-Text">
-              (+92)0323-4896676
+              (+92)323-4896676
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ export const teamContent = [
   {
     id: nanoid(),
     name: "Ghulam",
-    imagePath: "/teamMembers/ghulam.png",
+    imagePath: "/teamMembers/gama1.png",
     socials: [
       {
         name: "linkedIn",

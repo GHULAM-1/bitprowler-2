@@ -15,6 +15,7 @@ import CodeBlock from "@/components/post/customCodeBlock";
 import Link from "next/link";
 import { SanityImage } from "../../../../sanity/sanityImage";
 import { sanityFetchSinglePost } from "@/utils/sanityFetch";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
 
 export async function generateMetadata({ params }) {
   const data = await sanityFetchSinglePost({ slug: params.slug });
@@ -129,9 +130,9 @@ export default async function IndividualBlog({ params }) {
           </div>
         </div>
         <div className="px-6 flex  justify-center  items-center">
-          <CTASection path="/">Get to know us</CTASection>x
+          <CTASection path="/">Get to know us</CTASection>
         </div>
-
+        <CalendlyEmbed />
         <Footer />
       </>
     );

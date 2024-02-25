@@ -13,11 +13,7 @@ export default function Footer() {
       icon: <InstagramSVG className={SVGClasses} />,
       url: "https://www.instagram.com/bitprowler/",
     },
-    {
-      id: nanoid(),
-      icon: <FacebookSVG className={SVGClasses} />,
-      url: "https://www.facebook.com/bitprowler/",
-    },
+
     {
       id: nanoid(),
       icon: <LinkedinSVG className={SVGClasses} />,
@@ -28,7 +24,7 @@ export default function Footer() {
       id: nanoid(),
       icon: <FiverSVG className={SVGClasses} />,
 
-      url: "https://www.fiver.com/bitprowler/",
+      url: "https://www.fiverr.com/bitprowlertech",
     },
   ];
 
@@ -36,7 +32,7 @@ export default function Footer() {
     <>
       {/* mobile */}
       <div className="flex flex-col w-full justify-center items-center TABLET:hidden   ">
-        <div className="flex  items-center p-[1rem] justify-between bg-[#EAEAEA] dark:bg-[#151515] text-black dark:text-white w-[99%] rounded-t-[0.5rem]   ">
+        <div className="flex  items-center p-[1rem] justify-between bg-[#EAEAEA] dark:bg-[#151515] text-black dark:text-white w-full rounded-t-[0.5rem]   ">
           <div className="text-Mobile-Head font-bold">
             <span className="text-themeColor">bit</span>
             <span className="text-textPrimaryColor">prowler</span>
@@ -62,7 +58,7 @@ export default function Footer() {
       {/* other devices */}
 
       <div className="flex w-full items-center justify-center">
-        <div className="hidden TABLET:flex bg-tertiaryBackgroundColor w-[98%] rounded-[1rem] justify-between px-[2rem] py-[1rem] items-center">
+        <div className="hidden TABLET:flex bg-tertiaryBackgroundColor w-full  justify-between px-[2rem] py-[1rem] items-center">
           <div className="TABLET:text-SMALL_LAPTOP-L-Text font-black">
             <span className="text-themeColor">bit</span>
             <span className="text-textPrimaryColor">prowler</span>
